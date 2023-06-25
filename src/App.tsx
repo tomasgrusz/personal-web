@@ -1,14 +1,25 @@
 import React from 'react';
 import './App.css';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
-function App() {
+import LandingPage from 'pages/LandingPage';
+
+export default function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <LandingPage />,
+      errorElement: <></>
+    }
+  ]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        
-      </header>
+      <RouterProvider router={router} />
     </div>
   );
 }
-
-export default App;

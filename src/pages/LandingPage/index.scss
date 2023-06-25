@@ -1,0 +1,96 @@
+.LandingPage {
+    width: 100vw;
+    height: 100vh;
+    background-color: #282c34;
+    z-index: -2;
+    position: absolute;
+
+    .logo {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+
+        path, svg {
+            fill-rule: nonzero;
+            paint-order: fill; 
+            stroke: #eee;
+            fill: #eee;
+            width: 64px;
+            height: 64px;
+        }
+    }
+
+    .links {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        gap: 1rem;
+
+        * {
+            font-size: 20px;
+            color: #eee;
+        }
+
+        .linkedin, .github {
+            * {transition: color 0.2s ease-in-out; }
+        }
+
+        .linkedin:hover, .linkedin:active, .linkedin:focus {
+            * {color: #0072b1; }
+        }
+
+        .github:hover, .github:active, .github:focus {
+            * {color: #696161; }
+        }
+    }
+
+    .welcome-heading {
+        position: absolute;
+        width: 100vw;
+        top: 10%;
+        font-family: 'Exo2-Regular';
+        color: #eee;
+        font-size: 48px;
+    }
+
+    .bottom-content {
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        bottom: 2rem;
+        font-family: 'Exo2-Light';
+        color: #eee;
+
+        * {
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        h3 {
+            font-size: 16px;
+            color: #eee;
+        }
+    }
+
+    .copyright {
+        position: absolute;
+        right: 0.5rem;
+        bottom: 0.5rem;
+        color: #eee;
+        opacity: 0.3;
+        font-size: 16px;
+    }
+}
+
+.model-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+}
