@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 
 import LandingPage from 'pages/LandingPage';
+import Portal from 'components/three/Portal';
 
 export default function App() {
 
@@ -13,6 +14,11 @@ export default function App() {
     {
       path: '/',
       element: <LandingPage />,
+      errorElement: <></>
+    },
+    {
+      path: '/test',
+      element: <Portal />,
       errorElement: <></>
     }
   ]);
