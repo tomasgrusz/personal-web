@@ -1,0 +1,20 @@
+.ToggleSwitch {
+    z-index: 5;
+    align-items: start;
+    display: flex;
+    cursor: pointer;
+
+    .ToggleCircle {
+        background-color: white;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 2px 2px 5px black;
+
+        transition: all 0.2s ease-in-out;
+    }
+
+    .ToggleCircle.toggled {
+        transform: translateX(120%);
+        box-shadow: -2px 2px 5px black;
+    }
+}

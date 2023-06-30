@@ -1,26 +1,16 @@
-import React from 'react';
-import './App.scss';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import React from "react";
+import "./App.scss";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import LandingPage from 'pages/LandingPage';
-import Portal from 'components/three/Portal';
+import LandingPage from "pages/LandingPage";
 
 export default function App() {
-
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: "/",
       element: <LandingPage />,
-      errorElement: <></>
+      errorElement: <></>,
     },
-    {
-      path: '/test',
-      element: <Portal />,
-      errorElement: <></>
-    }
   ]);
 
   return (

@@ -1,57 +1,39 @@
 .LandingPage {
     width: 100vw;
     height: 100vh;
-    background-color: #282c34;
+    background-color: #252233;
     z-index: -2;
     position: absolute;
 
-    .logo {
-        position: absolute;
-        left: 16px;
-        top: 16px;
-
-        path, svg {
-            fill-rule: nonzero;
-            paint-order: fill; 
-            stroke: #eee;
-            fill: #eee;
-            width: 48px;
-            height: 48px;
-        }
-    }
-
-    .links {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        display: flex;
-        gap: 1rem;
-
-        * {
-            font-size: 20px;
-            color: #eee;
-        }
-
-        .linkedin, .github {
-            * {transition: color 0.2s ease-in-out; }
-        }
-
-        .linkedin:hover, .linkedin:active, .linkedin:focus {
-            * {color: #0072b1; }
-        }
-
-        .github:hover, .github:active, .github:focus {
-            * {color: #696161; }
-        }
-    }
-
-    .welcome-heading {
+    .top-content {
         position: absolute;
         width: 100vw;
         top: 10%;
-        font-family: 'SummerLight';
-        color: #eee;
-        font-size: 48px;
+
+        .welcome-heading {
+            color: #eee;
+            font-size: 48px;
+            text-transform: uppercase;
+            font-weight: lighter;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            span {
+                font-family: 'Summer';
+                font-size: 64px;
+                background: linear-gradient(
+                    to bottom right,
+                    white,
+                    #faf,
+                    #aaf
+                );
+                background-size: 200%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                white-space: nowrap;
+            }
+        }
     }
 
     .bottom-content {
