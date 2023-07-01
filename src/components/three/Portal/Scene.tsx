@@ -23,19 +23,29 @@ import {
   CylinderGeometry,
   Mesh,
   MeshBasicMaterial,
+  SpotLight,
   SpotLightHelper,
 } from "three";
+import { GLTF } from "three/examples/jsm/loaders/GLTFLoader";
 
-const Scene = ({ enabled }) => {
-  const godray = useRef();
+type GLTFResult = GLTF & {
+  nodes: {
+    Frame: THREE.Mesh;
+    PortalStair1: THREE.Mesh;
+    PortalStair2: THREE.Mesh;
+    Portal: THREE.Mesh;
+  };
+  materials: {};
+};
 
-  const { nodes, materials } = useGLTF("/assets/portal.glb");
-  const portalRef = useRef();
-  const light1 = useRef();
-  const light2 = useRef();
+const Scene = ({ enabled }: { enabled: boolean }) => {
+  const godray = useRef<SpotLight>(null!);
+
+  const { nodes, materials } = useGLTF("/assets/portal.glb") as GLTFResult;
+  const portalRef = useRef<Mesh>(null!);
+  const light1 = useRef<SpotLight>(null!);
+  const light2 = useRef<SpotLight>(null!);
   const textRef = useRef();
-
-  const portalActive = enabled ? enabled : false;
 
   // useHelper(light2, SpotLightHelper, "rgba(0,0,0,0)");
 
@@ -78,7 +88,7 @@ const Scene = ({ enabled }) => {
           speed={0.2}
           noise={0.1}
         />
-        <group visible={portalActive}>
+        <group visible={enabled}>
           <primitive object={portalLightTarget} />
           <spotLight
             penumbra={0.15}
@@ -135,46 +145,45 @@ const Scene = ({ enabled }) => {
       <EffectComposer stencilBuffer>
         <DepthOfField focusDistance={0.015} focalLength={0.15} bokehScale={2} />
         <BrightnessContrast brightness={0.0} contrast={0.035} />
-        {portalActive ? (
-          <GodRays
-            sun={mesh}
-            blendFunction={BlendFunction.Screen}
-            samples={20}
-            density={0.97}
-            decay={0.97}
-            weight={0.4}
-            exposure={0.1}
-            clampMax={1}
-            width={Resizer.AUTO_SIZE}
-            height={Resizer.AUTO_SIZE}
-            kernelSize={KernelSize.SMALL}
-            blur={true}
-          />
-        ) : (
-          ""
-        )}
-        {portalActive ? (
-          <SelectiveBloom
-            lights={[light1]} // ⚠️ REQUIRED! all relevant lights
-            selection={[portalRef]} // selection of objects that will have bloom effect
-            selectionLayer={10} // selection layer
-            intensity={2.0} // The bloom intensity.
-            blurPass={undefined} // A blur pass.
-            width={Resizer.AUTO_SIZE} // render width
-            height={Resizer.AUTO_SIZE} // render height
-            kernelSize={KernelSize.LARGE} // blur kernel size
-            luminanceThreshold={0.01} // luminance threshold. Raise this value to mask out darker elements in the scene.
-            luminanceSmoothing={0.0125} // smoothness of the luminance threshold. Range is [0, 1]
-          />
-        ) : (
-          ""
-        )}
+        <>
+          {enabled && (
+            <GodRays
+              sun={mesh}
+              // blendFunction={BlendFunction.Screen}
+              samples={20}
+              density={0.97}
+              decay={0.97}
+              weight={0.4}
+              exposure={0.1}
+              clampMax={1}
+              // width={Resizer.AUTO_SIZE}
+              // height={Resizer.AUTO_SIZE}
+              kernelSize={KernelSize.SMALL}
+              blur={true}
+            />
+          )}
+        </>
+        <>
+          {enabled && (
+            <SelectiveBloom
+              lights={[light1]} // ⚠️ REQUIRED! all relevant lights
+              selection={[portalRef]} // selection of objects that will have bloom effect
+              selectionLayer={10} // selection layer
+              intensity={2.0} // The bloom intensity.
+              // width={Resizer.AUTO_SIZE} // render width
+              // height={Resizer.AUTO_SIZE} // render height
+              kernelSize={KernelSize.LARGE} // blur kernel size
+              luminanceThreshold={0.01} // luminance threshold. Raise this value to mask out darker elements in the scene.
+              luminanceSmoothing={0.0125} // smoothness of the luminance threshold. Range is [0, 1]
+            />
+          )}
+        </>
       </EffectComposer>
     </group>
   );
 };
 
-const SceneWrapper = ({ enabled }) => {
+const SceneWrapper = ({ enabled }: { enabled: boolean }) => {
   return (
     <Canvas shadows>
       <Suspense fallback={"Loading..."}>
