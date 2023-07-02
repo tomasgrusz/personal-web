@@ -52,6 +52,7 @@
   },
   "devDependencies": {
     "@types/lodash": "^4.14.195",
-    "@types/three": "^0.152.1"
+    "@types/three": "^0.152.1",
+    "framer-motion": "^10.12.18"
   }
 }

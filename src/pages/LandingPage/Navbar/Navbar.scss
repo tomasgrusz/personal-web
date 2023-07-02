@@ -1,17 +1,8 @@
-.Navbar {
+.Navbar.Landing {
     .logo {
         position: absolute;
         left: 16px;
         top: 16px;
-
-        path, svg {
-            fill-rule: nonzero;
-            paint-order: fill; 
-            stroke: #eee;
-            fill: #eee;
-            width: 48px;
-            height: 48px;
-        }
     }
 
     .links {

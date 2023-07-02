@@ -3,9 +3,10 @@ import "./index.scss";
 import { BiLinkExternal } from "react-icons/bi";
 import { Link } from "react-router-dom";
 import Portal from "components/three/Portal";
-import Navbar from "./Navbar";
+import Navbar from "./";
 import MagicSwitch from "./MagicSwitch/MagicSwitch";
 import { useState } from "react";
+import WIPModal from "components/WIPModal/WIPModal";
 
 const LandingPage = () => {
   const [magical, setMagical] = useState(false);
@@ -23,18 +24,10 @@ const LandingPage = () => {
       </div>
       <div className="bottom-content">
         <MagicSwitch setToggle={setMagical} />
-        <h2>The website is currently in development, stay tuned!</h2>
-        <Link
-          to={"https://github.com/tomasgrusz/personal-web"}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h3>
-            Check out the progress on my GitHub <BiLinkExternal />
-          </h3>
-        </Link>
       </div>
       <label className="copyright">©2023 Tomas Grusz</label>
+      {/* WIP Modal */}
+      <WIPModal />
     </div>
   );
 };
