@@ -22,7 +22,7 @@ const WIPModal = () => {
           <p>
             You have reached a website that is currently in development.
             <br></br>
-            Some features can throw errors or may not be function correctly.
+            Some features can throw errors or may not function correctly.
           </p>
           <Link
             to={"https://github.com/tomasgrusz/personal-web"}
