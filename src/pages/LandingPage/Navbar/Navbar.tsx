@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="Navbar Landing">
+    <div className="NavbarLanding">
       <div className="logo">
         <LogoSVG size={64} mainColor="#77d" sideColor="white" />
       </div>
