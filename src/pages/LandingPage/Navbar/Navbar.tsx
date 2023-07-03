@@ -1,14 +1,14 @@
-import LogoSVG from "components/common/LogoSVG/LogoSVG";
 import "./Navbar.scss";
 
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
+import AnimatedLogoSVG from "components/common/LogoSVG/AnimatedLogoSVG";
 
 const Navbar = () => {
   return (
     <div className="NavbarLanding">
       <div className="logo">
-        <LogoSVG size={64} mainColor="#77d" sideColor="white" />
+        <AnimatedLogoSVG size={64} />
       </div>
       <div className="links">
         <div className="linkedin">
