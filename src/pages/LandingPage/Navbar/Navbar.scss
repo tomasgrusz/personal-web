@@ -1,0 +1,32 @@
+.NavbarLanding {
+    .logo {
+        position: absolute;
+        left: 16px;
+        top: 16px;
+    }
+
+    .links {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        gap: 1rem;
+
+        * {
+            font-size: 20px;
+            color: #eee;
+        }
+
+        .linkedin, .github {
+            * {transition: color 0.2s ease-in-out; }
+        }
+
+        .linkedin:hover, .linkedin:active, .linkedin:focus {
+            * {color: #0072b1; }
+        }
+
+        .github:hover, .github:active, .github:focus {
+            * {color: #696161; }
+        }
+    }
+}

@@ -24,6 +24,7 @@
       "@assets/*": ["./src/assets/*"],
       "@pages/*": ["./src/pages/*"],
       "@fonts/*": ["./src/fonts/*"],
+      "@components/*": ["./src/components/*"],
     }
   },
   "include": ["src", "global.d.ts"],
