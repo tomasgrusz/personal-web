@@ -1,44 +1,44 @@
 .Modal {
-    width: clamp(30%, 700px, 80%);
-    height: min(50%, 300px);
-    padding: 2rem;
-    background: rgba( 255, 255, 255, 0.95 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    outline: 12px dashed yellow;
+  width: clamp(30%, 700px, 80%);
+  height: min(50%, 300px);
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  outline: 12px dashed yellow;
 
-    overflow: hidden;
+  overflow: hidden;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+
+  .ModalChildren {
     display: flex;
     flex-direction: column;
-    justify-content:space-between;
-    gap: 1rem;
+    align-items: center;
+    margin: 0 4rem;
+  }
 
-    .ModalChildren {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0 4rem;
-    }
+  hr {
+    width: 90%;
+    margin: 2rem auto;
+  }
 
-    hr {
-        width: 90%;
-        margin: 2rem auto;
-    }
-
-    .ModalButton {
-        height: 64px;
-        font-size: large;
-        width: auto;
-        height: auto;
-        align-self: center;
-        margin: 0.25rem;
-        padding: 0.5rem 1rem;
-        border: none;
-        background-color: black;
-        color: #eee;
-        cursor: pointer;
-    }
+  .ModalButton {
+    height: 64px;
+    font-size: large;
+    width: auto;
+    height: auto;
+    align-self: center;
+    margin: 0.25rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: black;
+    color: #eee;
+    cursor: pointer;
+  }
 }

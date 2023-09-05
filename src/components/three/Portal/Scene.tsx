@@ -55,7 +55,7 @@ const Scene = ({ enabled }: { enabled: boolean }) => {
       color: "#aaf",
       transparent: true,
       opacity: 1,
-    })
+    }),
   );
   mesh.rotation.x = Math.PI / 2;
   mesh.position.set(4, 4.75, 0);
@@ -63,7 +63,7 @@ const Scene = ({ enabled }: { enabled: boolean }) => {
 
   let portalLightTarget = new Mesh(
     new CylinderGeometry(0, 0, 0, 0),
-    new MeshBasicMaterial({})
+    new MeshBasicMaterial({}),
   );
   portalLightTarget.position.set(4, 10, 0);
 

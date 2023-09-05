@@ -1,48 +1,60 @@
 .Navbar {
-    // position: fixed;
-    width: calc(100vw - 2rem);
-    z-index: 10;
+  // position: fixed;
+  width: calc(100vw - 2rem);
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+  color: #eee;
+  backdrop-filter: blur(10px);
+
+  .routes {
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-    align-items: center;
-    color: #eee;
-    backdrop-filter: blur(10px);
+    width: 50vw;
+    justify-content: space-evenly;
 
-    .routes {
-        display: flex;
-        width: 50vw;
-        justify-content: space-evenly;
-
-        .route {
-            transition: all 0.2s ease-in-out;
-            cursor: pointer;
-        }
-
-        .route:hover, .route:focus {
-            color: #aaf;
-        }
+    .route {
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
     }
 
-    .links {
-        display: flex;
-        gap: 1.5rem;
-
-        * {
-            font-size: 20px;
-            color: #eee;
-        }
-
-        .linkedin, .github {
-            * {transition: color 0.2s ease-in-out; }
-        }
-
-        .linkedin:hover, .linkedin:active, .linkedin:focus {
-            * {color: #0072b1; }
-        }
-
-        .github:hover, .github:active, .github:focus {
-            * {color: #696161; }
-        }
+    .route:hover,
+    .route:focus {
+      color: #aaf;
     }
+  }
+
+  .links {
+    display: flex;
+    gap: 1.5rem;
+
+    * {
+      font-size: 20px;
+      color: #eee;
+    }
+
+    .linkedin,
+    .github {
+      * {
+        transition: color 0.2s ease-in-out;
+      }
+    }
+
+    .linkedin:hover,
+    .linkedin:active,
+    .linkedin:focus {
+      * {
+        color: #0072b1;
+      }
+    }
+
+    .github:hover,
+    .github:active,
+    .github:focus {
+      * {
+        color: #696161;
+      }
+    }
+  }
 }

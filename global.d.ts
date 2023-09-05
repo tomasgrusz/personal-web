@@ -3,5 +3,5 @@ declare module "*.svg" {
   export default content;
 }
 declare module "*.jpg";
-declare module '*.png';
-declare module '*.scss';
+declare module "*.png";
+declare module "*.scss";
