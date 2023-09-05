@@ -1,2 +1,2 @@
-import { SceneWrapper } from "./Scene";
+import { SceneWrapper } from './Scene';
 export default SceneWrapper;

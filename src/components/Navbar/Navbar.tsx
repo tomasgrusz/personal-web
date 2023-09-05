@@ -1,10 +1,10 @@
-import "./Navbar.scss";
+import './Navbar.scss';
 
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { BsGithub, BsLinkedin } from 'react-icons/bs';
+import { Link } from 'react-router-dom';
 
-import "./Navbar.scss";
-import { AnimatedLogoSVG } from "components/common/LogoSVG";
+import './Navbar.scss';
+import { AnimatedLogoSVG } from 'components/common/LogoSVG';
 
 const Navbar = () => {
   return (
@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className="links">
         <div className="linkedin">
           <Link
-            to={"https://www.linkedin.com/in/tomasgrusz/"}
+            to={'https://www.linkedin.com/in/tomasgrusz/'}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -29,11 +29,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="github">
-          <Link
-            to={"https://github.com/tomasgrusz"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link to={'https://github.com/tomasgrusz'} target="_blank" rel="noopener noreferrer">
             <BsGithub />
           </Link>
         </div>

@@ -1,7 +1,7 @@
-import ToggleSwitch from "components/common/ToggleSwitch/ToggleSwitch";
-import { useEffect, useState } from "react";
+import ToggleSwitch from 'components/common/ToggleSwitch/ToggleSwitch';
+import { useEffect, useState } from 'react';
 
-import "./MagicSwitch.scss";
+import './MagicSwitch.scss';
 
 const MagicSwitch = ({
   setToggle,

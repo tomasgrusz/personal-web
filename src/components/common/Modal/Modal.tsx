@@ -1,12 +1,12 @@
-import { motion } from "framer-motion";
-import Backdrop from "./Backdrop";
+import { motion } from 'framer-motion';
+import Backdrop from './Backdrop';
 
-import styles from "./Modal.module.scss";
-import { ReactElement } from "react";
+import styles from './Modal.module.scss';
+import { ReactElement } from 'react';
 
 const dropIn = {
   hidden: {
-    y: "-100vh",
+    y: '-100vh',
     opacity: 0,
   },
   visible: {
@@ -14,12 +14,12 @@ const dropIn = {
     opacity: 1,
     transition: {
       duration: 0.1,
-      type: "spring",
+      type: 'spring',
       damping: 25,
       stiffness: 500,
     },
   },
-  exit: { y: "100vh", opacity: 0 },
+  exit: { y: '100vh', opacity: 0 },
 };
 
 const Modal = ({
@@ -49,13 +49,13 @@ const Modal = ({
             type="button"
             whileHover={{
               scale: 1.1,
-              backgroundColor: "#fe0",
-              color: "#222",
+              backgroundColor: '#fe0',
+              color: '#222',
             }}
             whileTap={{ scale: 0.95 }}
             onClick={onClose}
           >
-            {buttonLabel ? buttonLabel : "OK"}
+            {buttonLabel ? buttonLabel : 'OK'}
           </motion.button>
         </div>
       </motion.div>

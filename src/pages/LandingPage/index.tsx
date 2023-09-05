@@ -1,12 +1,12 @@
-import "./index.scss";
+import './index.scss';
 
-import { BiLinkExternal } from "react-icons/bi";
-import { Link } from "react-router-dom";
-import Portal from "components/three/Portal";
-import Navbar from "./Navbar";
-import MagicSwitch from "./MagicSwitch/MagicSwitch";
-import { useState } from "react";
-import WIPModal from "components/WIPModal/WIPModal";
+import { BiLinkExternal } from 'react-icons/bi';
+import { Link } from 'react-router-dom';
+import Portal from 'components/three/Portal';
+import Navbar from './Navbar';
+import MagicSwitch from './MagicSwitch/MagicSwitch';
+import { useState } from 'react';
+import WIPModal from 'components/WIPModal/WIPModal';
 
 const LandingPage = () => {
   const [magical, setMagical] = useState(false);
