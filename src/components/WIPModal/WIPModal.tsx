@@ -1,4 +1,4 @@
-import Modal from "components/common/Modal/Modal";
+import Modal from "components/common/Modal";
 import { AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
 import { BiLinkExternal } from "react-icons/bi";

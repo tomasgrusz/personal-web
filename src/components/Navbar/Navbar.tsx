@@ -4,7 +4,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
 
 import "./Navbar.scss";
-import AnimatedLogoSVG from "components/common/LogoSVG/AnimatedLogoSVG";
+import { AnimatedLogoSVG } from "components/common/LogoSVG";
 
 const Navbar = () => {
   return (

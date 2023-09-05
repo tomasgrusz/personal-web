@@ -1,10 +1,13 @@
 .Navbar {
-
+    // position: fixed;
+    width: calc(100vw - 2rem);
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
     align-items: center;
     color: #eee;
+    backdrop-filter: blur(10px);
 
     .routes {
         display: flex;

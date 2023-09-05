@@ -1,12 +1,12 @@
-import { AnimatePresence } from "framer-motion";
 import { Navbar } from "components/Navbar/Navbar";
-import "./index.scss";
 import WIPModal from "components/WIPModal/WIPModal";
+
+import styles from "./index.module.scss";
 
 const HomePage = () => {
   return (
     <>
-      <div className="HomePage">
+      <div className={styles.HomePage}>
         <Navbar />
         {/* WIP Modal */}
         <WIPModal />

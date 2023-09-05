@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import Backdrop from "./Backdrop";
 
-import "./Modal.scss";
+import styles from "./Modal.module.scss";
 import { ReactElement } from "react";
 
 const dropIn = {
@@ -34,18 +34,18 @@ const Modal = ({
   return (
     <Backdrop onClick={onClose}>
       <motion.div
-        className="Modal"
+        className={styles.Modal}
         onClick={(e) => e.stopPropagation()}
         variants={dropIn}
         initial="hidden"
         animate="visible"
         exit="exit"
       >
-        <div className="ModalChildren">{children}</div>
+        <div className={styles.ModalChildren}>{children}</div>
         <div>
           <hr></hr>
           <motion.button
-            className="ModalButton"
+            className={styles.ModalButton}
             type="button"
             whileHover={{
               scale: 1.1,

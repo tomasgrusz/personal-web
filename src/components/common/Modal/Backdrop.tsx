@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import "./Backdrop.scss";
+import styles from "./Backdrop.module.scss";
 import { ReactNode } from "react";
 
 const Backdrop = ({
@@ -13,7 +13,7 @@ const Backdrop = ({
   return (
     <>
       <motion.div
-        className="Backdrop"
+        className={styles.Backdrop}
         onClick={onClick}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
