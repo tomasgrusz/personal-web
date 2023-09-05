@@ -10,6 +10,8 @@ If you have any feedback, please reach out to me on [LinkedIn](https://www.linke
 
 React, Three.js, SCSS, TypeScript
 
+[![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+
 ## Run Locally
 
 Clone the project
