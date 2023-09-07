@@ -20,7 +20,8 @@
       "@assets/*": ["./src/assets/*"],
       "@pages/*": ["./src/pages/*"],
       "@fonts/*": ["./src/fonts/*"],
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["./src/components/*"],
+      "@styles/*": ["./src/styles/*"]
     }
   },
   "include": ["src", "global.d.ts"]
