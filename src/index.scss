@@ -18,7 +18,7 @@
 
 // Exo 2 Family --------------------------------------
 @font-face {
-  font-family: 'Exo2-Black';
+  font-family: 'Exo2';
   src:
     local('Exo2-Black'),
     url('fonts/Exo_2/static/Exo2-Black.ttf') format('truetype');
@@ -26,7 +26,7 @@
 }
 
 @font-face {
-  font-family: 'Exo2-Bold';
+  font-family: 'Exo2';
   src:
     local('Exo2-Bold'),
     url('fonts/Exo_2/static/Exo2-Bold.ttf') format('truetype');
@@ -34,7 +34,7 @@
 }
 
 @font-face {
-  font-family: 'Exo2-SemiBold';
+  font-family: 'Exo2';
   src:
     local('Exo2-SemiBold'),
     url('fonts/Exo_2/static/Exo2-SemiBold.ttf') format('truetype');
@@ -42,7 +42,7 @@
 }
 
 @font-face {
-  font-family: 'Exo2-Regular';
+  font-family: 'Exo2';
   src:
     local('Exo2-Regular'),
     url('fonts/Exo_2/static/Exo2-Regular.ttf') format('truetype');
@@ -50,7 +50,7 @@
 }
 
 @font-face {
-  font-family: 'Exo2-Light';
+  font-family: 'Exo2';
   src:
     local('Exo2-Light'),
     url('fonts/Exo_2/static/Exo2-Light.ttf') format('truetype');
@@ -58,7 +58,7 @@
 }
 
 @font-face {
-  font-family: 'Exo2-ExtraLight';
+  font-family: 'Exo2';
   src:
     local('Exo2-ExtraLight'),
     url('fonts/Exo_2/static/Exo2-ExtraLight.ttf') format('truetype');
@@ -66,7 +66,7 @@
 }
 
 @font-face {
-  font-family: 'Exo2-Thin';
+  font-family: 'Exo2';
   src:
     local('Exo2-Thin'),
     url('fonts/Exo_2/static/Exo2-Thin.ttf') format('truetype');
@@ -79,11 +79,11 @@
   src:
     local('Summer'),
     url('fonts/Summer/Summer.otf') format('opentype');
-  font-weight: 500;
+  font-weight: normal;
 }
 
 @font-face {
-  font-family: 'SummerLight';
+  font-family: 'Summer';
   src:
     local('SummerLight'),
     url('fonts/Summer/SummerLight.otf') format('opentype');
@@ -105,6 +105,7 @@ body {
     'Droid Sans',
     'Helvetica Neue',
     sans-serif;
+  font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
