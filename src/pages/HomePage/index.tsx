@@ -2,8 +2,7 @@ import { Navbar } from 'components/Navbar/Navbar';
 import WIPModal from 'components/WIPModal/WIPModal';
 
 import styles from './index.module.scss';
-import HomeSection from './HomeSection';
-import AboutSection from './AboutSection';
+import { HomeSection, AboutSection } from './sections';
 
 const HomePage = () => {
   return (
