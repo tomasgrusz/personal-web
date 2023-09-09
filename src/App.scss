@@ -1,6 +1,26 @@
 @import 'styles/variables';
+@import 'styles/mixins';
 
 .App {
   text-align: center;
   color: $text-base-color;
+}
+
+@include xlarge {
+}
+
+@include large {
+}
+
+@include medium {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@include small {
 }
