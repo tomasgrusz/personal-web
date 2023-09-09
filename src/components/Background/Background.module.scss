@@ -1,0 +1,135 @@
+@import 'styles/functions';
+@import 'styles/variables';
+@import 'styles/mixins';
+
+$max-star-count: 200;
+$star-size: 16px;
+
+@keyframes stars-appear {
+  0% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 1;
+    scale: 1.25;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes stars-sparkle {
+  0% {
+    scale: 1;
+    transform: rotate(0deg);
+  }
+
+  50% {
+    scale: 2;
+  }
+
+  100% {
+    scale: 1;
+    transform: rotate(360deg);
+  }
+}
+
+.Background {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0) 100%),
+    linear-gradient(180deg, rgba(59, 93, 178, 0.2) 0%, rgba(132, 59, 178, 0.25) 75%);
+
+  .sky {
+    padding-top: $nav-logo-size + 2 * $nav-padding;
+
+    .star {
+      position: absolute;
+      width: $star-size;
+      height: $star-size;
+      border-radius: 50%;
+      margin-top: $nav-logo-size + 2 * $nav-padding + $star-size;
+      fill: white;
+      filter: blur(0.5px);
+    }
+
+    @for $i from 1 through $max-star-count {
+      .star:nth-child(#{$i}) {
+        top: randomPosition('height');
+        left: randomPosition('width');
+        $randomSize: $star-size + random(2) - random(2);
+        width: $randomSize;
+        height: $randomSize;
+        transform: rotate(random() * 90deg);
+        opacity: random() + 0.5;
+        $random-sparkle-delay: random() * 5 + 2s;
+        @if random() > 0.5 {
+          animation:
+            stars-appear 2s 0s ease-in-out normal,
+            stars-sparkle 5s $random-sparkle-delay ease-in-out alternate-reverse infinite;
+        } @else {
+          animation: stars-appear 2s 0s ease-in-out normal;
+        }
+      }
+    }
+  }
+
+  .svg {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+
+    @media screen and (min-width: 1500px) {
+      transform: scaleY(0.75) translateY(25%);
+    }
+
+    @media screen and ((min-width: 2300px) or (max-height: 1000px)) {
+      transform: scaleY(0.5) translateY(50%);
+    }
+
+    @media screen and (min-width: 3100px) {
+      transform: scaleY(0.33) translateY(105%);
+    }
+
+    @include large {
+      transform: scaleY(1.5) translateY(-15%);
+    }
+
+    @include medium {
+      transform: scaleY(2) translateY(-25%);
+    }
+
+    .first {
+      fill: rgb(148, 72, 223);
+    }
+
+    .second {
+      fill: rgb(129, 59, 199);
+    }
+
+    .third {
+      fill: rgb(114, 57, 171);
+    }
+
+    .fourth {
+      fill: rgb(109, 57, 147);
+    }
+
+    .fifth {
+      fill: rgb(133, 68, 171);
+    }
+
+    .sixth {
+      fill: rgb(153, 86, 175);
+    }
+
+    .seventh {
+      fill: rgb(178, 106, 190);
+    }
+  }
+}
