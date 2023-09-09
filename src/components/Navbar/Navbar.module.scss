@@ -1,7 +1,8 @@
 @import 'styles/variables';
+@import 'styles/mixins';
 
 .Navbar {
-  $padding: 1rem;
+  $padding: $nav-padding;
   position: fixed;
   width: calc(100vw - ($padding * 2));
   z-index: 10;
@@ -16,6 +17,11 @@
     flex: 1;
     justify-content: space-evenly;
     padding: 0 2rem;
+
+    @include large {
+      display: none;
+      flex: 0;
+    }
 
     .route {
       transition: all 0.2s ease-in-out;
