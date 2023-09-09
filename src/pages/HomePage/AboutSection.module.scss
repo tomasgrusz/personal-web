@@ -1,0 +1,16 @@
+.AboutSection {
+  height: 100vw;
+  background: linear-gradient(180deg, rgb(148, 72, 223) 0%, rgb(69, 36, 90) 100%);
+  padding-top: -1rem;
+
+  // there seems to be a very small gap above, that disappears with the pseudo-element below
+  &::before {
+    content: '';
+    border: 2px solid rgb(148, 72, 223);
+    position: absolute;
+    right: 0;
+    left: 0;
+    transform: translateY(-2px);
+    z-index: 100;
+  }
+}
