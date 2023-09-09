@@ -1,0 +1,15 @@
+@use 'sass:math';
+
+@function randomPosition($measure) {
+  $random: random();
+  $windowWidth: 100vw;
+  $windowHeight: 100vh;
+  @if $measure == 'width' {
+    @return $random * $windowWidth;
+  } @else if $measure == 'height' {
+    @return $random * $random * $windowHeight;
+  } @else {
+    @warn "Invalid parameter value for $measure. Please use 'width' or 'height'.";
+    @return null; // Return null for an invalid parameter
+  }
+}
