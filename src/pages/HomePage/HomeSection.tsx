@@ -1,15 +1,11 @@
 import styles from './HomeSection.module.scss';
-import background from 'assets/homesection-background.png';
 import Moon from 'components/Moon/Moon';
+import Background from 'components/Background/Background';
 
 const HomeSection = () => {
   return (
-    <div
-      className={styles.HomeSection}
-      style={{
-        backgroundImage: `linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%), url(${background})`,
-      }}
-    >
+    <div className={styles.HomeSection}>
+      <Background />
       <h1 className={styles.heading}>
         Frontend Developer & <span className={styles.gradient}>Design Enthusiast</span>
       </h1>
