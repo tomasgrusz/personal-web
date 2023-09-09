@@ -1,3 +1,33 @@
+@import 'styles/variables';
+
+// Small devices
+@mixin small {
+  @media (max-width: #{$screen-small}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin medium {
+  @media (max-width: #{$screen-medium}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin large {
+  @media (max-width: #{$screen-large}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xlarge {
+  @media (max-width: #{$screen-xlarge}) {
+    @content;
+  }
+}
+
 @mixin gradient-text {
   @keyframes background-pan {
     from {
