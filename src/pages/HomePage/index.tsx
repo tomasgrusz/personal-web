@@ -10,6 +10,7 @@ const HomePage = () => {
       <div className={styles.HomePage}>
         <Navbar />
         <HomeSection />
+        <div className={styles.transition}></div>
         <AboutSection />
         {/* WIP Modal */}
         <WIPModal />

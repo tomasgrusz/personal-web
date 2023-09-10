@@ -6,7 +6,7 @@ import skills from './data/skills.json';
 const AboutSection = () => {
   return (
     <div className={styles.AboutSection}>
-      <SkillCardList items={skills} />
+      <SkillCardList items={skills} animate />
     </div>
   );
 };
