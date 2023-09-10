@@ -14,6 +14,10 @@ const WIPModal = () => {
     setModalOpen(true);
   }, []);
 
+  if (process.env.ENVIRONMENT === 'development') {
+    return <></>;
+  }
+
   return (
     <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
       {modalOpen && (

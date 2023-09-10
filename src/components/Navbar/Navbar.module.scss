@@ -22,56 +22,10 @@
       display: none;
       flex: 0;
     }
-
-    .route {
-      transition: all 0.2s ease-in-out;
-      cursor: pointer;
-      font-size: $text-size-button;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-
-      .routeLink {
-        font-size: $icon-size-button;
-      }
-    }
-
-    .route:hover,
-    .route:focus {
-      color: #aaf;
-    }
   }
 
   .links {
     display: flex;
     gap: 1.5rem;
-
-    * {
-      font-size: $icon-size-button;
-      color: $text-base-color;
-    }
-
-    .linkedin,
-    .github {
-      * {
-        transition: color 0.2s ease-in-out;
-      }
-    }
-
-    .linkedin:hover,
-    .linkedin:active,
-    .linkedin:focus {
-      * {
-        color: #0072b1;
-      }
-    }
-
-    .github:hover,
-    .github:active,
-    .github:focus {
-      * {
-        color: #696161;
-      }
-    }
   }
 }

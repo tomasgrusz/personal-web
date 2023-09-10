@@ -10,4 +10,5 @@ export interface SkillCardProps {
 
 export interface SkillCardListProps {
   items: SkillCardProps[];
+  animate?: boolean;
 }

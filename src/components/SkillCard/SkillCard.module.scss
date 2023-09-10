@@ -1,6 +1,10 @@
+@import 'styles/mixins';
+
 .SkillCard {
   display: inline-flex;
-  height: 39.0625rem;
+  max-height: 75vh;
+  max-height: 75svh;
+  height: 30rem;
   padding: 3rem 3.4375rem;
   flex-direction: column;
   align-items: center;
@@ -10,18 +14,24 @@
   border-radius: 2.5rem;
   background: rgba(108, 99, 255, 0.25);
   box-shadow: 0px 4px 4px 0px rgba(177, 99, 255, 0.69);
+  margin-bottom: 0.5rem;
 
   .hero {
-    // max-height: 50%;
+    max-height: 50%;
     overflow: hidden;
   }
 }
 
 .SkillCardList {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
   gap: 4.5rem;
-  align-self: stretch;
-  overflow-x: auto;
-  padding: 0 10vw;
+  align-items: center;
+  padding: 1rem 10vw;
+
+  @include large {
+    grid-template-columns: 1fr;
+    padding: 1rem 0;
+  }
 }

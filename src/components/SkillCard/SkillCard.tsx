@@ -2,6 +2,7 @@ import { PillList } from 'components/common/Pill';
 import styles from './SkillCard.module.scss';
 import { FC } from 'react';
 import { SkillCardListProps, SkillCardProps } from './interfaces';
+import ScrollReveal from 'components/animation/ScrollReveal';
 
 const SkillCard: FC<SkillCardProps> = ({ icon, title, description, pills }) => {
   return (
@@ -16,17 +17,32 @@ const SkillCard: FC<SkillCardProps> = ({ icon, title, description, pills }) => {
   );
 };
 
-const SkillCardList: FC<SkillCardListProps> = ({ items }) => {
+const SkillCardList: FC<SkillCardListProps> = ({ items, animate }) => {
   return (
     <div className={styles.SkillCardList}>
-      {items.map((item) => (
-        <SkillCard
-          icon={item.icon}
-          title={item.title}
-          description={item.description}
-          pills={item.pills}
-        />
-      ))}
+      {items.map((item) => {
+        if (animate) {
+          return (
+            <ScrollReveal>
+              <SkillCard
+                icon={item.icon}
+                title={item.title}
+                description={item.description}
+                pills={item.pills}
+              />
+            </ScrollReveal>
+          );
+        } else {
+          return (
+            <SkillCard
+              icon={item.icon}
+              title={item.title}
+              description={item.description}
+              pills={item.pills}
+            />
+          );
+        }
+      })}
     </div>
   );
 };
