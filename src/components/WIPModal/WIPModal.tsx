@@ -14,7 +14,7 @@ const WIPModal = () => {
     setModalOpen(true);
   }, []);
 
-  if (process.env.ENVIRONMENT === 'development') {
+  if (process.env.REACT_APP_ENVIRONMENT === 'development') {
     return <></>;
   }
 
