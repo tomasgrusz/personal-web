@@ -1,0 +1,34 @@
+@import 'styles/variables';
+
+.linkNav {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-size: $text-size-button;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  &:hover,
+  &:focus {
+    color: #aaf;
+  }
+
+  svg {
+    font-size: $icon-size-button;
+  }
+}
+
+.link {
+  * {
+    transition: all 0.2s ease-in-out;
+    font-size: $icon-size-button;
+    color: $text-base-color;
+  }
+
+  &:hover,
+  &:focus {
+    * {
+      color: #aaf;
+    }
+  }
+}
