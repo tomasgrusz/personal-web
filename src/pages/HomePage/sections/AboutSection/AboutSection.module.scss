@@ -1,4 +1,45 @@
+@import 'styles/mixins';
+
 .AboutSection {
   // height: 100vw;
   background: linear-gradient(180deg, rgb(148, 72, 223) 0%, rgb(69, 36, 90) 100%);
+  padding: 5rem;
+
+  @include large {
+    padding: 2rem;
+  }
+
+  .SkillsTitle {
+    padding: 2rem 0;
+    font-weight: 200;
+    color: #eee;
+    font-size: 48px;
+    text-transform: uppercase;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    line-height: 48px;
+    gap: 1rem;
+
+    @include medium {
+      flex-direction: column;
+      font-size: 40px;
+    }
+
+    .ancient {
+      font-family: 'Summer';
+      font-size: 64px;
+      background: linear-gradient(to bottom right, white, #faf, #aaf);
+      background-size: 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+      font-weight: 400;
+      line-height: normal;
+
+      @include medium {
+        font-size: 50px;
+      }
+    }
+  }
 }

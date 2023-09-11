@@ -16,12 +16,13 @@ const skills = [
         color: 'random',
       },
       {
-        text: 'Text',
+        text: 'Framer Motion',
         color: 'random',
       },
     ],
     title: 'React',
-    description: desc,
+    description:
+      'From orchestrating components to mastering state like a cosmic dance, React expertise is the rocket fuel that propels digital dreams into the stratosphere.',
   },
   {
     icon: <VSCode />,
@@ -52,7 +53,8 @@ const skills = [
       },
     ],
     title: 'Web Development',
-    description: desc,
+    description:
+      'Exploring the vast universe of web development, from wielding TypeScript like a laser sword, to sculpting styles with CSS like an interstellar artist.',
   },
   {
     icon: <Idea />,
@@ -83,7 +85,8 @@ const skills = [
       },
     ],
     title: 'Designing',
-    description: desc,
+    description:
+      'Transforming ideas into visually stunning and user-centric experiences, ensuring your digital creations shine like stars in the digital cosmos.',
   },
   {
     icon: <FullStack />,
@@ -122,7 +125,8 @@ const skills = [
       },
     ],
     title: 'Full-Stack',
-    description: desc,
+    description:
+      'With a constellation of tools and Git as a version control navigator, every aspect of your project will be in precise alignment.',
   },
 ];
 export default skills;
