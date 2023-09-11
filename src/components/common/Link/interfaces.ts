@@ -6,4 +6,5 @@ export interface LinkProps {
   external?: boolean;
   nav?: boolean;
   link?: string;
+  animate?: boolean;
 }
