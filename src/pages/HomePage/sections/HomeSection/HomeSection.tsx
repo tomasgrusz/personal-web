@@ -30,9 +30,11 @@ const HomeSection = () => {
             1000,
             "I'm Tomáš Grusz.\nNice to meet you!",
             1000,
+            "I'm Tomáš Grusz.\nLet's explore the web dev universe!",
           ]}
           wrapper="h1"
           speed={25}
+          deletionSpeed={65}
           style={{ display: 'inline-block', whiteSpace: 'pre-line' }}
           repeat={0}
           className={styles.greeting}
