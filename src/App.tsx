@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import LandingPage from 'pages/LandingPage';
 import HomePage from 'pages/HomePage';
+import Footer from 'components/Footer';
 
 export default function App() {
   const router = createBrowserRouter([
@@ -14,7 +15,12 @@ export default function App() {
     },
     {
       path: '/home',
-      element: <HomePage />,
+      element: (
+        <>
+          <HomePage />
+          <Footer />
+        </>
+      ),
       errorElement: <></>,
     },
   ]);
