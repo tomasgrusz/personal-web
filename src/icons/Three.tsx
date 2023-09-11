@@ -16,8 +16,8 @@ const Three = () => {
         y2="6"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#e6abff"></stop>
-        <stop offset="1" stop-color="#6dc7ff"></stop>
+        <stop offset="0" stopColor="#e6abff"></stop>
+        <stop offset="1" stopColor="#6dc7ff"></stop>
       </linearGradient>
       <path
         fill="url(#my7ly-g5hKLqacY7Hxsyda_j0beBVnUo5dZ_gr1)"
@@ -31,8 +31,8 @@ const Three = () => {
         y2="5"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#c822ff"></stop>
-        <stop offset="1" stop-color="#1a6dff"></stop>
+        <stop offset="0" stopColor="#c822ff"></stop>
+        <stop offset="1" stopColor="#1a6dff"></stop>
       </linearGradient>
       <path
         fill="url(#my7ly-g5hKLqacY7Hxsydb_j0beBVnUo5dZ_gr2)"

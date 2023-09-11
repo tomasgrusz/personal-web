@@ -16,8 +16,8 @@ const Sass = () => {
         y2="12"
         gradientUnits="userSpaceOnUse"
       >
-        <stop offset="0" stop-color="#c822ff"></stop>
-        <stop offset="1" stop-color="#1a6dff"></stop>
+        <stop offset="0" stopColor="#c822ff"></stop>
+        <stop offset="1" stopColor="#1a6dff"></stop>
       </linearGradient>
       <path
         fill="url(#i8dBPWukIumWArHbkY4nza_qsQZWvMuX4ad_gr1)"

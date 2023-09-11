@@ -17,9 +17,9 @@ const React = () => {
           y2="112.006"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#C8EEFF" />
-          <stop offset="0.30625" stop-color="#63D0FF" />
-          <stop offset="0.5" stop-color="#6C63FF" />
+          <stop offset="0" stopColor="#C8EEFF" />
+          <stop offset="0.30625" stopColor="#63D0FF" />
+          <stop offset="0.5" stopColor="#6C63FF" />
         </linearGradient>
       </defs>
       <path
