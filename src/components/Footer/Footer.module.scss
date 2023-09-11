@@ -1,0 +1,13 @@
+.Footer {
+  padding: 2rem;
+  .licenses {
+    display: flex;
+    font-size: 1rem;
+
+    label,
+    * {
+      font-size: 1rem !important;
+      display: inline;
+    }
+  }
+}
