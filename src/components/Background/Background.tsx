@@ -1,4 +1,6 @@
+import { useRef } from 'react';
 import styles from './Background.module.scss';
+import useComet from 'hooks/useComet';
 
 const Background = () => {
   const STAR_COUNT = () => {
@@ -11,9 +13,11 @@ const Background = () => {
       return 50;
     }
   };
+  const divRef = useRef<HTMLDivElement>(null);
+  useComet(divRef);
 
   return (
-    <div className={styles.Background}>
+    <div className={styles.Background} ref={divRef}>
       <div className={styles.sky}>
         {Array(STAR_COUNT())
           .fill(0)
@@ -29,8 +33,8 @@ const Background = () => {
               >
                 <path
                   d="M 27.972027972027718 27.972027972027888 C 1000 1000 1000 1000 1968.5314685314688 27.972027972027888 C 1000 1000 1000 1000 1975.5244755244757 1968.5314685314688 C 1000 1000 1000 1000 31.468531468531182 1972.0279720279723 C 1000 1000 1000 1000 27.972027972027718 27.972027972027888"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                 ></path>
               </svg>
             );
