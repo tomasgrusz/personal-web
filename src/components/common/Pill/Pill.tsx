@@ -37,10 +37,22 @@ const PillList: FC<PillListProps> = ({ pills, randomColor, sort }) => {
               return a.text > b.text ? 1 : -1;
             })
             .map((pill, i) => {
-              return <Pill text={pill.text} color={randomColor ? 'random' : pill.color}></Pill>;
+              return (
+                <Pill
+                  text={pill.text}
+                  color={randomColor ? 'random' : pill.color}
+                  key={`pill-${i}`}
+                ></Pill>
+              );
             })
         : pills.map((pill, i) => {
-            return <Pill text={pill.text} color={randomColor ? 'random' : pill.color}></Pill>;
+            return (
+              <Pill
+                text={pill.text}
+                color={randomColor ? 'random' : pill.color}
+                key={`pill-${i}`}
+              ></Pill>
+            );
           })}
     </div>
   );

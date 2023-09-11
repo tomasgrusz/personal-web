@@ -6,7 +6,7 @@ import ScrollReveal from 'components/animation/ScrollReveal';
 
 const SkillCard: FC<SkillCardProps> = ({ icon, title, description, pills }) => {
   return (
-    <div className={styles.SkillCard}>
+    <div className={styles.SkillCard} key={`skillcard-${title}`}>
       {icon}
       <div className={styles.hero}>
         <h2>{title}</h2>
@@ -20,15 +20,16 @@ const SkillCard: FC<SkillCardProps> = ({ icon, title, description, pills }) => {
 const SkillCardList: FC<SkillCardListProps> = ({ items, animate }) => {
   return (
     <div className={styles.SkillCardList}>
-      {items.map((item) => {
+      {items.map((item, i) => {
         if (animate) {
           return (
-            <ScrollReveal>
+            <ScrollReveal key={`skillcard-wrapper-${i}`}>
               <SkillCard
                 icon={item.icon}
                 title={item.title}
                 description={item.description}
                 pills={item.pills}
+                key={`skillcard-${i}`}
               />
             </ScrollReveal>
           );
@@ -39,6 +40,7 @@ const SkillCardList: FC<SkillCardListProps> = ({ items, animate }) => {
               title={item.title}
               description={item.description}
               pills={item.pills}
+              key={`skillcard-${i}`}
             />
           );
         }
