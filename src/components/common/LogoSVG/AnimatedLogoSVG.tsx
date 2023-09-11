@@ -122,7 +122,7 @@ const AnimatedLogoSVG = ({ size }: { size: number }) => {
             stroke="white"
             fill="white"
             mask="url(#hole4)"
-            clip-path="url(#clip1)"
+            clipPath="url(#clip1)"
             d="M194.895 163.055a60 60 0 1 0 120 0a60 60 0 1 0 -120 0"
             variants={icon}
             initial="hidden"
@@ -142,7 +142,7 @@ const AnimatedLogoSVG = ({ size }: { size: number }) => {
           <motion.path
             stroke="white"
             fill="white"
-            clip-path="url(#clip4)"
+            clipPath="url(#clip4)"
             mask="url(#hole7)"
             d="M215.257 106.687a60 60 0 1 0 120 0a60 60 0 1 0 -120 0"
             variants={icon}
@@ -166,7 +166,7 @@ const AnimatedLogoSVG = ({ size }: { size: number }) => {
           stroke="#77d"
           fill="#77d"
           mask="url(#hole6)"
-          clip-path="url(#clip3)"
+          clipPath="url(#clip3)"
           d="M115.104 158.816a100 100 0 1 0 200 0a100 100 0 1 0 -200 0"
           variants={icon}
           initial="hiddenVar"
@@ -177,7 +177,7 @@ const AnimatedLogoSVG = ({ size }: { size: number }) => {
           stroke="#77d"
           fill="#77d"
           mask="url(#hole8)"
-          clip-path="url(#clip5)"
+          clipPath="url(#clip5)"
           d="M115.104 158.816a100 100 0 1 0 200 0a100 100 0 1 0 -200 0"
           variants={icon}
           initial="hiddenVar"
