@@ -3,7 +3,7 @@ import styles from './Footer.module.scss';
 
 const Footer = () => {
   return (
-    <div className={styles.Footer}>
+    <footer className={styles.Footer}>
       <div className={styles.licenses}>
         <label>
           Icons by <Link text="Icons8" link="https://icons8.com" external animate={false} /> and{' '}
@@ -16,7 +16,7 @@ const Footer = () => {
           .
         </label>
       </div>
-    </div>
+    </footer>
   );
 };
 
