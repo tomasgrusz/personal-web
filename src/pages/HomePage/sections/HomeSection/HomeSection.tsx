@@ -1,7 +1,7 @@
 import styles from './HomeSection.module.scss';
-import Moon from 'components/Moon/Moon';
-import Background from 'components/Background/Background';
-import ScrollReveal from 'components/animation/ScrollReveal';
+import Moon from 'components/Moon';
+import Background from 'components/Background';
+import ScrollReveal from 'components/animation';
 import { TypeAnimation } from 'react-type-animation';
 
 const HomeSection = () => {

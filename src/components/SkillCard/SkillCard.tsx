@@ -2,7 +2,7 @@ import { PillList } from 'components/common/Pill';
 import styles from './SkillCard.module.scss';
 import { FC } from 'react';
 import { SkillCardListProps, SkillCardProps } from './interfaces';
-import ScrollReveal from 'components/animation/ScrollReveal';
+import ScrollReveal from 'components/animation';
 
 const SkillCard: FC<SkillCardProps> = ({ icon, title, description, pills }) => {
   return (

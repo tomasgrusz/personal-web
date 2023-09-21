@@ -2,7 +2,7 @@ import { FC } from 'react';
 import styles from './Link.module.scss';
 import { LinkProps } from './interfaces';
 import { Link as ReactLink } from 'react-router-dom';
-import ScrollReveal from 'components/animation/ScrollReveal';
+import ScrollReveal from 'components/animation';
 
 const Link: FC<LinkProps> = ({
   icon,

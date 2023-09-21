@@ -1,8 +1,7 @@
-import React from 'icons/React';
 import styles from './AboutSection.module.scss';
 import { SkillCardList } from 'components/SkillCard';
 import skills from './data/skills.json';
-import ScrollReveal from 'components/animation/ScrollReveal';
+import ScrollReveal from 'components/animation';
 
 const AboutSection = () => {
   return (

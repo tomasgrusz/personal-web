@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import styles from './Background.module.scss';
-import useComet from 'hooks/useComet';
+import { useComet } from 'hooks';
 
 const Background = () => {
   const STAR_COUNT = () => {
