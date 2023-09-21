@@ -9,7 +9,7 @@ import Link from 'components/common/Link/Link';
 
 const Navbar = () => {
   return (
-    <div className={styles.Navbar}>
+    <nav className={styles.Navbar}>
       <div className={styles.logo}>
         <AnimatedLogoSVG size={48} />
       </div>
@@ -23,7 +23,7 @@ const Navbar = () => {
         <Link icon={<BsLinkedin />} external link="https://www.linkedin.com/in/tomasgrusz/" />
         <Link icon={<BsGithub />} external link="https://github.com/tomasgrusz" />
       </div>
-    </div>
+    </nav>
   );
 };
 

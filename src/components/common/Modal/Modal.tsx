@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import Backdrop from './Backdrop';
 
 import styles from './Modal.module.scss';
-import { ReactElement } from 'react';
+import { ReactNode } from 'react';
 
 const dropIn = {
   hidden: {
@@ -29,7 +29,7 @@ const Modal = ({
 }: {
   onClose: () => void;
   buttonLabel?: string;
-  children?: ReactElement[];
+  children?: ReactNode;
 }) => {
   return (
     <Backdrop onClick={onClose}>

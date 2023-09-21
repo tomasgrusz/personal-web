@@ -1,3 +1,5 @@
+@import 'styles/variables';
+
 // Unica One Family --------------------------------------
 @font-face {
   font-family: 'UnicaOne';
@@ -109,6 +111,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #121212;
+  text-align: center;
+  color: $text-base-color;
 }
 
 code {

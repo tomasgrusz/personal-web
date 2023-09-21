@@ -6,7 +6,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HomeSection = () => {
   return (
-    <div className={styles.HomeSection}>
+    <section className={styles.HomeSection}>
       <Background />
       <ScrollReveal vertical={false}>
         <h1 className={styles.heading}>
@@ -15,11 +15,6 @@ const HomeSection = () => {
       </ScrollReveal>
       <Moon />
       <ScrollReveal>
-        {/* <div className={styles.greeting}>
-          <h2>Hi, I'm</h2>
-          <h1 className={styles.name}>Tomáš Grusz</h1>
-          <h2>Nice to meet you!</h2>
-        </div> */}
         <TypeAnimation
           sequence={[
             '',
@@ -40,7 +35,7 @@ const HomeSection = () => {
           className={styles.greeting}
         />
       </ScrollReveal>
-    </div>
+    </section>
   );
 };
 

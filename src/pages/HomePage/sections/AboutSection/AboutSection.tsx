@@ -6,14 +6,14 @@ import ScrollReveal from 'components/animation/ScrollReveal';
 
 const AboutSection = () => {
   return (
-    <div className={styles.AboutSection}>
+    <section className={styles.AboutSection}>
       <ScrollReveal>
-        <h1 className={styles.SkillsTitle}>
+        <h2 className={styles.SkillsTitle}>
           Crafting the <span className={styles.ancient}>Digital Galaxy</span>
-        </h1>
+        </h2>
       </ScrollReveal>
       <SkillCardList items={skills} animate />
-    </div>
+    </section>
   );
 };
 
