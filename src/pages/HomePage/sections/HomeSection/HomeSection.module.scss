@@ -49,29 +49,21 @@
   }
 
   .greeting {
-    // backdrop-filter: blur(4px);
-    font-weight: 300;
     font-weight: 200;
     margin: 1rem;
     line-height: 2;
     height: 8rem;
+    font-size: 2rem;
 
     @include medium {
       margin: 0.25rem;
+      font-size: 1.5rem;
     }
 
-    .name {
+    @include small {
+      font-size: 1.25rem;
       font-weight: 300;
-      margin: 0;
-    }
-
-    h2 {
-      font-weight: 200;
-      margin: 1rem;
-
-      @include medium {
-        margin: 0.25rem;
-      }
+      line-height: 1.5;
     }
   }
 }

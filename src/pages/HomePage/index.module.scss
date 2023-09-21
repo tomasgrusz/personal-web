@@ -8,19 +8,3 @@
     display: inline;
   }
 }
-
-.transition {
-  height: 5vh;
-  background: rgb(148, 72, 223);
-
-  // there seems to be a very small gap above, that disappears with the pseudo-element below
-  &::before {
-    content: '';
-    border: 2px solid rgb(148, 72, 223);
-    position: absolute;
-    right: 0;
-    left: 0;
-    transform: translateY(-2px);
-    z-index: 1;
-  }
-}

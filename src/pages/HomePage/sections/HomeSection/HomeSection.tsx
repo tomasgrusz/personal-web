@@ -27,7 +27,7 @@ const HomeSection = () => {
             1000,
             "I'm Tomáš Grusz.\nLet's explore the web dev universe!",
           ]}
-          wrapper="h1"
+          wrapper="h2"
           speed={25}
           deletionSpeed={65}
           style={{ display: 'inline-block', whiteSpace: 'pre-line' }}
