@@ -42,7 +42,7 @@ Start the server
 
 Contributions are always welcome!
 
-See `contributing.md` for ways to get started.
+See `CONTRIBUTING.md` for ways to get started.
 
 Please adhere to this project's license.
 
