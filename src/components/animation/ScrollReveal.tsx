@@ -5,9 +5,15 @@ interface ScrollRevealProps {
   children: ReactNode;
   vertical?: boolean;
   horizontal?: boolean;
+  disable?: boolean;
 }
 
-const ScrollReveal: FC<ScrollRevealProps> = ({ children, vertical = true, horizontal = false }) => {
+const ScrollReveal: FC<ScrollRevealProps> = ({
+  children,
+  vertical = true,
+  horizontal = false,
+  disable = false,
+}) => {
   //check for accessibility setting to reduce motion
   const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
   const wrapperRef = useRef<HTMLDivElement>(null);
@@ -21,6 +27,10 @@ const ScrollReveal: FC<ScrollRevealProps> = ({ children, vertical = true, horizo
     }
   }, [inView]);
 
+  if (isReduced || disable) {
+    return <>{children}</>;
+  }
+
   return (
     <div ref={wrapperRef} style={{ position: 'relative', overflow: 'hidden' }}>
       <motion.div
@@ -28,7 +38,7 @@ const ScrollReveal: FC<ScrollRevealProps> = ({ children, vertical = true, horizo
           hidden: { opacity: 0, y: vertical ? 100 : 0, x: horizontal ? -100 : 0 },
           default: { opacity: 1, y: 0, x: 0 },
         }}
-        initial={isReduced ? 'default' : 'hidden'}
+        initial="hidden"
         animate={controls}
         transition={{
           duration: 0.75,

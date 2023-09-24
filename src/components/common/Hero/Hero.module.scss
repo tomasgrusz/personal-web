@@ -1,0 +1,30 @@
+@import 'styles/mixins';
+
+.Hero {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  //TODO: add mobile support
+
+  .Image {
+    max-height: 50ch;
+    max-width: 50%;
+  }
+
+  .Text {
+    display: flex;
+    flex-direction: column;
+    max-width: 75ch;
+    gap: 1rem;
+
+    .Heading {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .Paragraph {
+      line-height: 1.35;
+    }
+  }
+}

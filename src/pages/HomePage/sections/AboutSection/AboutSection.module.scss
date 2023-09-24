@@ -1,9 +1,11 @@
 @import 'styles/mixins';
 
 .AboutSection {
-  // height: 100vw;
   background: linear-gradient(180deg, rgb(148, 72, 223) 0%, rgb(69, 36, 90) 100%);
   padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
 
   @include large {
     padding: 2rem;
