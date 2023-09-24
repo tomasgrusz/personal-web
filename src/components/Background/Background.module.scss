@@ -71,8 +71,6 @@ $star-size: 16px;
           animation:
             stars-appear 2s 0s ease-in-out normal,
             stars-sparkle 5s $random-sparkle-delay ease-in-out alternate-reverse infinite;
-        } @else {
-          animation: stars-appear 2s 0s ease-in-out normal;
         }
       }
     }
