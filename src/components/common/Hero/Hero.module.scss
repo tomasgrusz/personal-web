@@ -4,12 +4,21 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
+  padding: 0 2rem;
 
-  //TODO: add mobile support
+  @include medium {
+    padding: 0;
+    flex-direction: column-reverse !important;
+    align-items: center;
+  }
 
   .Image {
     max-height: 50ch;
     max-width: 50%;
+
+    @include medium {
+      max-width: 75%;
+    }
   }
 
   .Text {
@@ -17,14 +26,22 @@
     flex-direction: column;
     max-width: 75ch;
     gap: 1rem;
+    padding: 0;
+
+    @include medium {
+      text-align: left !important;
+      padding: 0 1rem;
+    }
 
     .Heading {
       font-size: 2rem;
       margin: 0;
+      font-weight: 500;
     }
 
     .Paragraph {
       line-height: 1.35;
+      font-weight: 300;
     }
   }
 }
