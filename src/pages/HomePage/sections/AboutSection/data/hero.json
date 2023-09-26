@@ -1,12 +1,13 @@
 [
   {
-    "title": "Test",
-    "text": "Excepteur nostrud nisi ea et mollit ad excepteur do. Aute culpa qui sunt ad. Excepteur sit voluptate mollit et. Aliquip qui fugiat ullamco anim. Reprehenderit esse ea et irure deserunt do exercitation velit mollit ipsum nisi voluptate. Sint laboris dolore excepteur deserunt aute do consectetur ipsum dolore fugiat ex. Ullamco elit nulla Lorem mollit enim labore.",
-    "imageAlt": "Alt"
+    "title": "About Me",
+    "text": "I'm a React Frontend Developer based in <strong>Prague, Czech Republic</strong>. My journey in web development began with a solid foundation in Computer Science from the University of Birmingham. I've had the privilege of working on diverse projects, where I've learned the value of collaboration and problem-solving in the world of web development. I look forward to continuing this journey, contributing to innovative solutions, and working alongside talented professionals.",
+    "imageAlt": "Coding in front of a computer screen",
+    "buttonText": "Let's connect"
   },
   {
-    "title": "Test",
+    "title": "Experience",
     "text": "Excepteur nostrud nisi ea et mollit ad excepteur do. Aute culpa qui sunt ad. Excepteur sit voluptate mollit et. Aliquip qui fugiat ullamco anim. Reprehenderit esse ea et irure deserunt do exercitation velit mollit ipsum nisi voluptate. Sint laboris dolore excepteur deserunt aute do consectetur ipsum dolore fugiat ex. Ullamco elit nulla Lorem mollit enim labore.",
-    "imageAlt": "Alt"
+    "imageAlt": "Looking at the code of a website"
   }
 ]

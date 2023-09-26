@@ -1,4 +1,5 @@
 @import 'styles/mixins';
+@import 'styles/globals';
 
 @include xlarge {
 }
@@ -38,4 +39,8 @@
 *::-webkit-scrollbar-thumb {
   background-color: #dbb0e7;
   border-radius: 10px;
+}
+
+a {
+  color: $text-base-color;
 }
