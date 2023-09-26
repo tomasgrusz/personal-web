@@ -1,0 +1,44 @@
+@import 'styles/mixins';
+
+.Cave {
+  svg {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1920 / 500;
+    &.flip {
+      rotate: 180deg;
+    }
+
+    @include xlarge {
+      width: 150%;
+    }
+
+    @include medium {
+      width: 200%;
+    }
+
+    @include small {
+      width: 250%;
+    }
+  }
+}
+
+.layer1 {
+  fill: rgb(69, 36, 90);
+}
+
+.layer2 {
+  fill: rgb(53, 28, 69);
+}
+
+.layer3 {
+  fill: rgb(53, 28, 69);
+}
+
+.layer4 {
+  fill: rgb(34, 16, 46);
+}
+
+.layer5 {
+  fill: rgb(41, 21, 55);
+}
