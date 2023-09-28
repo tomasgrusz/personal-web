@@ -6,6 +6,7 @@ export interface SkillCardProps {
   title: string;
   description: string;
   pills: PillProps[];
+  label?: string;
 }
 
 export interface SkillCardListProps {

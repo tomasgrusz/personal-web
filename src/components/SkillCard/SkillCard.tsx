@@ -4,7 +4,7 @@ import { FC } from 'react';
 import { SkillCardListProps, SkillCardProps } from './interfaces';
 import ScrollReveal from 'components/animation';
 
-const SkillCard: FC<SkillCardProps> = ({ icon, title, description, pills }) => {
+const SkillCard: FC<SkillCardProps> = ({ icon, title, description, pills, label }) => {
   return (
     <div className={styles.SkillCard} key={`skillcard-${title}`}>
       {icon}
@@ -12,7 +12,10 @@ const SkillCard: FC<SkillCardProps> = ({ icon, title, description, pills }) => {
         <h2>{title}</h2>
         <p>{description}</p>
       </div>
-      <PillList pills={pills} randomColor />
+      <div className={styles.pillWrapper}>
+        <h4>{label}</h4>
+        <PillList pills={pills} randomColor />
+      </div>
     </div>
   );
 };
@@ -21,29 +24,18 @@ const SkillCardList: FC<SkillCardListProps> = ({ items, animate }) => {
   return (
     <div className={styles.SkillCardList}>
       {items.map((item, i) => {
-        if (animate) {
-          return (
-            <ScrollReveal key={`skillcard-wrapper-${i}`}>
-              <SkillCard
-                icon={item.icon}
-                title={item.title}
-                description={item.description}
-                pills={item.pills}
-                key={`skillcard-${i}`}
-              />
-            </ScrollReveal>
-          );
-        } else {
-          return (
+        return (
+          <ScrollReveal key={`skillcard-wrapper-${i}`} disable={!animate}>
             <SkillCard
               icon={item.icon}
               title={item.title}
               description={item.description}
               pills={item.pills}
               key={`skillcard-${i}`}
+              label={item.label}
             />
-          );
-        }
+          </ScrollReveal>
+        );
       })}
     </div>
   );

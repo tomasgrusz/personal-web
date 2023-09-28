@@ -1,11 +1,9 @@
 import { FullStack, Idea, React, VSCode } from 'icons';
 
-const desc =
-  'Excepteur sunt commodo consequat nulla amet adipisicing cillum nulla et ullamco labore eiusmod voluptate. Ad minim exercitation incididunt nisi cupidatat minim reprehenderit esse eiusmod laborum quis deserunt amet. Incididunt minim adipisicing deserunt occaecat id voluptate magna veniam aliqua amet sint sunt amet. In laborum laborum nulla mollit velit. Eu magna Lorem est magna anim laborum est commodo deserunt nulla. Amet excepteur ad culpa commodo deserunt eu irure pariatur id magna. Sunt veniam est sunt magna cillum est exercitation laborum ut eu.';
-
 const skills = [
   {
     icon: <React />,
+    label: 'Libraries',
     pills: [
       {
         text: 'ReactRouter',
@@ -26,6 +24,7 @@ const skills = [
   },
   {
     icon: <VSCode />,
+    label: 'Languages',
     pills: [
       {
         text: 'TypeScript',
@@ -58,6 +57,7 @@ const skills = [
   },
   {
     icon: <Idea />,
+    label: 'Design Tools',
     pills: [
       {
         text: 'Figma',
@@ -90,6 +90,7 @@ const skills = [
   },
   {
     icon: <FullStack />,
+    label: 'Technologies',
     pills: [
       {
         text: 'Node',
@@ -101,10 +102,6 @@ const skills = [
       },
       {
         text: 'Vercel',
-        color: 'random',
-      },
-      {
-        text: 'Cloudflare',
         color: 'random',
       },
       {
