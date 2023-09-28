@@ -1,13 +1,14 @@
 [
   {
-    "title": "About Me",
+    "title": "The Person Behind the Pixels",
     "text": "I'm a React Frontend Developer based in <strong>Prague, Czech Republic</strong>. My journey in web development began with a solid foundation in Computer Science from the University of Birmingham. I've had the privilege of working on diverse projects, where I've learned the value of collaboration and problem-solving in the world of web development. I look forward to continuing this journey, contributing to innovative solutions, and working alongside talented professionals.",
     "imageAlt": "Coding in front of a computer screen",
-    "buttonText": "Let's connect"
+    "buttonText": "Let's Connect"
   },
   {
-    "title": "Experience",
-    "text": "Excepteur nostrud nisi ea et mollit ad excepteur do. Aute culpa qui sunt ad. Excepteur sit voluptate mollit et. Aliquip qui fugiat ullamco anim. Reprehenderit esse ea et irure deserunt do exercitation velit mollit ipsum nisi voluptate. Sint laboris dolore excepteur deserunt aute do consectetur ipsum dolore fugiat ex. Ullamco elit nulla Lorem mollit enim labore.",
-    "imageAlt": "Looking at the code of a website"
+    "title": "My Web Development Philosophy",
+    "text": "My primary focus as a React.js Frontend Developer revolves around crafting intuitive and visually engaging web experiences. What truly excites me is the art of simplification. I believe that the best web solutions are those that make complex tasks feel effortless to users. Ultimately, I aim to bring a touch of simplicity and elegance to the digital world, one project at a time.",
+    "imageAlt": "Looking at the code and thinking",
+    "buttonText": "Get in Touch"
   }
 ]

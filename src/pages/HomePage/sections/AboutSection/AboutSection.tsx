@@ -40,9 +40,17 @@ const AboutSection = () => {
         <SkillCardList items={skills} animate />
       </section>
       <Hero
-        text={hero[1].text}
+        text={
+          <>
+            My primary focus as a React.js Frontend Developer revolves around{' '}
+            <span className="BOLD">crafting intuitive and visually engaging web experiences</span>.
+            What truly excites me is the art of simplification. I believe that the best web
+            solutions are those that make complex tasks feel effortless to users. Ultimately, I aim
+            to bring a touch of simplicity and elegance to the digital world, one project at a time.
+          </>
+        }
         title={hero[1].title}
-        image={images.CodeInspection}
+        image={images.HackerMindset}
         imageAlt={hero[1].imageAlt}
       />
     </section>
