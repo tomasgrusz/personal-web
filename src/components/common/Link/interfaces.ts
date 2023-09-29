@@ -7,4 +7,5 @@ export interface LinkProps {
   nav?: boolean;
   link?: string;
   animate?: boolean;
+  ariaLabel?: string;
 }

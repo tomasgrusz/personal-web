@@ -11,6 +11,7 @@ const Link: FC<LinkProps> = ({
   nav = false,
   link = '',
   animate = true,
+  ariaLabel,
 }) => {
   if (nav) {
     return (
@@ -27,28 +28,17 @@ const Link: FC<LinkProps> = ({
   } else {
     return (
       <div className={styles.link}>
-        {animate && (
-          <ScrollReveal vertical={false}>
-            <ReactLink
-              to={link}
-              target={external ? '_blank' : ''}
-              rel={external ? 'noopener noreferrer' : ''}
-            >
-              {icon}
-              {text}
-            </ReactLink>
-          </ScrollReveal>
-        )}
-        {!animate && (
+        <ScrollReveal vertical={false} disable={!animate}>
           <ReactLink
             to={link}
             target={external ? '_blank' : ''}
             rel={external ? 'noopener noreferrer' : ''}
+            aria-label={ariaLabel}
           >
             {icon}
             {text}
           </ReactLink>
-        )}
+        </ScrollReveal>
       </div>
     );
   }

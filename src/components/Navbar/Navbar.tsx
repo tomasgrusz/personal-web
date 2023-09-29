@@ -20,8 +20,18 @@ const Navbar = () => {
         <Link icon={<MdAlternateEmail />} text="Contact Me" nav />
       </div>
       <div className={styles.links}>
-        <Link icon={<BsLinkedin />} external link="https://www.linkedin.com/in/tomasgrusz/" />
-        <Link icon={<BsGithub />} external link="https://github.com/tomasgrusz" />
+        <Link
+          icon={<BsLinkedin />}
+          external
+          link="https://www.linkedin.com/in/tomasgrusz/"
+          ariaLabel="Visit Tomas Grusz's LinkedIn"
+        />
+        <Link
+          icon={<BsGithub />}
+          external
+          link="https://github.com/tomasgrusz"
+          ariaLabel="Visit Tomas Grusz's GitHub"
+        />
       </div>
     </nav>
   );

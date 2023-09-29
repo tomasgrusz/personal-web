@@ -1,6 +1,7 @@
 import { FC, useEffect, useState } from 'react';
 import styles from './Pill.module.scss';
 import { PillListProps, PillProps } from './interfaces';
+import { ScrollRevealList } from 'components/animation';
 
 const colors = ['#63D0FF88', '#B163FF88', '#FF63DD88', '#57e1ae99', '#6663FF88'];
 
@@ -29,7 +30,7 @@ const Pill: FC<PillProps> = ({ text, color }) => {
 
 const PillList: FC<PillListProps> = ({ pills, randomColor, sort }) => {
   return (
-    <div className={styles.PillList}>
+    <ScrollRevealList className={styles.PillList}>
       {sort
         ? pills
             .sort((a, b) => {
@@ -54,7 +55,7 @@ const PillList: FC<PillListProps> = ({ pills, randomColor, sort }) => {
               ></Pill>
             );
           })}
-    </div>
+    </ScrollRevealList>
   );
 };
 
