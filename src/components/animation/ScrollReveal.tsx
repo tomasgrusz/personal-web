@@ -15,7 +15,8 @@ const ScrollReveal: FC<ScrollRevealProps> = ({
   disable = false,
 }) => {
   //check for accessibility setting to reduce motion
-  const isReduced = window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true;
+  const isReduced =
+    window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true || disable;
   const wrapperRef = useRef<HTMLDivElement>(null);
   const inView = useInView(wrapperRef, { once: true });
 
@@ -27,7 +28,7 @@ const ScrollReveal: FC<ScrollRevealProps> = ({
     }
   }, [inView]);
 
-  if (isReduced || disable) {
+  if (isReduced) {
     return <>{children}</>;
   }
 
