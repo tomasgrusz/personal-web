@@ -2,10 +2,12 @@ import styles from './AboutSection.module.scss';
 import { SkillCardList } from 'components/SkillCard';
 import skills from './data/skills.json';
 import hero from './data/hero.json';
+import partners from './data/partners.json';
 import ScrollReveal from 'components/animation';
 import Hero from 'components/common/Hero';
 import { images } from 'assets/undraw';
 import { Link } from 'react-router-dom';
+import Partners from 'components/Partners';
 
 const AboutSection = () => {
   return (
@@ -31,6 +33,7 @@ const AboutSection = () => {
         imageAlt={hero[0].imageAlt}
         buttonText={hero[0].buttonText}
       />
+      <Partners partners={partners} />
       <section>
         <ScrollReveal>
           <h2 className={styles.SkillsTitle}>
