@@ -1,4 +1,4 @@
-Create a 404 page #seo
+Create a 404 page #seo #IMPORTANT
 
 Update the 3D button #three
 
@@ -10,16 +10,28 @@ Redesign Moon #styles
 
 Add Moon phases #styles
 
-Make Navbar work #seo
+Make Navbar work #seo #IMPORTANT
 
 SkillCards redesign #ux
 
-Add CTA to Hero #IMPORTANT
+Add CTA to Hero #IMPORTANT #main
 
 Add semantic HTML to lists #seo
 
 Screen Reader config #seo
 
-Add Partner Icons section #IMPORTANT
+Add Partner Icons section #IMPORTANT #main {cm:2023-09-29}
 
 ScrollRevealList #ux
+
+Add CV download/preview #IMPORTANT #main
+
+Create ProjectCard #IMPORTANT #ux #main
+
+Style ProjectCard #ux
+
+Update SkillCardList to scale on larger screens (flexbox) #ux
+
+Create and style Button #IMPORTANT #style #ux #main
+
+Testimonials Section #main
