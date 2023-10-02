@@ -10,7 +10,7 @@ const Error = () => {
         <h1 className="MAGIC">404: Galactic Anomaly</h1>
         <h2>You've drifted into uncharted space. This page is lost in the cosmos.</h2>
         <label>Navigate to Safety?</label>
-        <Button icon={<IoIosArrowRoundBack />} link={'/'} text="Back to Home" />
+        <Button icon={<IoIosArrowRoundBack />} link={'/'} text="Back to Home" style={1} />
       </div>
       <Background />
     </>

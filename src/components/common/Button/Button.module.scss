@@ -1,3 +1,5 @@
+@import 'styles/variables';
+
 .Button {
   display: inline-flex;
   padding: 1rem 3.5625rem;
@@ -10,10 +12,57 @@
     cursor: pointer;
   }
   border-radius: 20rem;
-  background: linear-gradient(273deg, #7f34e0 5%, #4834d4 95%);
+  background: linear-gradient(273deg, #7f34e0 5%, #4834d4 50%, #7f34e0 95%);
+  background-size: 200%;
   box-shadow: 0px 4px 20px 0px rgba(104, 109, 224, 0.5);
   border: none;
-  color: white;
+  color: $text-base-color;
+  transition: all 0.2s ease-in-out;
+
+  &.style-1 {
+    &:hover,
+    &:active {
+      background-position: right;
+      box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.5);
+    }
+  }
+
+  &.style-2 {
+    color: $text-base-color;
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 0px 15px 1px #1a002f77;
+    border: 1px solid transparent;
+
+    &:hover,
+    &:active {
+      background: rgba(255, 255, 255, 0.25);
+      box-shadow:
+        0 8px 32px 0 rgba(31, 38, 135, 0.37),
+        inset 0px 0px 15px 1px #1a002f77;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+  }
+
+  &.style-3 {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    &:hover,
+    &:active {
+      background: rgba(144, 19, 254, 0.25);
+      box-shadow:
+        0 8px 32px 0 rgba(31, 38, 135, 0.37),
+        inset 0px 0px 15px 1px #1a002f77;
+      backdrop-filter: blur(4px);
+      -webkit-backdrop-filter: blur(4px);
+      border: 1px solid rgba(106, 0, 255, 0.18);
+    }
+  }
 
   .icon {
     display: inline;

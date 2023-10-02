@@ -3,7 +3,7 @@ import styles from './Pill.module.scss';
 import { PillListProps, PillProps } from './interfaces';
 import { ScrollRevealList } from 'components/animation';
 
-const colors = ['#63D0FF88', '#B163FF88', '#FF63DD88', '#57e1ae99', '#6663FF88'];
+const colors = ['#3478e0aa', '#e034b2aa', '#c734e0aa', '#34c0e0aa', '#7f34e0aa'];
 
 const Pill: FC<PillProps> = ({ text, color }) => {
   const [pillColor, setPillColor] = useState<string>(colors[0]);

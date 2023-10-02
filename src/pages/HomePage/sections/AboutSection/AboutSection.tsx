@@ -55,6 +55,7 @@ const AboutSection = () => {
         title={hero[1].title}
         image={images.HackerMindset}
         imageAlt={hero[1].imageAlt}
+        buttonText={hero[1].buttonText}
       />
     </section>
   );

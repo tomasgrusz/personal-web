@@ -5,4 +5,5 @@ export interface ButtonProps {
   link?: string;
   text: string;
   external?: boolean;
+  style?: 1 | 2 | 3;
 }

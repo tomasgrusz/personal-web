@@ -1,11 +1,9 @@
 .Partners {
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    rgba(0, 0, 0, 0.2) 2rem,
-    rgba(0, 0, 0, 0.2) calc(100% - 2rem),
-    transparent 100%
-  );
+  background: rgba(0, 0, 0, 0.1);
+  box-shadow:
+    inset 0px 20px 15px -15px #1a002f77,
+    inset 0px -20px 15px -15px #1a002f77;
+  border: 1px solid transparent;
   padding-block: 4rem;
 
   .List {
