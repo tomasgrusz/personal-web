@@ -1,4 +1,4 @@
-Create a 404 page #seo #IMPORTANT
+Create a 404 page #seo #IMPORTANT {cm:2023-10-02}
 
 Update the 3D button #three
 
@@ -16,7 +16,7 @@ SkillCards redesign #ux
 
 Add CTA to Hero #IMPORTANT #main
 
-Add semantic HTML to lists #seo
+Add semantic HTML to lists #seo {cm:2023-09-29}
 
 Screen Reader config #seo
 
@@ -32,6 +32,6 @@ Style ProjectCard #ux
 
 Update SkillCardList to scale on larger screens (flexbox) #ux
 
-Create and style Button #IMPORTANT #style #ux #main
+Create and style Button #IMPORTANT #style #ux #main {cm:2023-10-02}
 
 Testimonials Section #main

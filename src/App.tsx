@@ -5,6 +5,7 @@ import HomePage from 'pages/HomePage';
 import Footer from 'components/Footer';
 import MagicSwitch from 'components/MagicSwitch';
 import WIPModal from 'components/WIPModal';
+import Error from 'components/Error';
 
 export default function App() {
   const router = createBrowserRouter([
@@ -19,7 +20,7 @@ export default function App() {
           <WIPModal />
         </>
       ),
-      errorElement: <></>,
+      errorElement: <Error />,
     },
   ]);
 

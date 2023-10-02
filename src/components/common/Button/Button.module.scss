@@ -1,0 +1,39 @@
+.Button {
+  display: inline-flex;
+  padding: 1rem 3.5625rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+  width: fit-content;
+  &,
+  * {
+    cursor: pointer;
+  }
+  border-radius: 20rem;
+  background: linear-gradient(273deg, #7f34e0 5%, #4834d4 95%);
+  box-shadow: 0px 4px 20px 0px rgba(104, 109, 224, 0.5);
+  border: none;
+  color: white;
+
+  .icon {
+    display: inline;
+    height: 16px;
+    font-size: 16px;
+    * {
+      margin: 0 !important;
+    }
+  }
+
+  .label {
+    margin: 0;
+    text-align: center;
+    font-family: 'Exo2';
+    font-size: 1rem;
+  }
+}
+
+a {
+  display: inline-flex;
+  width: fit-content;
+  text-decoration: none;
+}
