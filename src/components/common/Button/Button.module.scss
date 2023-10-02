@@ -7,6 +7,7 @@
   align-items: center;
   gap: 0.25rem;
   width: fit-content;
+  margin: 2px 4px 20px;
   &,
   * {
     cursor: pointer;
@@ -14,7 +15,7 @@
   border-radius: 20rem;
   background: linear-gradient(273deg, #7f34e0 5%, #4834d4 50%, #7f34e0 95%);
   background-size: 200%;
-  box-shadow: 0px 4px 20px 0px rgba(104, 109, 224, 0.5);
+  box-shadow: 0px 4px 16px 0px rgba(104, 109, 224, 0.5);
   border: none;
   color: $text-base-color;
   transition: all 0.2s ease-in-out;
@@ -37,7 +38,7 @@
     &:active {
       background: rgba(255, 255, 255, 0.25);
       box-shadow:
-        0 8px 32px 0 rgba(31, 38, 135, 0.37),
+        0 8px 16px 0 rgba(31, 38, 135, 0.37),
         inset 0px 0px 15px 1px #1a002f77;
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
