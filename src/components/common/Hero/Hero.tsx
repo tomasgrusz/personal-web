@@ -1,4 +1,4 @@
-import { FC, useEffect, useRef } from 'react';
+import { FC } from 'react';
 import styles from './Hero.module.scss';
 import { HeroProps } from './interfaces';
 import ScrollReveal from 'components/animation/ScrollReveal';
@@ -17,7 +17,7 @@ const Hero: FC<HeroProps> = ({
       <section className={styles.Hero} style={left ? { flexDirection: 'row-reverse' } : {}}>
         <img className={styles.Image} src={image} alt={imageAlt}></img>
         <div className={styles.Text} style={{ textAlign: left ? 'right' : 'left' }}>
-          <h3 className={styles.Heading}>{title}</h3>
+          <h2 className={styles.Heading}>{title}</h2>
           <p className={styles.Paragraph}>{text}</p>
         </div>
       </section>
