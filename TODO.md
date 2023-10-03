@@ -22,7 +22,7 @@ Screen Reader config #seo
 
 Add Partner Icons section #IMPORTANT #main {cm:2023-09-29}
 
-ScrollRevealList #ux
+ScrollRevealList #ux {cm:2023-10-02}
 
 Add CV download/preview #IMPORTANT #main
 
@@ -35,3 +35,5 @@ Update SkillCardList to scale on larger screens (flexbox) #ux
 Create and style Button #IMPORTANT #style #ux #main {cm:2023-10-02}
 
 Testimonials Section #main
+
+Certificates Section?

@@ -3,10 +3,10 @@ import styles from './Button.module.scss';
 import { ButtonProps } from './interfaces';
 import { Link } from 'react-router-dom';
 
-const Button: FC<ButtonProps> = ({ icon, link, text, external, style = 1 }) => {
+const Button: FC<ButtonProps> = ({ icon, link, text, external, style = 1, onClick }) => {
   const Button = () => {
     return (
-      <button className={`${styles.Button} ${styles[`style-${style}`]}`}>
+      <button className={`${styles.Button} ${styles[`style-${style}`]}`} onClick={onClick}>
         <div className={styles.icon}>{icon}</div>
         <label className={styles.label}>{text}</label>
       </button>

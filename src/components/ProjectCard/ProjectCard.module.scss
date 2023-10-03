@@ -1,0 +1,98 @@
+@import 'styles/mixins';
+.ProjectCard {
+  width: 20rem;
+  height: 30rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding: 2rem 1.5rem;
+  text-align: left;
+  cursor: pointer;
+
+  button {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+  }
+
+  .date {
+    list-style: none;
+    justify-self: start;
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+  }
+
+  .content {
+    transform: translateY(20rem);
+    transition: all 0.2s ease-in-out;
+
+    .title {
+      font-size: 1.75rem;
+    }
+
+    &.toggle {
+      transform: translateY(2rem);
+    }
+  }
+}
+
+.heading {
+  font-size: 10rem;
+  width: 100%;
+  margin: 0;
+  top: 13rem;
+  font-family: 'Summer';
+  position: absolute;
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+
+    to {
+      background-position: -200% center;
+    }
+  }
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5) 2.5%,
+      rgba(0, 0, 0, 0) 50%,
+      rgba(0, 0, 0, 0.5) 97.5%
+    ),
+    radial-gradient(
+      rgba(255, 100, 255, 0.1) 0%,
+      rgba(255, 179, 255, 0.8) 25%,
+      rgba(255, 100, 255, 0.1) 50%,
+      rgba(255, 179, 255, 0.8) 75%,
+      rgba(255, 100, 255, 0.1) 100%
+    );
+  background-size: 1000%;
+  background-position: 100% center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: background-pan 10s linear 0s infinite alternate;
+  opacity: 0.35;
+
+  @include medium {
+    font-size: 8rem;
+  }
+
+  @include small {
+    font-size: 6rem;
+  }
+}
+
+.ProjectCardList {
+  list-style: none;
+  padding: 0;
+  padding-left: 100vw;
+  display: flex;
+  gap: max(calc(33vw - 8rem), 8rem);
+  width: fit-content;
+}

@@ -6,4 +6,5 @@ export interface ButtonProps {
   text: string;
   external?: boolean;
   style?: 1 | 2 | 3;
+  onClick?: (e: any) => void;
 }

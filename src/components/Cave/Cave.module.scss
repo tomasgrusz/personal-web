@@ -1,6 +1,7 @@
 @import 'styles/mixins';
 
 .Cave {
+  overflow: hidden;
   svg {
     width: 100%;
     height: auto;
