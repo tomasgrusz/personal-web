@@ -1,10 +1,10 @@
 # Personal website & portfolio - Tomáš Grusz
 
-A personal [tomasgrusz.com](https://tomasgrusz.com) website & portfolio built with React and hosted on Vercel.
+A personal [grusz.dev](https://grusz.dev) website & portfolio built with React and hosted on Vercel.
 
 ## Feedback
 
-If you have any feedback, please reach out to me on [LinkedIn](https://www.linkedin.com/in/tomasgrusz/) or via form on the [website](https://tomasgrusz.com).
+If you have any feedback, please reach out to me on [LinkedIn](https://www.linkedin.com/in/tomasgrusz/) or via form on the [website](https://grusz.dev).
 
 ## Tech Stack
 

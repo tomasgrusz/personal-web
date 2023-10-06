@@ -1,4 +1,4 @@
-import { PillProps } from 'components/common/Pill/interfaces';
+import { PillProps } from '@components/common/Pill/interfaces';
 
 export interface ProjectCardProps {
   title: string;

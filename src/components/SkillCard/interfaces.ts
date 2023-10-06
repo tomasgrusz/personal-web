@@ -1,4 +1,4 @@
-import { PillProps } from 'components/common/Pill/interfaces';
+import { PillProps } from '@components/common/Pill/interfaces';
 import { ReactNode } from 'react';
 
 export interface SkillCardProps {

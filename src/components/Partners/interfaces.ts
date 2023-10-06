@@ -1,3 +1,9 @@
+export interface PartnerImage {
+  url: string;
+  width: number;
+  height: number;
+}
+
 export interface PartnerProps {
   logo: string;
   alt: string;

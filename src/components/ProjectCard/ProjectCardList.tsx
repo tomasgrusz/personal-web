@@ -1,9 +1,11 @@
+'use client';
+
 import { FC, useRef } from 'react';
 import styles from './ProjectCard.module.scss';
 import { ProjectCardListProps } from './interfaces';
 import ProjectCard from './ProjectCard';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import ScrollReveal from 'components/animation/ScrollReveal';
+import ScrollReveal from '@components/animation/ScrollReveal';
 
 const ProjectCardList: FC<ProjectCardListProps> = ({ data = [] }) => {
   const scrollerRef = useRef<HTMLDivElement>(null);

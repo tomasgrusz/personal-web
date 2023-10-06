@@ -1,9 +1,9 @@
-import ToggleSwitch from 'components/common/ToggleSwitch/ToggleSwitch';
+import ToggleSwitch from '@components/common/ToggleSwitch/ToggleSwitch';
 import { useState } from 'react';
 
 import styles from './MagicSwitch.module.scss';
 import { BsFillBadge3DFill } from 'react-icons/bs';
-import Modal from 'components/common/Modal';
+import Modal from '@components/common/Modal';
 import { AnimatePresence } from 'framer-motion';
 
 const MagicSwitch = () => {

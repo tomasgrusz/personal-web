@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import styles from './Button.module.scss';
 import { ButtonProps } from './interfaces';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 const Button: FC<ButtonProps> = ({ icon, link, text, external, style = 1, onClick }) => {
   const Button = () => {
@@ -15,7 +15,7 @@ const Button: FC<ButtonProps> = ({ icon, link, text, external, style = 1, onClic
   if (link) {
     return (
       <Link
-        to={link}
+        href={link}
         target={external ? '_blank' : ''}
         rel={external ? 'noopener noreferrer' : ''}
         aria-label={text}

@@ -1,6 +1,6 @@
-@import 'styles/functions';
-@import 'styles/variables';
-@import 'styles/mixins';
+@import '@styles/functions';
+@import '@styles/variables';
+@import '@styles/mixins';
 
 $max-star-count: 200;
 $star-size: 16px;
@@ -68,8 +68,7 @@ $star-size: 16px;
         opacity: random() + 0.5;
         $random-sparkle-delay: random() * 5 + 2s;
         @if random() > 0.75 {
-          animation:
-            stars-appear 2s 0s ease-in-out normal,
+          animation: stars-appear 2s 0s ease-in-out normal,
             stars-sparkle 5s $random-sparkle-delay ease-in-out alternate-reverse infinite;
         }
       }

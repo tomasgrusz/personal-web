@@ -1,10 +1,12 @@
+'use client';
+
 import { useRef } from 'react';
 import styles from './Background.module.scss';
-import { useComet } from 'hooks';
+import { useComet } from '@hooks/index';
 
 const Background = () => {
   const STAR_COUNT = () => {
-    const vw = window.innerWidth;
+    const vw = 100; //TODO: fix
     if (vw > 1500) {
       return 200;
     } else if (vw > 750) {

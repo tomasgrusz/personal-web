@@ -1,8 +1,9 @@
-import Modal from 'components/common/Modal';
+'use client';
+import Modal from '@components/common/Modal';
 import { AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { BiLinkExternal } from 'react-icons/bi';
-import { Link } from 'react-router-dom';
 
 const WIPModal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -29,7 +30,7 @@ const WIPModal = () => {
             Some features can throw errors or may not function correctly.
           </p>
           <Link
-            to={'https://github.com/tomasgrusz/personal-web'}
+            href={'https://github.com/tomasgrusz/personal-web'}
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -4,8 +4,8 @@ import { BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
 import { BiHomeAlt2, BiCarousel } from 'react-icons/bi';
 import { MdAlternateEmail } from 'react-icons/md';
 
-import { AnimatedLogoSVG } from 'components/common/LogoSVG';
-import Link from 'components/common/Link/Link';
+import { AnimatedLogoSVG } from '@components/common/LogoSVG';
+import Link from '@components/common/Link/Link';
 
 const Navbar = () => {
   return (
