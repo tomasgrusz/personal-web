@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import styles from './Hero.module.scss';
 import { HeroProps } from './interfaces';
-import ScrollReveal from 'components/animation/ScrollReveal';
+import ScrollReveal from '@components/animation/ScrollReveal';
 import Button from '../Button';
 
 const Hero: FC<HeroProps> = ({

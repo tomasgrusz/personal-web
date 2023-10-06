@@ -1,8 +1,7 @@
 import { FC } from 'react';
 import styles from './Link.module.scss';
 import { LinkProps } from './interfaces';
-import { Link as ReactLink } from 'react-router-dom';
-import ScrollReveal from 'components/animation';
+import ScrollReveal from '@components/animation';
 
 const Link: FC<LinkProps> = ({
   icon,
@@ -29,15 +28,15 @@ const Link: FC<LinkProps> = ({
     return (
       <div className={styles.link}>
         <ScrollReveal vertical={false} disable={!animate}>
-          <ReactLink
-            to={link}
+          <a
+            href={link}
             target={external ? '_blank' : ''}
             rel={external ? 'noopener noreferrer' : ''}
             aria-label={ariaLabel}
           >
             {icon}
             {text}
-          </ReactLink>
+          </a>
         </ScrollReveal>
       </div>
     );

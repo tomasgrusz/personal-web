@@ -1,9 +1,11 @@
+'use client';
+
 import { FC, MouseEvent, useState } from 'react';
 import styles from './ProjectCard.module.scss';
 import { ProjectCardProps } from './interfaces';
-import { PillList } from 'components/common/Pill';
-import { Link } from 'react-router-dom';
-import Button from 'components/common/Button';
+import { PillList } from '@components/common/Pill';
+import Button from '@components/common/Button';
+import Link from 'next/link';
 
 const ProjectCard: FC<ProjectCardProps> = ({
   title,
@@ -49,8 +51,8 @@ const ProjectCard: FC<ProjectCardProps> = ({
         {toggle && (
           <>
             <PillList pills={pills} randomColor sort />
-            {githubLink && <Link to={githubLink} />}
-            {webLink && <Link to={webLink} />}
+            {githubLink && <Link href={githubLink} />}
+            {webLink && <Link href={webLink} />}
           </>
         )}
       </div>

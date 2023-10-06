@@ -1,3 +1,5 @@
+'use client';
+
 import { motion, useInView, useAnimation } from 'framer-motion';
 import { FC, ReactNode, useEffect, useRef } from 'react';
 
@@ -17,7 +19,8 @@ const ScrollRevealList: FC<ScrollRevealListProps> = ({
 }) => {
   //check for accessibility setting to reduce motion
   const isReduced =
-    window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true || disable;
+    // window.matchMedia(`(prefers-reduced-motion: reduce)`).matches === true ||
+    disable;
   const wrapperRef = useRef<HTMLDivElement>(null);
   const inView = useInView(wrapperRef, { once: true });
 

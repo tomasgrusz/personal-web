@@ -1,4 +1,4 @@
-import Link from 'components/common/Link/Link';
+import Link from '@components/common/Link/Link';
 import styles from './Footer.module.scss';
 
 const Footer = () => {

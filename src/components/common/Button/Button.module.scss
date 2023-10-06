@@ -1,4 +1,4 @@
-@import 'styles/variables';
+@import '@styles/variables';
 
 .Button {
   display: inline-flex;
@@ -37,9 +37,7 @@
     &:hover,
     &:active {
       background: rgba(255, 255, 255, 0.25);
-      box-shadow:
-        0 8px 16px 0 rgba(31, 38, 135, 0.37),
-        inset 0px 0px 15px 1px #1a002f77;
+      box-shadow: 0 8px 16px 0 rgba(31, 38, 135, 0.37), inset 0px 0px 15px 1px #1a002f77;
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
       border: 1px solid rgba(255, 255, 255, 0.18);
@@ -56,9 +54,7 @@
     &:hover,
     &:active {
       background: rgba(144, 19, 254, 0.25);
-      box-shadow:
-        0 8px 32px 0 rgba(31, 38, 135, 0.37),
-        inset 0px 0px 15px 1px #1a002f77;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), inset 0px 0px 15px 1px #1a002f77;
       backdrop-filter: blur(4px);
       -webkit-backdrop-filter: blur(4px);
       border: 1px solid rgba(106, 0, 255, 0.18);
@@ -80,10 +76,10 @@
     font-family: 'Exo2';
     font-size: 1rem;
   }
-}
 
-a {
-  display: inline-flex;
-  width: fit-content;
-  text-decoration: none;
+  a {
+    display: inline-flex;
+    width: fit-content;
+    text-decoration: none;
+  }
 }
