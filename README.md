@@ -1,6 +1,6 @@
 # Personal website & portfolio - Tomáš Grusz
 
-A personal [grusz.dev](https://grusz.dev) website & portfolio built with React and hosted on Vercel.
+A personal [grusz.dev](https://grusz.dev) website & portfolio built with Next.js 13 and hosted on Vercel.
 
 ## Feedback
 
@@ -8,7 +8,7 @@ If you have any feedback, please reach out to me on [LinkedIn](https://www.linke
 
 ## Tech Stack
 
-React, Three.js, SCSS, TypeScript
+Next 13, React, Three.js, SCSS, TypeScript
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
