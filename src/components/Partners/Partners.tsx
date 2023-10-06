@@ -1,13 +1,13 @@
 import { FC } from 'react';
 import styles from './Partners.module.scss';
-import { PartnerProps, PartnersProps } from './interfaces';
+import { PartnerImage, PartnerProps, PartnersProps } from './interfaces';
 import { ScrollRevealList } from '@components/animation';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const PartnerImages = [
-  { url: '/images/partners/Make-Logo-RGB-White.svg', width: 160 },
-  { url: '/images/partners/UoB-white-line.png', width: 300 },
+const PartnerImages: PartnerImage[] = [
+  { url: '/images/partners/Make-Logo-RGB-White.svg', width: 160, height: 32 },
+  { url: '/images/partners/UoB-white-line.png', width: 384, height: 97 },
 ];
 
 const Partners: FC<PartnersProps> = ({ partners }) => {
@@ -26,8 +26,12 @@ const Partners: FC<PartnersProps> = ({ partners }) => {
             <Image
               src={PartnerImages[i].url}
               alt={partner.alt}
-              height={partner.height || 32}
-              width={PartnerImages[i].width}
+              height={partner.height || PartnerImages[i].height}
+              width={
+                partner.height
+                  ? PartnerImages[i].width * (partner.height / PartnerImages[i].height)
+                  : PartnerImages[i].width
+              }
             />
           </Link>
         ))}
