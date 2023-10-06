@@ -1,12 +1,12 @@
-import { motion } from "framer-motion";
-import Backdrop from "./Backdrop";
+import { motion } from 'framer-motion';
+import Backdrop from './Backdrop';
 
-import "./Modal.scss";
-import { ReactElement } from "react";
+import styles from './Modal.module.scss';
+import { ReactNode } from 'react';
 
 const dropIn = {
   hidden: {
-    y: "-100vh",
+    y: '-100vh',
     opacity: 0,
   },
   visible: {
@@ -14,12 +14,12 @@ const dropIn = {
     opacity: 1,
     transition: {
       duration: 0.1,
-      type: "spring",
+      type: 'spring',
       damping: 25,
       stiffness: 500,
     },
   },
-  exit: { y: "100vh", opacity: 0 },
+  exit: { y: '100vh', opacity: 0 },
 };
 
 const Modal = ({
@@ -29,33 +29,33 @@ const Modal = ({
 }: {
   onClose: () => void;
   buttonLabel?: string;
-  children?: ReactElement[];
+  children?: ReactNode;
 }) => {
   return (
     <Backdrop onClick={onClose}>
       <motion.div
-        className="Modal"
+        className={styles.Modal}
         onClick={(e) => e.stopPropagation()}
         variants={dropIn}
         initial="hidden"
         animate="visible"
         exit="exit"
       >
-        <div className="ModalChildren">{children}</div>
+        <div className={styles.ModalChildren}>{children}</div>
         <div>
           <hr></hr>
           <motion.button
-            className="ModalButton"
+            className={styles.ModalButton}
             type="button"
             whileHover={{
               scale: 1.1,
-              backgroundColor: "#fe0",
-              color: "#222",
+              backgroundColor: '#fe0',
+              color: '#222',
             }}
             whileTap={{ scale: 0.95 }}
             onClick={onClose}
           >
-            {buttonLabel ? buttonLabel : "OK"}
+            {buttonLabel ? buttonLabel : 'OK'}
           </motion.button>
         </div>
       </motion.div>

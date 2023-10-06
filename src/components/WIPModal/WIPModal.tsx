@@ -1,8 +1,9 @@
-import Modal from "components/common/Modal/Modal";
-import { AnimatePresence } from "framer-motion";
-import { useEffect, useState } from "react";
-import { BiLinkExternal } from "react-icons/bi";
-import { Link } from "react-router-dom";
+'use client';
+import Modal from '@components/common/Modal';
+import { AnimatePresence } from 'framer-motion';
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { BiLinkExternal } from 'react-icons/bi';
 
 const WIPModal = () => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -13,6 +14,10 @@ const WIPModal = () => {
   useEffect(() => {
     setModalOpen(true);
   }, []);
+
+  if (process.env.REACT_APP_ENVIRONMENT === 'development') {
+    return <></>;
+  }
 
   return (
     <AnimatePresence initial={false} mode="wait" onExitComplete={() => null}>
@@ -25,11 +30,11 @@ const WIPModal = () => {
             Some features can throw errors or may not function correctly.
           </p>
           <Link
-            to={"https://github.com/tomasgrusz/personal-web"}
+            href={'https://github.com/tomasgrusz/personal-web'}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <label style={{ cursor: "pointer" }}>
+            <label style={{ cursor: 'pointer' }}>
               Check out the progress on GitHub <BiLinkExternal />
             </label>
           </Link>

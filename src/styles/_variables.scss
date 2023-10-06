@@ -1,0 +1,18 @@
+/* Extra small devices (phones, 600px and down) */
+$screen-small: 600px;
+
+/* Medium devices (landscape tablets, 768px and up) */
+$screen-medium: 768px;
+
+/* Large devices (laptops/desktops, 992px and up) */
+$screen-large: 992px;
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+$screen-xlarge: 1200px;
+
+$text-base-color: #e5f7ff !default;
+$text-size-button: 18px;
+$icon-size-button: $text-size-button + 3px;
+
+$nav-logo-size: 48px;
+$nav-padding: 16px;

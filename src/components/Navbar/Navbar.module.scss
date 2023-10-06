@@ -1,0 +1,35 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+
+.Navbar {
+  $padding: $nav-padding;
+  position: fixed;
+  width: calc(100vw - ($padding * 2));
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  padding: $padding;
+  align-items: center;
+  backdrop-filter: blur(4px);
+
+  @include large {
+    backdrop-filter: none;
+  }
+
+  .routes {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    padding: 0 2rem;
+
+    @include large {
+      display: none;
+      flex: 0;
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 1.5rem;
+  }
+}

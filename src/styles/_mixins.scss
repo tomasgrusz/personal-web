@@ -1,0 +1,65 @@
+@import './variables';
+
+// Small devices
+@mixin small {
+  @media (max-width: #{$screen-small}) {
+    @content;
+  }
+}
+
+// Medium devices
+@mixin medium {
+  @media (max-width: #{$screen-medium}) {
+    @content;
+  }
+}
+
+// Large devices
+@mixin large {
+  @media (max-width: #{$screen-large}) {
+    @content;
+  }
+}
+
+// Extra large devices
+@mixin xlarge {
+  @media (max-width: #{$screen-xlarge}) {
+    @content;
+  }
+}
+
+@mixin gradient-text {
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+
+    to {
+      background-position: -200% center;
+    }
+  }
+  background: linear-gradient(
+    90deg,
+    #e963ff 0%,
+    #ffae74 25%,
+    #a764ff 50%,
+    #ffae74 75%,
+    #e963ff 100%
+  );
+  background-size: 200%;
+  background-position: 100% center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: background-pan 3s linear 0s infinite normal;
+  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+
+  cursor: help;
+
+  &:hover,
+  &:focus {
+    animation-play-state: running;
+    -webkit-animation-play-state: running;
+  }
+}

@@ -1,19 +1,13 @@
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import "./Backdrop.scss";
-import { ReactNode } from "react";
+import styles from './Backdrop.module.scss';
+import { ReactNode } from 'react';
 
-const Backdrop = ({
-  children,
-  onClick,
-}: {
-  children: ReactNode;
-  onClick: () => void;
-}) => {
+const Backdrop = ({ children, onClick }: { children: ReactNode; onClick: () => void }) => {
   return (
     <>
       <motion.div
-        className="Backdrop"
+        className={styles.Backdrop}
         onClick={onClick}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

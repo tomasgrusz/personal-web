@@ -1,0 +1,66 @@
+@import '@styles/mixins';
+
+.SkillCard {
+  display: inline-flex;
+  max-height: 75vh;
+  max-height: 75svh;
+  height: 30rem;
+  padding: 3rem 3.4375rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+  flex-shrink: 0;
+  width: 14.8125rem;
+  border-radius: 1.25rem;
+  background: rgba(35, 33, 88, 0.15);
+  box-shadow: inset 0px 0px 32px 4px rgba(0, 0, 0, 0.4);
+  margin-bottom: 0.5rem;
+
+  svg {
+    min-height: 100px;
+  }
+
+  .hero {
+    max-height: 50%;
+    overflow: hidden;
+    font-weight: 200;
+
+    h3 {
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+
+    p {
+      text-align: left;
+      line-height: 1.5;
+    }
+  }
+
+  .pillWrapper {
+    text-align: left;
+    h4 {
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-block: 0.5rem;
+    }
+  }
+}
+
+.SkillCardList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 4.5rem;
+  align-items: center;
+  padding: 1rem;
+  list-style: none;
+
+  @include large {
+    padding: 1rem 0;
+  }
+
+  @include medium {
+    grid-template-columns: 1fr;
+  }
+}

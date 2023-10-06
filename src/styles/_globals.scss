@@ -1,0 +1,10 @@
+@import './mixins';
+@import './variables';
+
+.MAGIC {
+  @include gradient-text;
+}
+
+.BOLD {
+  font-weight: bold;
+}

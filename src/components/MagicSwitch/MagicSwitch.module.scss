@@ -1,0 +1,80 @@
+@import '@styles/variables';
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+.MagicSwitchCTA {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 100;
+  cursor: pointer;
+  color: $text-base-color;
+
+  .icon {
+    font-size: 28px;
+  }
+}
+
+.MagicSwitch {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  height: 5rem;
+
+  .MagicOption {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: space-between;
+    height: 100%;
+
+    .MagicDisclaimer {
+      font-size: 0.75rem;
+      color: #faf;
+    }
+
+    .MagicLabel {
+      font-size: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .MagicDescription {
+      opacity: 0.7;
+    }
+  }
+
+  .MagicOption.magic {
+    .MagicLabel {
+      font-family: 'Summer';
+      font-weight: bold;
+      animation: background-pan 3s linear infinite;
+      background: linear-gradient(to right, #aaf, #faf, #a92bd7, #faf, #aaf);
+      background-size: 200%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      white-space: nowrap;
+    }
+  }
+}
+
+.ToggleSwitch.toggled {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    rgb(200, 170, 255),
+    #b992f8,
+    rgb(227, 170, 255),
+    #b992f8,
+    rgb(200, 170, 255)
+  );
+  background-size: 200%;
+}

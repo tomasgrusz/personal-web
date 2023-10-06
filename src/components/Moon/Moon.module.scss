@@ -1,0 +1,18 @@
+@import '@styles/mixins';
+
+$moon-size: 200px;
+
+.moon {
+  background-size: cover;
+  border-radius: 50%;
+  background-position-x: center;
+  background-position-y: bottom;
+  width: $moon-size;
+  height: $moon-size * 0.975;
+  // filter: opacity(0.5) drop-shadow(0 0 0 rgb(113, 98, 231));
+
+  @include medium {
+    width: $moon-size * 0.75;
+    height: $moon-size * 0.975 * 0.75;
+  }
+}

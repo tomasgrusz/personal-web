@@ -1,45 +1,40 @@
-import "./Navbar.scss";
+import styles from './Navbar.module.scss';
 
-import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
+import { BiHomeAlt2, BiCarousel } from 'react-icons/bi';
+import { MdAlternateEmail } from 'react-icons/md';
 
-import "./Navbar.scss";
-import AnimatedLogoSVG from "components/common/LogoSVG/AnimatedLogoSVG";
+import { AnimatedLogoSVG } from '@components/common/LogoSVG';
+import Link from '@components/common/Link/Link';
 
 const Navbar = () => {
   return (
-    <div className="Navbar">
-      <div className="logo">
-        <AnimatedLogoSVG size={64} />
+    <nav className={styles.Navbar}>
+      <div className={styles.logo}>
+        <AnimatedLogoSVG size={48} />
       </div>
-      <div className="routes">
-        <div className="route">About</div>
-        <div className="route">Portfolio</div>
-        <div className="route">Experience</div>
-        <div className="route">Contact</div>
+      <div className={styles.routes}>
+        <Link icon={<BiHomeAlt2 />} text="Home" nav />
+        <Link icon={<BsPerson />} text="About Me" nav />
+        <Link icon={<BiCarousel />} text="Portfolio" nav />
+        <Link icon={<MdAlternateEmail />} text="Contact Me" nav />
       </div>
-      <div className="links">
-        <div className="linkedin">
-          <Link
-            to={"https://www.linkedin.com/in/tomasgrusz/"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsLinkedin />
-          </Link>
-        </div>
-        <div className="github">
-          <Link
-            to={"https://github.com/tomasgrusz"}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BsGithub />
-          </Link>
-        </div>
+      <div className={styles.links}>
+        <Link
+          icon={<BsLinkedin />}
+          external
+          link="https://www.linkedin.com/in/tomasgrusz/"
+          ariaLabel="Visit Tomas Grusz's LinkedIn"
+        />
+        <Link
+          icon={<BsGithub />}
+          external
+          link="https://github.com/tomasgrusz"
+          ariaLabel="Visit Tomas Grusz's GitHub"
+        />
       </div>
-    </div>
+    </nav>
   );
 };
 
-export { Navbar };
+export default Navbar;

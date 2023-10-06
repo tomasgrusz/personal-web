@@ -1,0 +1,133 @@
+@import '@styles/variables';
+@import '@styles/mixins';
+@import '@styles/globals';
+
+// Unica One Family --------------------------------------
+@font-face {
+  font-family: 'UnicaOne';
+  src: local('UnicaOne-Regular'), url('../fonts/UnicaOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+// Bungee Inline Family --------------------------------------
+@font-face {
+  font-family: 'BungeeInline';
+  src: local('BungeeInline-Regular'), url('../fonts/BungeeInline-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+// Exo 2 Family --------------------------------------
+@font-face {
+  font-family: 'Exo2';
+  src: local('Exo2-Black'), url('../fonts/Exo_2/static/Exo2-Black.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: local('Exo2-Bold'), url('../fonts/Exo_2/static/Exo2-Bold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: local('Exo2-SemiBold'), url('../fonts/Exo_2/static/Exo2-SemiBold.ttf') format('truetype');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: local('Exo2-Regular'), url('../fonts/Exo_2/static/Exo2-Regular.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: local('Exo2-Light'), url('../fonts/Exo_2/static/Exo2-Light.ttf') format('truetype');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: local('Exo2-ExtraLight'), url('../fonts/Exo_2/static/Exo2-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'Exo2';
+  src: local('Exo2-Thin'), url('../fonts/Exo_2/static/Exo2-Thin.ttf') format('truetype');
+  font-weight: 100;
+}
+
+// Summer Family --------------------------------------
+@font-face {
+  font-family: 'Summer';
+  src: local('Summer'), url('../fonts/Summer/Summer.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Summer';
+  src: local('SummerLight'), url('../fonts/Summer/SummerLight.otf') format('opentype');
+  font-weight: 300;
+}
+
+body {
+  margin: 0;
+  font-family: 'Exo2', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
+    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #121212;
+  text-align: center;
+  color: $text-base-color;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+@include xlarge {
+}
+
+@include large {
+}
+
+@include medium {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@include small {
+}
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #dbb0e7 #805991;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #805991;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #dbb0e7;
+  // border-radius: 10px;
+}
+
+a {
+  color: $text-base-color;
+}
