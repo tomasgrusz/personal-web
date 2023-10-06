@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   themeColor: '#252233',
   viewport: { width: 'device-width', initialScale: 1 },
   robots: { index: true, follow: true },
-  alternates: { canonical: 'https://tomasgrusz.com' },
+  alternates: { canonical: 'https://grusz.dev' },
   icons: [
     { rel: 'icon', url: '/favicon.ico' },
     { rel: 'icon', url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   manifest: '/site.webmanifest',
   openGraph: {
     type: 'website',
-    url: 'https://tomasgrusz.com',
+    url: 'https://grusz.dev',
     title: 'Tomáš Grusz - Building Interactive React Websites',
     description:
       "Transform your online presence! I specialize in creating custom websites and web applications using React. Let's turn ideas into interactive online experiences.",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    creator: '@webgrusz',
+    creator: '@gruszdev',
     images: '/banner.png',
     title: 'Tomáš Grusz - Building Interactive React Websites',
     description:
