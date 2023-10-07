@@ -13,11 +13,12 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://grusz.dev' },
   icons: [
-    { rel: 'icon', url: '/favicon.ico' },
-    { rel: 'icon', url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
-    { rel: 'icon', url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
     { rel: 'apple-touch-icon', sizes: '180x180', url: '/apple-touch-icon.png' },
     { rel: 'mask-icon', color: '#aaaaff', url: '/safari-pinned-tab.svg' },
+    { rel: 'icon', url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
+    { rel: 'icon', url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+    { rel: 'icon', url: '/favicon.ico', type: 'image/x-icon' },
+    { rel: 'shortcut icon', url: '/favicon.ico', type: 'image/x-icon' },
   ],
   manifest: '/site.webmanifest',
   openGraph: {
