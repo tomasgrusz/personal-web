@@ -17,6 +17,8 @@ export const metadata: Metadata = {
     { rel: 'mask-icon', color: '#aaaaff', url: '/safari-pinned-tab.svg' },
     { rel: 'icon', url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
     { rel: 'icon', url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
+    { rel: 'icon', url: '/favicon.ico', type: 'image/x-icon' },
+    { rel: 'shortcut icon', url: '/favicon.ico', type: 'image/x-icon' },
   ],
   manifest: '/site.webmanifest',
   openGraph: {
