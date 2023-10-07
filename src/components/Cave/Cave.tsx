@@ -2,7 +2,7 @@ import styles from './Cave.module.scss';
 
 const Cave = ({ flip = false }) => {
   return (
-    <div className={styles.Cave}>
+    <div className={`${styles.Cave} ${flip ? styles.lower : styles.upper}`}>
       <svg
         className={`${styles.Cave} ${flip ? styles.flip : ''}`}
         width="1920"
