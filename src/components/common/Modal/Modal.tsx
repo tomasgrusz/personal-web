@@ -3,6 +3,7 @@ import Backdrop from './Backdrop';
 
 import styles from './Modal.module.scss';
 import { ReactNode } from 'react';
+import Button from '../Button';
 
 const dropIn = {
   hidden: {
@@ -42,22 +43,8 @@ const Modal = ({
         exit="exit"
       >
         <div className={styles.ModalChildren}>{children}</div>
-        <div>
-          <hr></hr>
-          <motion.button
-            className={styles.ModalButton}
-            type="button"
-            whileHover={{
-              scale: 1.1,
-              backgroundColor: '#fe0',
-              color: '#222',
-            }}
-            whileTap={{ scale: 0.95 }}
-            onClick={onClose}
-          >
-            {buttonLabel ? buttonLabel : 'OK'}
-          </motion.button>
-        </div>
+        <hr></hr>
+        <Button text={buttonLabel ? buttonLabel : 'OK'} onClick={onClose} style={1} />
       </motion.div>
     </Backdrop>
   );
