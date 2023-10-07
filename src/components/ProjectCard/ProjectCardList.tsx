@@ -16,7 +16,7 @@ const ProjectCardList: FC<ProjectCardListProps> = ({ data = [] }) => {
   const horizontal = useTransform(scrollYProgress, [0, 1], ['0%', '-100%']);
 
   return (
-    <div ref={scrollerRef} style={{ display: 'flex', height: '300vh' }}>
+    <div ref={scrollerRef} style={{ display: 'flex', height: '400vh' }}>
       <div
         style={{
           position: 'sticky',
