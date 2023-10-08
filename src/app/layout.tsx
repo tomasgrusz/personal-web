@@ -61,7 +61,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org/",
               "@type": "WebSite",
               "name": "Tomáš Grusz",
-              "url": "https://grusz.dev"
+              "url": "https://grusz.dev",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "{search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
             }`,
           }}
         ></script>
