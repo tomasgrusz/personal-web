@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Tomáš Grusz - Building Interactive React Websites',
   description:
-    "Transform your online presence! I specialize in creating custom websites and web applications using React. Let's turn ideas into interactive online experiences.",
+    "I'm a React Frontend Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
   applicationName: 'tomasgrusz',
   authors: [{ name: 'Tomáš Grusz' }],
   keywords: 'website development, web dev, react, frontend developer',
@@ -26,8 +26,8 @@ export const metadata: Metadata = {
     url: 'https://grusz.dev',
     title: 'Tomáš Grusz - Building Interactive React Websites',
     description:
-      "Transform your online presence! I specialize in creating custom websites and web applications using React. Let's turn ideas into interactive online experiences.",
-    siteName: 'Tomáš Grusz - Building Interactive React Websites',
+      "I'm a React Frontend Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
+    siteName: 'Tomáš Grusz',
     images: [
       {
         url: '/banner.png',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     images: '/banner.png',
     title: 'Tomáš Grusz - Building Interactive React Websites',
     description:
-      "Transform your online presence! I specialize in creating custom websites and web applications using React. Let's turn ideas into interactive online experiences.",
+      "I'm a React Frontend Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
   },
   other: {
     'msapplication-TileColor': '#603cba',
@@ -53,6 +53,47 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+              "@context": "https://schema.org/",
+              "@type": "WebSite",
+              "name": "Tomáš Grusz",
+              "url": "https://grusz.dev",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "{search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            }`,
+          }}
+        ></script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: `{
+              "@context": "https://schema.org/",
+              "@type": "Person",
+              "name": "Tomáš Grusz",
+              "url": "https://grusz.dev",
+              "image": "https://pbs.twimg.com/profile_images/1710629613129359361/-0KpGWTv_400x400.jpg",
+              "sameAs": [
+                "https://twitter.com/gruszdev",
+                "https://www.linkedin.com/in/tomasgrusz/",
+                "https://github.com/tomasgrusz",
+                "https://grusz.dev"
+              ],
+              "jobTitle": "Associate Software Engineer - Frontend",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Make"
+              }
+            }`,
+          }}
+        ></script>
+      </head>
       <body>{children}</body>
     </html>
   );
