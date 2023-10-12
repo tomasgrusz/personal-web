@@ -9,10 +9,10 @@ const ContactSection = () => {
         <div className={styles.hero}>
           <h2 className={styles.heading}>Contact Me</h2>
           <p className={styles.paragraph}>
-            Whether you have a question, a project in mind, or just want to connect, don't hesitate
-            to reach out. Feel free to drop me a message through the contact form, or connect with
-            me through the provided contact information. Let&apos;s start a conversation and explore
-            the possibilities together!
+            Whether you have a question, a project in mind, or just want to connect, don&apos;t
+            hesitate to reach out. Feel free to drop me a message through the contact form, or
+            connect with me through the provided contact information. Let&apos;s start a
+            conversation and explore the possibilities together!
           </p>
           <Image
             className={styles.Image}
