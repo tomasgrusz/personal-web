@@ -52,7 +52,7 @@ const AboutSection = () => {
           </>
         }
         title={hero[1].title}
-        image={'/images/undraw/undraw_developer_activity_re_39tg.svg'}
+        image={'/images/undraw/undraw_hacker_mindset_re_8a33.svg'}
         imageAlt={hero[1].imageAlt}
         buttonText={hero[1].buttonText}
       />
