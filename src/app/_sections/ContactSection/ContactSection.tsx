@@ -4,7 +4,7 @@ import ContactForm from '@/components/ContactForm';
 
 const ContactSection = () => {
   return (
-    <section className={styles.ContactSection}>
+    <section className={styles.ContactSection} id="contact">
       <div className={styles.contact}>
         <div className={styles.hero}>
           <h2 className={styles.heading}>Contact Me</h2>

@@ -14,6 +14,10 @@ const skills = [
         color: 'random',
       },
       {
+        text: 'Next.js',
+        color: 'random',
+      },
+      {
         text: 'Framer Motion',
         color: 'random',
       },

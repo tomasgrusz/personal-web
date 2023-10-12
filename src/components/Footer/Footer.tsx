@@ -1,4 +1,4 @@
-import Link from '@components/common/Link/Link';
+import Link from 'next/link';
 import styles from './Footer.module.scss';
 
 const Footer = () => {
@@ -6,13 +6,14 @@ const Footer = () => {
     <footer className={styles.Footer}>
       <div className={styles.licenses}>
         <label>
-          Icons by <Link text="Icons8" link="https://icons8.com" external animate={false} /> and{' '}
-          <Link
-            text="react-icons"
-            link="https://react-icons.github.io/react-icons"
-            external
-            animate={false}
-          />
+          Icons by{' '}
+          <Link href="https://icons8.com" target="_blank">
+            Icons8
+          </Link>{' '}
+          and{' '}
+          <Link href="https://react-icons.github.io/react-icons" target="_blank">
+            react-icons
+          </Link>
           .
         </label>
       </div>

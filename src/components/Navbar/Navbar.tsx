@@ -5,7 +5,7 @@ import { BiHomeAlt2, BiCarousel } from 'react-icons/bi';
 import { MdAlternateEmail } from 'react-icons/md';
 
 import { AnimatedLogoSVG } from '@components/common/LogoSVG';
-import Link from '@components/common/Link/Link';
+import Link from 'next/link';
 
 const Navbar = () => {
   return (
@@ -14,24 +14,40 @@ const Navbar = () => {
         <AnimatedLogoSVG size={48} />
       </div>
       <div className={styles.routes}>
-        <Link icon={<BiHomeAlt2 />} text="Home" nav />
-        <Link icon={<BsPerson />} text="About Me" nav />
-        <Link icon={<BiCarousel />} text="Portfolio" nav />
-        <Link icon={<MdAlternateEmail />} text="Contact Me" nav />
+        <Link href="#home" className={styles.link}>
+          <BiHomeAlt2 />
+          Home
+        </Link>
+        <Link href="#about" className={styles.link}>
+          <BsPerson />
+          About Me
+        </Link>
+        <Link href="#portfolio" className={styles.link}>
+          <BiCarousel />
+          Portfolio
+        </Link>
+        <Link href="#contact" className={styles.link}>
+          <MdAlternateEmail />
+          Contact Me
+        </Link>
       </div>
       <div className={styles.links}>
         <Link
-          icon={<BsLinkedin />}
-          external
-          link="https://www.linkedin.com/in/tomasgrusz/"
-          ariaLabel="Visit Tomas Grusz's LinkedIn"
-        />
+          href="https://www.linkedin.com/in/tomasgrusz/"
+          aria-label="Visit Tomas Grusz's LinkedIn"
+          target="_blank"
+          className={styles.link}
+        >
+          <BsLinkedin />
+        </Link>
         <Link
-          icon={<BsGithub />}
-          external
-          link="https://github.com/tomasgrusz"
-          ariaLabel="Visit Tomas Grusz's GitHub"
-        />
+          href="https://github.com/tomasgrusz"
+          aria-label="Visit Tomas Grusz's GitHub"
+          target="_blank"
+          className={styles.link}
+        >
+          <BsGithub />
+        </Link>
       </div>
     </nav>
   );

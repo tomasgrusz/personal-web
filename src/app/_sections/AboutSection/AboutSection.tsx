@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 const AboutSection = () => {
   return (
-    <section className={styles.AboutSection}>
+    <section className={styles.AboutSection} id="about">
       <Hero
         left
         text={
@@ -18,7 +18,7 @@ const AboutSection = () => {
             I&apos;m a React Frontend Developer currently based in{' '}
             <span className="BOLD">Prague, Czech Republic</span>. My journey in web development
             began with a solid foundation in Computer Science from the{' '}
-            <Link href="https://www.birmingham.ac.uk" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.birmingham.ac.uk" target="_blank">
               University of Birmingham
             </Link>
             . I&apos;ve had the privilege of working on diverse projects, where I&apos;ve learned
