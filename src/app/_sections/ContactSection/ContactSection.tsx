@@ -11,8 +11,8 @@ const ContactSection = () => {
           <p className={styles.paragraph}>
             Whether you have a question, a project in mind, or just want to connect, don't hesitate
             to reach out. Feel free to drop me a message through the contact form, or connect with
-            me through the provided contact information. Let's start a conversation and explore the
-            possibilities together!
+            me through the provided contact information. Let&apos;s start a conversation and explore
+            the possibilities together!
           </p>
           <Image
             className={styles.Image}

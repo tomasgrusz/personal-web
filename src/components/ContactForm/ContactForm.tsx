@@ -41,7 +41,7 @@ const ContactForm = () => {
         ></textarea>
       </div>
       {submitted ? (
-        <p>Success! I'll try to respond as soon as possible.</p>
+        <p>Success! I&apos;ll try to respond as soon as possible.</p>
       ) : (
         <Button text="Submit" />
       )}
