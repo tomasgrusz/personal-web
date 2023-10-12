@@ -8,6 +8,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-inline: 7rem;
+    @include large {
+      padding-inline: 4rem;
+    }
     gap: 2rem;
     text-align: right;
 
