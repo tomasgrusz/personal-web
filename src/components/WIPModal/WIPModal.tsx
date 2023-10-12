@@ -25,15 +25,11 @@ const WIPModal = () => {
         <Modal onClose={close} buttonLabel="I understand">
           <h2>🚧 Work in progress! 🚧</h2>
           <p>
-            You have reached a website that is currently in development.
+            This website is currently in development.
             <br></br>
-            Some features can throw errors or may not function correctly.
+            Occasionally, you may experience bugs or missing features.
           </p>
-          <Link
-            href={'https://github.com/tomasgrusz/personal-web'}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <Link href={'https://github.com/tomasgrusz/personal-web'} target="_blank">
             <label style={{ cursor: 'pointer' }}>
               Check out the progress on GitHub <BiLinkExternal />
             </label>
