@@ -4,12 +4,19 @@ import { useForm } from 'react-hook-form';
 import { sendEmail } from '@utils/sendEmail';
 import { ContactFormData } from './types';
 import Button from '@components/common/Button';
+import { useState } from 'react';
 
 const ContactForm = () => {
   const { register, handleSubmit } = useForm<ContactFormData>();
+  const [submitted, setSubmitted] = useState<boolean>(false);
 
-  function onSubmit(data: ContactFormData) {
-    sendEmail(data);
+  async function onSubmit(data: ContactFormData) {
+    const response = await sendEmail(data);
+    if (response === 'Email sent') {
+      setSubmitted(true);
+    } else {
+      alert('Something went wrong. Please try again later.');
+    }
   }
   return (
     <form className={styles.ContactForm} onSubmit={handleSubmit(onSubmit)}>
@@ -33,7 +40,11 @@ const ContactForm = () => {
           {...register('message', { required: true })}
         ></textarea>
       </div>
-      <Button text="Submit" />
+      {submitted ? (
+        <p>Success! I'll try to respond as soon as possible.</p>
+      ) : (
+        <Button text="Submit" />
+      )}
     </form>
   );
 };
