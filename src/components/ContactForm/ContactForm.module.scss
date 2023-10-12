@@ -1,4 +1,5 @@
 @import '@styles/variables.scss';
+@import '@styles/mixins.scss';
 
 .ContactForm {
   display: flex;
@@ -6,9 +7,11 @@
   gap: 2rem;
   width: 400px;
   border-radius: 1.25rem;
-  padding-inline: 1rem;
   margin-inline: auto;
   width: 17rem;
+  @include medium {
+    align-items: center;
+  }
 
   .field {
     display: flex;
