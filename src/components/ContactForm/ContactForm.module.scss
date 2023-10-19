@@ -34,6 +34,8 @@
     input {
       background: rgba(35, 33, 88, 0.15);
       box-shadow: inset 0px 0px 32px 4px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: inset 0px 0px 32px 4px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: inset 0px 0px 32px 4px rgba(0, 0, 0, 0.4);
       border: none;
       color: $text-base-color;
       height: 2.75rem;
@@ -47,6 +49,8 @@
       resize: none;
       background: rgba(35, 33, 88, 0.15);
       box-shadow: inset 0px 0px 32px 4px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: inset 0px 0px 32px 4px rgba(0, 0, 0, 0.4);
+      -webkit-box-shadow: inset 0px 0px 32px 4px rgba(0, 0, 0, 0.4);
       border: none;
       color: $text-base-color;
       height: 10rem;
