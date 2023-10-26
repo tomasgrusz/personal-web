@@ -1,9 +1,8 @@
 'use client';
 
-import { FC, MouseEvent, useState } from 'react';
+import { FC } from 'react';
 import styles from './ProjectCard.module.scss';
 import { ProjectCardProps } from './interfaces';
-import { PillList } from '@components/common/Pill';
 import Button from '@components/common/Button';
 import Link from 'next/link';
 
@@ -20,23 +19,16 @@ const ProjectCard: FC<ProjectCardProps> = ({
   webLink,
   pills,
 }) => {
-  const [toggle, setToggle] = useState<boolean>(false);
-
-  const handleClick = (e: MouseEvent) => {
-    setToggle(!toggle);
-  };
-
   return (
-    <article
-      className={`${styles.ProjectCard} ${toggle && styles.toggle}`}
+    <div
+      className={styles.ProjectCard}
       style={{
-        background: `url(${image})`,
+        background: `linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(${image})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
-      onClick={handleClick}
     >
-      <Button text="More" onClick={handleClick} style={2} />
+      <Button text="Learn More" style={1} />
       <ul className={styles.date}>
         <li>
           <time>{dateStarted}</time>
@@ -45,18 +37,11 @@ const ProjectCard: FC<ProjectCardProps> = ({
           <time>{dateEnded}</time>
         </li>
       </ul>
-      <div className={`${styles.content} ${toggle && styles.toggle}`}>
+      <div className={styles.content}>
         <h3 className={styles.title}>{title}</h3>
-        <p className={styles.desc}>{toggle ? desc : shortDesc}</p>
-        {toggle && (
-          <>
-            <PillList pills={pills} randomColor sort />
-            {githubLink && <Link href={githubLink} />}
-            {webLink && <Link href={webLink} />}
-          </>
-        )}
+        <p className={styles.desc}>{shortDesc}</p>
       </div>
-    </article>
+    </div>
   );
 };
 
