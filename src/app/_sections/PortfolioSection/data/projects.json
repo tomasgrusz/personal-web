@@ -110,6 +110,10 @@
     "dateStarted": "Feb 2022",
     "dateEnded": "Jun 2022",
     "image": "images/projects/fresher-friend.jpeg",
+    "imageAlt": "Students socialising via a mobile app",
+    "imageCaption": "Fresher Friend",
+    "githubLink": "",
+    "webLink": "",
     "pills": [
       {
         "text": "Node",
