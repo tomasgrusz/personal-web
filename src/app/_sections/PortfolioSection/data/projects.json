@@ -1,22 +1,76 @@
 [
   {
+    "title": "Personal Web v.1",
+    "shortDesc": "My personal website and portfolio.",
+    "desc": "You're here! A personal grusz.dev website & portfolio built with Next.js 13 and hosted on Vercel, where I practice my web development skills and showcase my projects.",
+    "dateStarted": "Jul 2023",
+    "dateEnded": "Now",
+    "image": "images/projects/grusz-dev.png",
+    "imageAlt": "Personal Website Landing Page",
+    "imageCaption": "Personal Website Landing Page",
+    "githubLink": "https://github.com/tomasgrusz/personal-web",
+    "webLink": "https://grusz.dev/",
+    "pills": [
+      {
+        "text": "Next.js 13",
+        "color": "random"
+      },
+      {
+        "text": "GitHub",
+        "color": "random"
+      },
+      {
+        "text": "Vercel",
+        "color": "random"
+      },
+      {
+        "text": "TypeScript",
+        "color": "random"
+      },
+      {
+        "text": "React",
+        "color": "random"
+      },
+      {
+        "text": "Figma",
+        "color": "random"
+      },
+      {
+        "text": "SCSS",
+        "color": "random"
+      },
+      {
+        "text": "Framer Motion",
+        "color": "random"
+      }
+    ]
+  },
+  {
     "title": "Studdy",
     "shortDesc": "Web app for flashcards with gamification.",
-    "desc": "A full-stack web application with an aim to help students with study material memorisation via flashcards and other mnemonic and gamification techniques.",
+    "desc": "A full-stack web application with an aim to help students with study material memorisation via flashcards and other mnemonic and gamification techniques. Spend intelligems to customize your 3D studio room dynamically.",
     "dateStarted": "Oct 2022",
     "dateEnded": "May 2023",
-    "image": "studdy.png",
-    "imageAlt": "",
-    "imageCaption": "",
-    "githubLink": "",
-    "webLink": "",
+    "image": "images/projects/studdy.png",
+    "imageAlt": "Studdy Logo",
+    "imageCaption": "Studdy Logo",
+    "githubLink": "https://github.com/tomasgrusz/studdy-client",
+    "webLink": "https://studdy-client.vercel.app/",
     "pills": [
+      {
+        "text": "Three.js",
+        "color": "random"
+      },
       {
         "text": "Node",
         "color": "random"
       },
       {
-        "text": "Git",
+        "text": "GitLab",
+        "color": "random"
+      },
+      {
+        "text": "GitHub",
         "color": "random"
       },
       {
@@ -28,15 +82,69 @@
         "color": "random"
       },
       {
-        "text": "PostgreSQL",
-        "color": "random"
-      },
-      {
         "text": "Mongo",
         "color": "random"
       },
       {
         "text": "DigitalOcean",
+        "color": "random"
+      },
+      {
+        "text": "JavaScript",
+        "color": "random"
+      },
+      {
+        "text": "React",
+        "color": "random"
+      },
+      {
+        "text": "Blender 3D",
+        "color": "random"
+      }
+    ]
+  },
+  {
+    "title": "Fresher Friend",
+    "shortDesc": "Social web for freshers at UoB.",
+    "desc": "An interactive web application developed using a PERN stack that helps freshers (and students in general) studying at the University of Birmingham find their future flatmates and course mates, engage in fun activities, chat, and socialise. By creating an account, users are automatically allocated into groups based on their profile and interests.",
+    "dateStarted": "Feb 2022",
+    "dateEnded": "Jun 2022",
+    "image": "images/projects/fresher-friend.jpeg",
+    "pills": [
+      {
+        "text": "Node",
+        "color": "random"
+      },
+      {
+        "text": "GitLab",
+        "color": "random"
+      },
+      {
+        "text": "DigitalOcean",
+        "color": "random"
+      },
+      {
+        "text": "Express",
+        "color": "random"
+      },
+      {
+        "text": "PostgreSQL",
+        "color": "random"
+      },
+      {
+        "text": "JavaScript",
+        "color": "random"
+      },
+      {
+        "text": "React",
+        "color": "random"
+      },
+      {
+        "text": "REST API",
+        "color": "random"
+      },
+      {
+        "text": "CI/CD",
         "color": "random"
       }
     ]
