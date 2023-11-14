@@ -94,6 +94,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             }`,
           }}
         ></script>
+        <script
+          id="seona-js-plugin"
+          defer
+          src="https://assets.usestyle.ai/seonajsplugin"
+          type="text/javascript"
+        ></script>
       </head>
       <body>{children}</body>
     </html>
