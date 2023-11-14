@@ -37,6 +37,7 @@ const Navbar = () => {
           aria-label="Visit Tomas Grusz's LinkedIn"
           target="_blank"
           className={styles.link}
+          title="LinkedIn"
         >
           <BsLinkedin />
         </Link>
@@ -45,6 +46,7 @@ const Navbar = () => {
           aria-label="Visit Tomas Grusz's GitHub"
           target="_blank"
           className={styles.link}
+          title="GitHub"
         >
           <BsGithub />
         </Link>
