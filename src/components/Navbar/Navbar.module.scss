@@ -26,10 +26,44 @@
       display: none;
       flex: 0;
     }
+
+    .link {
+      transition: all 0.2s ease-in-out;
+      cursor: pointer;
+      font-size: $text-size-button;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        color: #aaf;
+      }
+
+      svg {
+        font-size: $icon-size-button;
+      }
+    }
   }
 
   .links {
     display: flex;
     gap: 1.5rem;
+
+    .link {
+      * {
+        transition: all 0.2s ease-in-out;
+        font-size: $icon-size-button;
+        color: $text-base-color;
+      }
+
+      &:hover,
+      &:focus {
+        * {
+          color: #aaf;
+        }
+      }
+    }
   }
 }

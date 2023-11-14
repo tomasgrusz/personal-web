@@ -8,7 +8,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HomeSection = () => {
   return (
-    <section className={styles.HomeSection}>
+    <section className={styles.HomeSection} id="home">
       <Background />
       <ScrollReveal vertical={false}>
         <h1 className={styles.heading}>

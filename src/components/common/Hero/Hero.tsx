@@ -23,7 +23,7 @@ const Hero: FC<HeroProps> = ({
         >
           <h2 className={styles.Heading}>{title}</h2>
           <p className={styles.Paragraph}>{text}</p>
-          {buttonText && <Button text={buttonText} style={2} />}
+          {buttonText && <Button text={buttonText} style={2} link="#contact" />}
         </div>
       </section>
     </ScrollReveal>

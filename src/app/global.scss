@@ -108,6 +108,10 @@ code {
 }
 
 /* ===== Scrollbar CSS ===== */
+html {
+  --scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
+}
 /* Firefox */
 * {
   scrollbar-width: auto;

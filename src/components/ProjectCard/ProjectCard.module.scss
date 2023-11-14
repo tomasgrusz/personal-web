@@ -1,7 +1,7 @@
 @import '@styles/mixins';
 .ProjectCard {
   width: 20rem;
-  height: 30rem;
+  aspect-ratio: 9 / 14;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -9,10 +9,18 @@
   padding: 2rem 1.5rem;
   text-align: left;
   cursor: pointer;
+  transition: scale 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  position: relative;
+
+  &:focus-within,
+  &:hover {
+    scale: 1.05;
+    box-shadow: 0 0 16px 2px rgba(255, 179, 255, 0.8);
+  }
 
   button {
     position: absolute;
-    top: 2rem;
+    bottom: 0;
     left: 1rem;
   }
 
@@ -20,24 +28,21 @@
     list-style: none;
     justify-self: start;
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: right;
-    align-items: center;
+    align-items: flex-end;
+    text-align: right;
   }
 
   .content {
-    transform: translateY(20rem);
-    transition: all 0.2s ease-in-out;
+    margin-top: auto;
+    margin-bottom: 4rem;
 
     .title {
       font-size: 1.75rem;
-    }
-
-    &.toggle {
-      transform: translateY(2rem);
     }
   }
 }
@@ -93,6 +98,85 @@
   padding: 0;
   padding-left: 100vw;
   display: flex;
-  gap: max(calc(33vw - 8rem), 8rem);
+  gap: 20vw;
   width: fit-content;
+}
+
+.ProjectCardExtended {
+  width: 50rem;
+  aspect-ratio: 22.5 / 14;
+  display: flex;
+  background-color: #0c0b15;
+  border-radius: 12px;
+  box-shadow: 0 0 16px 2px rgba(255, 179, 255, 0.8);
+  margin-inline: 2rem;
+  position: relative;
+
+  @include medium {
+    display: block;
+  }
+
+  .image {
+    width: auto;
+    min-width: 20rem;
+    aspect-ratio: 9 / 14 !important;
+    overflow: none;
+    border-radius: 12px 0px 0px 12px;
+    position: relative;
+
+    @include medium {
+      display: none;
+    }
+
+    .date {
+      list-style: none;
+      justify-self: start;
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: right;
+      align-items: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .content {
+    padding: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+
+    .title {
+      font-size: 2rem;
+    }
+
+    .links {
+      position: absolute;
+      right: 1rem;
+      display: flex;
+      gap: 1rem;
+      bottom: 1rem;
+      .link {
+        transition: all 0.2s ease-in-out;
+        cursor: pointer;
+        font-size: $text-size-button;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        text-decoration: none;
+        margin-bottom: 1rem;
+
+        &:hover,
+        &:focus {
+          color: #aaf;
+        }
+
+        svg {
+          font-size: $icon-size-button;
+        }
+      }
+    }
+  }
 }
