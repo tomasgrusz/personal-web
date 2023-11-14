@@ -117,8 +117,9 @@
   }
 
   .image {
-    width: 20rem;
-    aspect-ratio: 9 / 14;
+    width: auto;
+    min-width: 20rem;
+    aspect-ratio: 9 / 14 !important;
     overflow: none;
     border-radius: 12px 0px 0px 12px;
     position: relative;
