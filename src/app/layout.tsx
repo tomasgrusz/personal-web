@@ -2,12 +2,12 @@ import './global.scss';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tomáš Grusz - Building Interactive React Websites',
+  title: 'Tomáš Grusz - Frontend Web Developer',
   description:
-    "I'm a React Frontend Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
+    "I'm a Frontend Web Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
   applicationName: 'tomasgrusz',
   authors: [{ name: 'Tomáš Grusz' }],
-  keywords: 'website development, web dev, react, frontend developer',
+  keywords: 'website development, web dev, frontend developer',
   themeColor: '#252233',
   viewport: { width: 'device-width', initialScale: 1 },
   robots: { index: true, follow: true },
@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://grusz.dev',
-    title: 'Tomáš Grusz - Building Interactive React Websites',
+    title: 'Tomáš Grusz - Frontend Web Developer',
     description:
-      "I'm a React Frontend Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
+      "I'm a Frontend Web Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
     siteName: 'Tomáš Grusz',
     images: [
       {
@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     creator: '@gruszdev',
     images: '/banner.png',
-    title: 'Tomáš Grusz - Building Interactive React Websites',
+    title: 'Tomáš Grusz - Frontend Web Developer',
     description:
-      "I'm a React Frontend Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
+      "I'm a Frontend Web Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
   },
   other: {
     'msapplication-TileColor': '#603cba',
