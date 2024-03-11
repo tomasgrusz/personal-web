@@ -15,7 +15,7 @@ const AboutSection = () => {
         left
         text={
           <>
-            I&apos;m a React Frontend Developer currently based in{' '}
+            I&apos;m a Frontend Web Developer currently based in{' '}
             <span className="BOLD">Prague, Czech Republic</span>. My journey in web development
             began with a solid foundation in Computer Science from the{' '}
             <Link href="https://www.birmingham.ac.uk" target="_blank">
@@ -44,7 +44,7 @@ const AboutSection = () => {
       <Hero
         text={
           <>
-            My primary focus as a React.js Frontend Developer revolves around{' '}
+            My primary focus as a Frontend Web Developer revolves around{' '}
             <span className="BOLD">crafting intuitive and visually engaging web experiences</span>.
             What truly excites me is the art of simplification. I believe that the best web
             solutions are those that make complex tasks feel effortless to users. Ultimately, I aim
