@@ -4,14 +4,14 @@ import { BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
 import { BiHomeAlt2, BiCarousel } from 'react-icons/bi';
 import { MdAlternateEmail } from 'react-icons/md';
 
-import { AnimatedLogoSVG } from '@components/common/LogoSVG';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
     <nav className={styles.Navbar}>
       <div className={styles.logo}>
-        <AnimatedLogoSVG size={48} />
+        <Image src={'/images/icon1.png'} width={48} height={48} alt="Tomas Grusz logo" />
       </div>
       <div className={styles.routes}>
         <Link href="#home" className={styles.link}>
