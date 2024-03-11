@@ -1,10 +1,56 @@
 [
   {
+    "title": "Terren",
+    "shortDesc": "A web-based procedural map generator and 3D visualiser",
+    "desc": "A web-based 🗺️ procedural map generator and 3D visualiser 🏔️ built with React, Next.js and Three.js",
+    "dateStarted": "Dec 2023",
+    "dateEnded": "Now",
+    "image": "images/projects/terren.png",
+    "imageAlt": "Terren: Procedural Map Generator & 3D Visualiser",
+    "imageCaption": "Terren: Procedural Map Generator & 3D Visualiser",
+    "githubLink": "https://github.com/tomasgrusz/terren",
+    "webLink": "https://terren.grusz.dev/",
+    "pills": [
+      {
+        "text": "Next.js",
+        "color": "random"
+      },
+      {
+        "text": "GitHub",
+        "color": "random"
+      },
+      {
+        "text": "Vercel",
+        "color": "random"
+      },
+      {
+        "text": "TypeScript",
+        "color": "random"
+      },
+      {
+        "text": "React",
+        "color": "random"
+      },
+      {
+        "text": "Three.js",
+        "color": "random"
+      },
+      {
+        "text": "Framer Motion",
+        "color": "random"
+      },
+      {
+        "text": "SCSS",
+        "color": "random"
+      }
+    ]
+  },
+  {
     "title": "Personal Web v.1",
     "shortDesc": "My personal website and portfolio.",
     "desc": "You're here! A personal grusz.dev website & portfolio built with Next.js 13 and hosted on Vercel, where I practice my web development skills and showcase my projects.",
     "dateStarted": "Jul 2023",
-    "dateEnded": "Now",
+    "dateEnded": "Oct 2023",
     "image": "images/projects/grusz-dev.png",
     "imageAlt": "Personal Website Landing Page",
     "imageCaption": "Personal Website Landing Page",
@@ -12,7 +58,7 @@
     "webLink": "https://grusz.dev/",
     "pills": [
       {
-        "text": "Next.js 13",
+        "text": "Next.js",
         "color": "random"
       },
       {

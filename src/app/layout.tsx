@@ -2,32 +2,23 @@ import './global.scss';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tomáš Grusz - Building Interactive React Websites',
+  title: 'Tomas Grusz - Frontend Web Developer',
   description:
-    "I'm a React Frontend Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
+    "I'm a Frontend Web Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
   applicationName: 'tomasgrusz',
-  authors: [{ name: 'Tomáš Grusz' }],
-  keywords: 'website development, web dev, react, frontend developer',
+  authors: [{ name: 'Tomas Grusz' }],
+  keywords: 'website development, web dev, frontend developer',
   themeColor: '#252233',
   viewport: { width: 'device-width', initialScale: 1 },
   robots: { index: true, follow: true },
   alternates: { canonical: 'https://grusz.dev' },
-  icons: [
-    { rel: 'icon', url: '/favicon.ico', type: 'image/x-icon' },
-    { rel: 'icon', url: '/favicon-32x32.png', type: 'image/png', sizes: '32x32' },
-    { rel: 'icon', url: '/favicon-16x16.png', type: 'image/png', sizes: '16x16' },
-    { rel: 'shortcut icon', url: '/favicon.ico', type: 'image/x-icon' },
-    { rel: 'apple-touch-icon', sizes: '180x180', url: '/apple-touch-icon.png' },
-    { rel: 'mask-icon', color: '#aaaaff', url: '/safari-pinned-tab.svg' },
-  ],
-  manifest: '/site.webmanifest',
   openGraph: {
     type: 'website',
     url: 'https://grusz.dev',
-    title: 'Tomáš Grusz - Building Interactive React Websites',
+    title: 'Tomas Grusz - Frontend Web Developer',
     description:
-      "I'm a React Frontend Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
-    siteName: 'Tomáš Grusz',
+      "I'm a Frontend Web Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
+    siteName: 'Tomas Grusz',
     images: [
       {
         url: '/banner.png',
@@ -41,9 +32,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     creator: '@gruszdev',
     images: '/banner.png',
-    title: 'Tomáš Grusz - Building Interactive React Websites',
+    title: 'Tomas Grusz - Frontend Web Developer',
     description:
-      "I'm a React Frontend Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
+      "I'm a Frontend Web Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
   },
   other: {
     'msapplication-TileColor': '#603cba',
