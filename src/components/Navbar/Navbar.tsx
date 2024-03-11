@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className={styles.Navbar}>
       <div className={styles.logo}>
-        <Image src={'/images/icon1.png'} width={48} height={48} alt="Tomas Grusz logo" />
+        <Image src={'/images/icon.png'} width={48} height={48} alt="Tomas Grusz logo" />
       </div>
       <div className={styles.routes}>
         <Link href="#home" className={styles.link}>
