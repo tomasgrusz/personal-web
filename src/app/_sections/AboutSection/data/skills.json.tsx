@@ -1,8 +1,9 @@
-import { FullStack, Idea, React, VSCode } from '@icons/index';
+import { FaReact } from "react-icons/fa6";
+import { GoBug, GoCommandPalette, GoPencil, GoStack, GoTools } from "react-icons/go";
 
 const skills = [
   {
-    icon: <React />,
+    icon: <FaReact size={128} color="#61dbfb" />,
     label: 'Libraries',
     pills: [
       {
@@ -21,13 +22,17 @@ const skills = [
         text: 'Framer Motion',
         color: 'random',
       },
+      {
+        text: 'React Hook Form',
+        color: 'random',
+      }
     ],
     title: 'React',
     description:
       'From orchestrating components to mastering state like a cosmic dance, React expertise is the rocket fuel that propels digital dreams into the stratosphere.',
   },
   {
-    icon: <VSCode />,
+    icon: <GoCommandPalette size={128} color="#EEA8FF" />,
     label: 'Languages',
     pills: [
       {
@@ -60,7 +65,7 @@ const skills = [
       'Exploring the vast universe of web development, from wielding TypeScript like a laser sword, to sculpting styles with CSS like an interstellar artist.',
   },
   {
-    icon: <Idea />,
+    icon: <GoPencil size={128} color="#F6A1BD" />,
     label: 'Design Tools',
     pills: [
       {
@@ -93,7 +98,7 @@ const skills = [
       'Transforming ideas into visually stunning and user-centric experiences, ensuring your digital creations shine like stars in the digital cosmos.',
   },
   {
-    icon: <FullStack />,
+    icon: <GoStack size={128} color="#3DD9D8" />,
     label: 'Technologies',
     pills: [
       {
@@ -101,7 +106,7 @@ const skills = [
         color: 'random',
       },
       {
-        text: 'Git',
+        text: 'PostgreSQL',
         color: 'random',
       },
       {
@@ -113,21 +118,81 @@ const skills = [
         color: 'random',
       },
       {
-        text: 'PostgreSQL',
+        text: 'MongoDB',
         color: 'random',
       },
       {
-        text: 'Mongo',
-        color: 'random',
-      },
-      {
-        text: 'DigitalOcean',
+        text: 'GraphQL',
         color: 'random',
       },
     ],
     title: 'Full-Stack',
     description:
-      'With a constellation of tools and Git as a version control navigator, every aspect of your project will be in precise alignment.',
+      'From the back-end to the front-end, wielding the power of full-stack development to create out of this world digital experiences.',
+  },
+  {
+    icon: <GoBug size={128} color="#FD6894" />,
+    label: 'Testing Environments',
+    pills: [
+      {
+        text: 'Cypress',
+        color: 'random',
+      },
+      {
+        text: 'Playwright',
+        color: 'random',
+      },
+      {
+        text: 'Storybook',
+        color: 'random',
+      },
+      {
+        text: 'Lighthouse',
+        color: 'random',
+      },
+      {
+        text: 'Jest',
+        color: 'random',
+      },
+    ],
+    title: 'Testing',
+    description: 'Testing is the final frontier, ensuring your digital creations are bug-free and ready to launch into the digital cosmos.',
+  },
+  {
+    icon: <GoTools size={128} />,
+    label: 'Miscellaneous',
+    pills: [
+      {
+        text: 'Git',
+        color: 'random',
+      },
+      {
+        text: 'Bun',
+        color: 'random',
+      },
+      {
+        text: 'Yarn',
+        color: 'random',
+      },
+      {
+        text: 'CircleCI',
+        color: 'random',
+      },
+      {
+        text: 'Markdown',
+        color: 'random',
+      },
+      {
+        text: 'LaTeX',
+        color: 'random',
+      },
+      {
+        text: 'NPM',
+        color: 'random',
+      },
+    ],
+    title: 'Miscellaneous',
+    description: 'From version control to project management, every aspect of your project will be in precise alignment.',
   },
 ];
 export default skills;
