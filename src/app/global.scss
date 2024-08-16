@@ -112,15 +112,10 @@ html {
   --scroll-behavior: smooth !important;
   scroll-behavior: smooth !important;
 }
-/* Firefox */
-* {
-  scrollbar-width: auto;
-  scrollbar-color: #dbb0e7 #805991;
-}
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 *::-webkit-scrollbar-track {
@@ -129,7 +124,6 @@ html {
 
 *::-webkit-scrollbar-thumb {
   background-color: #dbb0e7;
-  // border-radius: 10px;
 }
 
 a {
