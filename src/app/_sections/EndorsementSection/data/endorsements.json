@@ -1,0 +1,28 @@
+[
+    {
+        "name": "Aleksandr Iushin",
+        "title": "Software Engineer",
+        "subtitle": "Worked on the same team",
+        "company": "Make",
+        "quotes": [
+            "...he has done a <b>tremendous job improving the codebase</b> and introducing best practices for UI and styling...", 
+            "...his enthusiasm makes him a <b>fantastic coworker</b>; it's always a pleasure to pair program with him...", 
+            "...<b>eager to share his knowledge</b> with coworkers and is always looking to learn more..."
+        ],
+        "image": "/images/endorsements/alex-iushin.jpeg",
+        "link": "https://www.linkedin.com/in/alexanderyushin/"
+    },
+    {
+        "name": "Thomas Morris",
+        "title": "Senior Full-Stack Engineer",
+        "subtitle": "Senior on the same team",
+        "company": "Make",
+        "quotes": [
+            "...he's smart, resourceful, and really <b>takes the initiative</b> on the projects he's on...",
+            "...one of his main strengths is his ability to approach a problem creatively and <b>think outside-the-box</b>...",
+            "...you can really tell he's <b>passionate to grow</b> and to learn new things..."
+        ],
+        "image": "/images/endorsements/thomas-morris.jpeg",
+        "link": "https://www.linkedin.com/in/thomasimorris/"
+    }
+]
