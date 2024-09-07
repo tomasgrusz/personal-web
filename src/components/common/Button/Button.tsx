@@ -1,12 +1,21 @@
-import { FC } from 'react';
+import { FC, ReactNode } from 'react';
 import styles from './Button.module.scss';
-import { ButtonProps } from './interfaces';
 import Link from 'next/link';
 
-const Button: FC<ButtonProps> = ({ icon, link, text, external, style = 1, onClick }) => {
+export type ButtonProps = {
+  icon?: ReactNode;
+  link?: string;
+  text: string;
+  external?: boolean;
+  style?: 1 | 2 | 3;
+  onClick?: (e: any) => void;
+  className?: string;
+}
+
+const Button: FC<ButtonProps> = ({ icon, link, text, external, style = 1, onClick, className }) => {
   const Button = () => {
     return (
-      <button className={`${styles.Button} ${styles[`style-${style}`]}`} onClick={onClick}>
+      <button className={`${styles.Button} ${styles[`style-${style}`]} ${className}`} onClick={onClick}>
         <div className={styles.icon}>{icon}</div>
         <label className={styles.label}>{text}</label>
       </button>
@@ -19,8 +28,10 @@ const Button: FC<ButtonProps> = ({ icon, link, text, external, style = 1, onClic
         target={external ? '_blank' : ''}
         rel={external ? 'noopener noreferrer' : ''}
         aria-label={text}
+        className={`${styles.Button} ${styles[`style-${style}`]} ${className}`}
       >
-        <Button />
+        <div className={styles.icon}>{icon}</div>
+        <label className={styles.label}>{text}</label>
       </Link>
     );
   }

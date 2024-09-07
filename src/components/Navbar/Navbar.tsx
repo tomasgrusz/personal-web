@@ -2,10 +2,12 @@ import styles from './Navbar.module.scss';
 
 import { BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
 import { BiHomeAlt2, BiCarousel } from 'react-icons/bi';
-import { MdAlternateEmail } from 'react-icons/md';
+import { MdOutlineEmail } from 'react-icons/md';
 
 import Link from 'next/link';
 import Image from 'next/image';
+import mailLink from '@/utils/mailLink';
+import Button from '../common/Button';
 
 const Navbar = () => {
   return (
@@ -26,10 +28,7 @@ const Navbar = () => {
           <BiCarousel />
           Portfolio
         </Link>
-        <Link href="#contact" className={styles.link}>
-          <MdAlternateEmail />
-          Contact Me
-        </Link>
+        <Button icon={<MdOutlineEmail />} text={"Contact Me"} link={mailLink} className={styles.mainLink} />
       </div>
       <div className={styles.links}>
         <Link

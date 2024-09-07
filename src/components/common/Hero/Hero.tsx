@@ -3,6 +3,7 @@ import styles from './Hero.module.scss';
 import { HeroProps } from './interfaces';
 import ScrollReveal from '@components/animation/ScrollReveal';
 import Button from '../Button';
+import mailLink from '@/utils/mailLink';
 
 const Hero: FC<HeroProps> = ({
   left,
@@ -23,7 +24,7 @@ const Hero: FC<HeroProps> = ({
         >
           <h2 className={styles.Heading}>{title}</h2>
           <p className={styles.Paragraph}>{text}</p>
-          {buttonText && <Button text={buttonText} style={2} link="#contact" />}
+          {buttonText && <Button text={buttonText} style={2} link={mailLink} />}
         </div>
       </section>
     </ScrollReveal>
