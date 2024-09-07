@@ -12,12 +12,12 @@ const EndorsementSection = () => {
     return (
         <section className={styles.EndorsementSection}>
             <h2 className={styles.heading}>What colleagues are saying</h2>
+            <p className={styles.description}>Grateful to have worked with such talented people. Here&apos;s a glimpse of their thoughts on our time together and the experiences we&apos;ve shared. Discover all endorsements <Link href={'https://www.linkedin.com/in/tomasgrusz/details/recommendations/'}>here</Link>.</p>
             <div className={styles.endorsements}>
                 {endorsements.map((endorsement, index) => {
                     return <EndorsementCard key={index} {...endorsement} companyIcon={PartnerImages[endorsement.company]} />
                 })}
             </div>
-            <p>Discover all endorsements <Link href={'https://www.linkedin.com/in/tomasgrusz/details/recommendations/'}>here</Link>.</p>
         </section>
     );
 }

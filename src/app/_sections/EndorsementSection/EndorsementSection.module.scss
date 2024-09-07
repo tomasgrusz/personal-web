@@ -1,13 +1,24 @@
+@import '@styles/mixins';
+
 .EndorsementSection {
     padding-block: 10rem;
     padding-inline: 5rem;
     background: linear-gradient(180deg, rgb(69, 36, 90) 0%, rgb(51, 28, 67) 100%);
+
+    @include large {
+        padding-block: 5rem;
+        padding-inline: 2rem;
+    }
 
     .heading {
         font-size: 2rem;
         margin: 0;
         font-weight: 500;
         text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .description {
+        line-height: 1.25rem;
     }
   
     .endorsements {
@@ -16,5 +27,10 @@
         gap: 4rem;
         flex-wrap: wrap;
         margin-top: 2rem;
+        justify-items: center;
+
+        @include large {
+            grid-template-columns: 1fr;
+        }
     }
 }

@@ -1,13 +1,15 @@
 .EndorsementCard {
-    background-color: #472b636e;
+    background-color: #774da06e;
     padding: 1rem 3rem 2rem;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 500px;
-    box-shadow: inset 0px 0px 32px 8px rgba(0, 0, 0, 0.2), inset 0px 0px 16px 2px rgba(0, 0, 0, 0.4), 0px 0px 0px 0px;
+    box-shadow: 0px 0px 32px 8px rgba(0, 0, 0, 0.2), 0px 0px 16px 2px rgba(0, 0, 0, 0.4), 0px 0px 0px 0px;
+    max-width: 450px;
+    min-width: 300px;
+    width: auto;
 
     .infoWrapper {
         display: flex;
@@ -16,6 +18,7 @@
         align-items: center;
         padding-top: 1rem;
         border-top: 1.5px solid #ffffff44;
+        width: 100%;
 
         .link {
             margin-block: auto;
@@ -65,6 +68,7 @@
                 display: flex;
                 gap: 0.5rem;
                 align-items: center;
+                flex-wrap: wrap;
 
                 .companyIcon {
                     height: 16px;
@@ -75,7 +79,7 @@
     }
 
     .quote {
-        max-width: 35ch;
+        // max-width: 35ch;
         font-style: italic;
         margin-inline: 0;
 
