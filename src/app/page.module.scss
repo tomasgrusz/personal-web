@@ -7,4 +7,50 @@
     width: auto;
     display: inline;
   }
+
+  & section {
+    padding: 5rem;
+
+    &[class*="no-padding"] {
+      padding: 0;
+    }
+  }
+
+  & > :nth-child(2) {
+    background: linear-gradient(180deg, rgb(148, 72, 223) 0%, rgb(134, 63, 194) 100%);
+  }
+
+  & > :nth-child(3) {
+    background: linear-gradient(180deg, rgb(134, 63, 194) 0%, rgb(119, 55, 166) 100%);
+  }
+
+  & > :nth-child(4) {
+    background: linear-gradient(180deg, rgb(119, 55, 166) 0%, rgb(104, 47, 139) 100%);
+  }
+
+  & > :nth-child(5) {
+    background: linear-gradient(180deg, rgb(104, 47, 139) 0%, rgb(88, 40, 113) 100%);
+  }
+
+  & > :nth-child(6) {
+    background: linear-gradient(180deg, rgb(88, 40, 113) 0%, rgb(69, 36, 90) 100%);
+  }
+
+  // override the background color of the PortfolioSection
+  & section[class*="PortfolioSection"] {
+    background: linear-gradient(180deg, rgb(15, 10, 20) 0%, rgb(20, 10, 20) 70%, rgb(20, 5, 10) 90%, rgb(25, 5, 5) 95%, rgb(40, 15, 15) 100%);
+  }
+
+  & > :nth-child(8) {
+    margin-top: -2px;
+    background: linear-gradient(180deg, rgb(84, 32, 75) 0%, rgb(87, 22, 59) 100%);
+  }
+
+  & > :nth-child(9) {
+    background: linear-gradient(180deg, rgb(87, 22, 59) 0%, rgb(88, 13, 42) 100%);
+  }
+
+  & > :nth-child(10) {
+    background: linear-gradient(180deg, rgb(88, 13, 42) 0%, rgb(84, 7, 25) 100%);
+  }
 }

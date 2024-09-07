@@ -1,15 +1,6 @@
 @import '@styles/mixins';
 
 .EndorsementSection {
-    padding-block: 10rem;
-    padding-inline: 5rem;
-    background: linear-gradient(180deg, rgb(69, 36, 90) 0%, rgb(51, 28, 67) 100%);
-
-    @include large {
-        padding-block: 5rem;
-        padding-inline: 2rem;
-    }
-
     .heading {
         font-size: 2rem;
         margin: 0;

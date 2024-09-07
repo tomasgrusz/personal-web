@@ -49,3 +49,30 @@
 .layer5 {
   fill: rgb(41, 21, 55);
 }
+
+// start transition to crimson colors
+.lower {
+  .layer1 {
+    fill: rgb(84, 32, 75);
+  }
+  
+  .layer2 {
+    fill: rgb(53, 28, 69);
+    filter: hue-rotate(30deg);
+  }
+  
+  .layer3 {
+    fill: rgb(53, 28, 69);
+    filter: hue-rotate(30deg);
+  }
+  
+  .layer4 {
+    fill: rgb(34, 16, 46);
+    filter: hue-rotate(30deg);
+  }
+  
+  .layer5 {
+    fill: rgb(41, 21, 55);
+    filter: hue-rotate(30deg);
+  }
+}
