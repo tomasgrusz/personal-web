@@ -6,8 +6,6 @@ const GitHubSection = async ({contributions, languages}: {contributions: any, la
 
     return (
         <section className={styles.GitHubSection}>
-            <h2>Coding activity</h2>
-            <h3>{contributions.data.user.contributionsCollection.contributionCalendar.totalContributions} contributions to personal projects for the past year!</h3>
             <div className={styles.contributions}>
                 {contributions.data.user.contributionsCollection.contributionCalendar.weeks.map((week: any, index: number) => {
                     return (<div key={index} className={styles.week}>
@@ -22,12 +20,14 @@ const GitHubSection = async ({contributions, languages}: {contributions: any, la
                     </div>)
                 })}
             </div>
-            <div className={styles.section}>
+            <div className={styles.languageSection}>
                 <div>
-                    <h3>Most used languages</h3>
-                    <p>Lorem ipsum dolor sit amet con</p>
+                    <h3 className={styles.heading}>GitHub Activity for Personal Repositories</h3>
+                    <p className={styles.description}>Cupidatat amet quis nisi tempor nostrud cupidatat enim sunt adipisicing. Qui ipsum cupidatat consectetur dolor magna voluptate dolor quis adipisicing ex id aute laborum nostrud. Quis nulla culpa amet labore velit reprehenderit ipsum reprehenderit. Cillum minim do ut cupidatat et adipisicing sint cupidatat id dolore laborum duis non magna. Laboris officia consequat id Lorem enim officia quis. Non sunt voluptate non est ullamco. Do ipsum consectetur ea officia tempor aliquip id eu.</p>
+                    <p className={styles.description}>Cupidatat amet quis nisi tempor nostrud cupidatat enim sunt adipisicing. Qui ipsum cupidatat consectetur dolor magna voluptate dolor quis adipisicing ex id aute laborum nostrud. Quis nulla culpa amet labore velit reprehenderit ipsum reprehenderit. Cillum minim do ut cupidatat et adipisicing sint cupidatat id dolore laborum duis non magna. Laboris officia consequat id Lorem enim officia quis. Non sunt voluptate non est ullamco. Do ipsum consectetur ea officia tempor aliquip id eu.</p>
                 </div>
                 <div className={styles.languages}>
+                    <h3 className={styles.left}>Most used languages</h3>
                     {languages.map((language, index) => {
                         return <div key={index} className={styles.language}>
                             <ProgressBar value={language.weight} label={language.percentage} suffix='%' color={language.color} />

@@ -8,4 +8,5 @@ export interface HeroProps {
   image: string;
   imageAlt: string;
   buttonText?: string;
+  id?: string;
 }

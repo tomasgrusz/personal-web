@@ -12,6 +12,7 @@ import HomeSection from './_sections/HomeSection/HomeSection';
 import StatisticsSection from './_sections/StatisticsSection/StatisticsSection';
 import fetchLanguages, { Language } from './actions/fetchLanguages';
 import fetchContributions from './actions/fetchContributions';
+import LighthouseSection from './_sections/LighthouseSection/LighthouseSection';
 
 // revalidate: 1 day
 export const revalidate = 60 * 60 * 24;
@@ -41,6 +42,7 @@ export default async function Home() {
         <EndorsementSection />
         {/* Hero 2 + Lighthouse */}
         <HeroSection2 /> {/* TODO: add Lighthouse */}
+        <LighthouseSection />
         {/* ✅ Portfolio Section */}
         <PortfolioSection />
         {/* Hero 3 + GitHub */}
@@ -50,6 +52,16 @@ export default async function Home() {
         {/* Hero Section 3 */}
         <HeroSection1 />
         {/* Reward/Thank You Section */}
+        {/* 
+          Reward section will contain a short questionnaire form where I will ask 3 questions about myself.
+          Answering all of them correctly will reward the user with a thank you message and a small gift code,
+          which they can use to get a free coffee on me at a local coffee shop during their next visit.
+
+          The catch in the questionnaire is that the last answer (years in the industry) will be a dynamic value,
+          which is shown at the top of the page in the Statistics Section, where the user will probably need to scroll up to find the answer. But, the value will now be hidden there with a witty text "Gotcha!".
+
+          We can create a cookie in the browser to make sure that the answer will not reveal itself if the user refreshes the page. However, on the original page, the answer will come back in around 1 minute.
+        */}
         <HeroSection1 />
       </main>
       <Footer />

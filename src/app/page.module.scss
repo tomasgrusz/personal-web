@@ -46,21 +46,25 @@
     background: linear-gradient(180deg, rgb(88, 40, 113) 0%, rgb(69, 36, 90) 100%);
   }
 
+  & > :nth-child(7) {
+    background: rgb(69, 36, 90);
+  }
+
   // override the background color of the PortfolioSection
   & section[class*="PortfolioSection"] {
     background: linear-gradient(180deg, rgb(15, 10, 20) 0%, rgb(20, 10, 20) 70%, rgb(20, 5, 10) 90%, rgb(25, 5, 5) 95%, rgb(40, 15, 15) 100%);
   }
 
-  & > :nth-child(8) {
+  & > :nth-child(9) {
     margin-top: -2px;
     background: linear-gradient(180deg, rgb(84, 32, 75) 0%, rgb(87, 22, 59) 100%);
   }
 
-  & > :nth-child(9) {
+  & > :nth-child(10) {
     background: linear-gradient(180deg, rgb(87, 22, 59) 0%, rgb(88, 13, 42) 100%);
   }
 
-  & > :nth-child(10) {
+  & > :nth-child(11) {
     background: linear-gradient(180deg, rgb(88, 13, 42) 0%, rgb(84, 7, 25) 100%);
   }
 }

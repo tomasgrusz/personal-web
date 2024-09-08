@@ -24,6 +24,7 @@ const HeroSection1 = () => {
         image={'/images/undraw/undraw_developer_activity_re_39tg.svg'}
         imageAlt={hero[0].imageAlt}
         buttonText={hero[0].buttonText}
+        id="about"
       />);
 };
 

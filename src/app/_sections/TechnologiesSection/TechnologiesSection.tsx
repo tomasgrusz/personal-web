@@ -5,7 +5,7 @@ import ScrollReveal from '@components/animation';
 
 const TechnologiesSection = () => {
   return (
-    <section className={styles.TechnologiesSection} id="about">
+    <section className={styles.TechnologiesSection}>
         <ScrollReveal>
           <h2 className={styles.SkillsTitle}>
             Crafting the <span className={styles.ancient}>Digital Galaxy</span>
