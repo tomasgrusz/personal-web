@@ -1,12 +1,8 @@
-import fetchContributions from '@/app/actions/fetchContributions';
 import styles from './GitHubSection.module.scss';
 import ProgressBar from '@/components/common/ProgressBar';
-import fetchLanguages, { Language } from '@/app/actions/fetchLanguages';
+import { Language } from '@/app/actions/fetchLanguages';
 
-const GitHubSection = async () => {
-
-    const contributions = await fetchContributions();
-    const languages: Language[] = await fetchLanguages();
+const GitHubSection = async ({contributions, languages}: {contributions: any, languages: Language[]}) => {
 
     return (
         <section className={styles.GitHubSection}>
