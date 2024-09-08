@@ -6,7 +6,7 @@ const LighthouseSection = () => {
         <section className={styles.LighthouseSection}>
             <div className={styles.info}>
                 <h2 className={styles.heading}>Lightspeed Performance</h2>
-                <p className={styles.description}>I take pride in delivering fast and accessible websites. My goal is to provide the best possible experience for the end user, which is why I always aim for the highest possible scores in Google's Lighthouse audits.</p>
+                <p className={styles.description}>I take pride in delivering fast and accessible websites. My goal is to provide the best possible experience for the end user, which is why I always aim for the highest possible scores in Google&apos;s Lighthouse audits.</p>
             </div>
             <div className={styles.stats}>
                 <div className={styles.stat}>
