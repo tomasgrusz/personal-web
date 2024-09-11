@@ -1,25 +1,6 @@
 @import '@styles/mixins';
 
-.AboutSection {
-  background: linear-gradient(180deg, rgb(148, 72, 223) 0%, rgb(69, 36, 90) 100%);
-  display: flex;
-  flex-direction: column;
-  gap: 10rem;
-  padding-block: 5rem;
-
-  & > * {
-    padding-left: 5rem;
-    padding-right: 5rem;
-
-    @include large {
-      padding-left: 2rem;
-      padding-right: 2rem;
-    }
-  }
-
-  @include large {
-    gap: 4rem;
-  }
+.TechnologiesSection {
 
   .SkillsTitle {
     font-weight: 200;

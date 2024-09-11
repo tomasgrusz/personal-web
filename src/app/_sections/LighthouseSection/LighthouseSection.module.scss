@@ -1,0 +1,53 @@
+@import '@styles/mixins';
+
+.LighthouseSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    @include medium {
+        grid-template-columns: 1fr;
+    }
+
+    .info {
+        margin-block: auto;
+
+        h2 {
+            font-size: 2rem;
+            margin: 0;
+            font-weight: 500;
+            text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
+        }
+
+        p {
+            max-width: 50ch;
+            margin-inline: auto;
+        }
+    }
+
+    .stats {
+        display: grid;
+        grid-template-columns: 128px 128px;
+        gap: 1rem;
+        margin-inline: auto;
+
+        background-color: rgba(0,0,0,0.1);
+        padding: 3rem;
+        border-radius: 0.5rem;
+        box-shadow: inset 0px 0px 32px 8px rgba(0, 0, 0, 0.2), inset 0px 0px 16px 2px rgba(0, 0, 0, 0.4), inset 0px 0px 0px 0px;
+
+        .stat {
+            p {
+                font-weight: 500;
+                margin-top: 0;
+            }
+        }
+    
+        .footnote {
+            grid-column: 1 / -1;
+            font-size: 12px;
+            color: #aaa;
+            margin-inline: 4px;
+        }
+    }
+}

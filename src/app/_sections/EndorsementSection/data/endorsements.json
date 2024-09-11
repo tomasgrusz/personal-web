@@ -1,16 +1,16 @@
 [
     {
-        "name": "Aleksandr Iushin",
-        "title": "Software Engineer",
-        "subtitle": "Worked on the same team",
+        "name": "Břetislav Proft",
+        "title": "Engineering Manager",
+        "subtitle": "Managed directly",
         "company": "Make",
         "quotes": [
-            "...he has done a <b>tremendous job improving the codebase</b> and introducing best practices for UI and styling...", 
-            "...his enthusiasm makes him a <b>fantastic coworker</b>; it's always a pleasure to pair program with him...", 
-            "...<b>eager to share his knowledge</b> with coworkers and is always looking to learn more..."
+            "...quickly proved himself a <b>highly skilled developer</b> with a keen eye for detail and a deep understanding of frontend technologies...",
+            "...a talented and driven engineer with a <b>great attitude towards teamwork</b> and problem-solving...",
+            "I highly recommend him for any position where technical solid expertise and a collaborative mindset are valued."
         ],
-        "image": "/images/endorsements/alex-iushin.jpeg",
-        "link": "https://www.linkedin.com/in/alexanderyushin/"
+        "image": "/images/endorsements/bret-proft.jpeg",
+        "link": "https://www.linkedin.com/in/bretislav-proft/"
     },
     {
         "name": "Thomas Morris",
@@ -24,5 +24,31 @@
         ],
         "image": "/images/endorsements/thomas-morris.jpeg",
         "link": "https://www.linkedin.com/in/thomasimorris/"
+    },
+    {
+        "name": "Aleksandr Iushin",
+        "title": "Software Engineer",
+        "subtitle": "Worked on the same team",
+        "company": "Make",
+        "quotes": [
+            "...he has done a <b>tremendous job improving the codebase</b> and introducing best practices for UI and styling...", 
+            "...his enthusiasm makes him a <b>fantastic coworker</b>; it's always a pleasure to pair program with him...", 
+            "...<b>eager to share his knowledge</b> with coworkers and is always looking to learn more..."
+        ],
+        "image": "/images/endorsements/alex-iushin.jpeg",
+        "link": "https://www.linkedin.com/in/alexanderyushin/"
+    },
+    {
+        "name": "Jorge Collinet",
+        "title": "Machine Learning Engineer",
+        "subtitle": "",
+        "company": "Make",
+        "quotes": [
+            "...relaxed, peaceful and analytical attitude...",
+            "...a real pleasure to talk and discuss software topics with him...",
+            "I hope I can work with him again in the future."
+        ],
+        "image": "/images/endorsements/jorge-collinet.jpeg",
+        "link": "https://www.linkedin.com/in/jorge-collinet-311723b1/"
     }
 ]

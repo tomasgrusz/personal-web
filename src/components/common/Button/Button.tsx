@@ -7,7 +7,7 @@ export type ButtonProps = {
   link?: string;
   text: string;
   external?: boolean;
-  style?: 1 | 2 | 3;
+  style?: 1 | 2 | 3 | 4;
   onClick?: (e: any) => void;
   className?: string;
 }

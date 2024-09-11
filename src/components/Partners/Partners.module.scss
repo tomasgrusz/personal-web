@@ -1,10 +1,10 @@
 .Partners {
-  background: rgba(0, 0, 0, 0.1);
   box-shadow:
     inset 0px 20px 15px -15px #1a002f77,
     inset 0px -20px 15px -15px #1a002f77;
   border: 1px solid transparent;
   padding-block: 4rem;
+  filter: brightness(0.85);
 
   .List {
     list-style: none;

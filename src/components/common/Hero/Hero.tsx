@@ -13,10 +13,11 @@ const Hero: FC<HeroProps> = ({
   image,
   imageAlt,
   buttonText,
+  id,
 }) => {
   return (
     <ScrollReveal disable={!animate}>
-      <section className={styles.Hero} style={left ? { flexDirection: 'row-reverse' } : {}}>
+      <section id={id} className={styles.Hero} style={left ? { flexDirection: 'row-reverse' } : {}}>
         <img className={styles.Image} src={image} alt={imageAlt}></img>
         <div
           className={styles.Text}

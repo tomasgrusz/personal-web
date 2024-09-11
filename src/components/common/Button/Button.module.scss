@@ -62,6 +62,19 @@
     }
   }
 
+  &.style-4 {
+    background: linear-gradient(273deg, #e03468 5%, #d43457 50%, #e03468 95%);
+    box-shadow: 0px 4px 16px 0px rgba(224, 104, 130, 0.5);
+    background-size: 200%;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover,
+    &:active {
+      background-position: right;
+      box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.5);
+    }
+  }
+
   .icon {
     display: inline;
     height: 16px;
