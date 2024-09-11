@@ -5,7 +5,7 @@ import { Language } from '@/app/actions/fetchLanguages';
 const GitHubSection = async ({contributions, languages}: {contributions: any, languages: Language[]}) => {
 
     return (
-        <section className={styles.GitHubSection}>
+        <section className={styles.GitHubSection} id="tech">
             <div className={styles.contributions}>
                 {contributions.data.user.contributionsCollection.contributionCalendar.weeks.map((week: any, index: number) => {
                     return (<div key={index} className={styles.week}>
