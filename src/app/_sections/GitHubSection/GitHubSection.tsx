@@ -9,7 +9,7 @@ const GitHubSection = async ({contributions, languages}: {contributions: any, la
         <section className={styles.GitHubSection} id="tech">
             <div className={styles.info}>
                 <h3 className={styles.heading}>GitHub Activity for Personal Repositories</h3>
-                <p className={styles.description}>My GitHub contributions reflect my commitment to continuous learning and development. Here is an overview of my activity and the languages I frequently use. See more <Link href="https://github.com/tomasgrusz" target='_blank'>here</Link>.</p>
+                <p className={styles.description}>My GitHub contributions reflect my commitment to continuous learning and development. Here is an overview of my activity and the languages I frequently use. <Link href="https://github.com/tomasgrusz" target='_blank'>Explore GitHub activity</Link></p>
             </div>
             <div className={styles.contributions}>
                 {contributions.data.user.contributionsCollection.contributionCalendar.weeks.map((week: any, index: number) => {

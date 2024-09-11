@@ -41,7 +41,7 @@ const EndorsementCard: React.FC<Props> = ({
                 </Link>
                 <div className={styles.info}>
                     <p className={styles.subtitle}>{subtitle}</p>
-                    <h4 className={styles.name}>{name}</h4>
+                    <h3 className={styles.name}>{name}</h3>
                     <p className={styles.position}>{title} | {companyIcon ? <Image className={styles.companyIcon} src={companyIcon} alt={company} width={160} height={40} /> : company}</p>
                 </div>
             </div>
