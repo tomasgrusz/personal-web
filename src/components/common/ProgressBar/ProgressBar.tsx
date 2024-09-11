@@ -33,6 +33,7 @@ const ProgressBar: React.FC<Props> = ({
         end: label || value,
         duration: 1.5,
         suffix: suffix || '',
+        decimals: 2,
     });
 
     useEffect(() => {

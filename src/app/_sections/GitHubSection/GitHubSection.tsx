@@ -1,11 +1,16 @@
 import styles from './GitHubSection.module.scss';
 import ProgressBar from '@/components/common/ProgressBar';
 import { Language } from '@/app/actions/fetchLanguages';
+import Link from 'next/link';
 
 const GitHubSection = async ({contributions, languages}: {contributions: any, languages: Language[]}) => {
 
     return (
         <section className={styles.GitHubSection} id="tech">
+            <div className={styles.info}>
+                <h3 className={styles.heading}>GitHub Activity for Personal Repositories</h3>
+                <p className={styles.description}>My GitHub contributions reflect my commitment to continuous learning and development. Here is an overview of my activity and the languages I frequently use. See more <Link href="https://github.com/tomasgrusz" target='_blank'>here</Link>.</p>
+            </div>
             <div className={styles.contributions}>
                 {contributions.data.user.contributionsCollection.contributionCalendar.weeks.map((week: any, index: number) => {
                     return (<div key={index} className={styles.week}>
@@ -21,11 +26,6 @@ const GitHubSection = async ({contributions, languages}: {contributions: any, la
                 })}
             </div>
             <div className={styles.languageSection}>
-                <div>
-                    <h3 className={styles.heading}>GitHub Activity for Personal Repositories</h3>
-                    <p className={styles.description}>Cupidatat amet quis nisi tempor nostrud cupidatat enim sunt adipisicing. Qui ipsum cupidatat consectetur dolor magna voluptate dolor quis adipisicing ex id aute laborum nostrud. Quis nulla culpa amet labore velit reprehenderit ipsum reprehenderit. Cillum minim do ut cupidatat et adipisicing sint cupidatat id dolore laborum duis non magna. Laboris officia consequat id Lorem enim officia quis. Non sunt voluptate non est ullamco. Do ipsum consectetur ea officia tempor aliquip id eu.</p>
-                    <p className={styles.description}>Cupidatat amet quis nisi tempor nostrud cupidatat enim sunt adipisicing. Qui ipsum cupidatat consectetur dolor magna voluptate dolor quis adipisicing ex id aute laborum nostrud. Quis nulla culpa amet labore velit reprehenderit ipsum reprehenderit. Cillum minim do ut cupidatat et adipisicing sint cupidatat id dolore laborum duis non magna. Laboris officia consequat id Lorem enim officia quis. Non sunt voluptate non est ullamco. Do ipsum consectetur ea officia tempor aliquip id eu.</p>
-                </div>
                 <div className={styles.languages}>
                     <h3 className={styles.left}>Most used languages</h3>
                     {languages.map((language, index) => {

@@ -58,9 +58,6 @@
 
   @include large {
     padding: 1rem 0;
-  }
-
-  @include medium {
     grid-template-columns: 1fr;
   }
 }

@@ -87,7 +87,7 @@ const fetchLanguages = async () => {
   topLangs.forEach((lang) => lang.weight = Math.round((lang.size / maxSize) * 100));
 
   const totalSize = topLangs.reduce((acc, curr) => curr.size + acc, 0);
-  topLangs.forEach((lang) => lang.percentage = Math.round((lang.size / totalSize) * 100));
+  topLangs.forEach((lang) => lang.percentage = (Math.round((lang.size / totalSize) * 10000)) / 100);
 
   return topLangs;
 };

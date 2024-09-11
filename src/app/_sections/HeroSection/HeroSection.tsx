@@ -1,7 +1,10 @@
 import Hero from "@/components/common/Hero";
 import Link from "next/link";
-
+import styles from "./HeroSection.module.scss";
 import hero from './hero.json';
+import Image from "next/image";
+import Button from "@/components/common/Button";
+import { BsGithub } from "react-icons/bs";
 
 const HeroSection1 = () => {
     return (<Hero
@@ -46,4 +49,28 @@ const HeroSection2 = () => {
   />);
 }
 
-export {HeroSection1, HeroSection2};
+const HeroSection3 = () => {
+  return (
+    <section className={styles.HeroSection3}>
+      <div className={styles.cards}>
+        <div className={styles.card}>
+          <h3>Enjoyed the website?</h3>
+          <p>
+            Did you know that the website code is <b>open-sourced</b> on GitHub? If you want to support me,
+            you can <span className="MAGIC">star</span> the repository.
+          </p>
+          <Button style={4} icon={<BsGithub />} text="View Project on GitHub" link="https://github.com/tomasgrusz/personal-web" />
+        </div>
+      </div>
+      <Image
+        src="/images/undraw/undraw_phone_call.svg"
+        alt="Web Developer"
+        width={500}
+        height={252}
+        className={styles.image}
+      />
+    </section>
+  );
+};
+
+export {HeroSection1, HeroSection2, HeroSection3};
