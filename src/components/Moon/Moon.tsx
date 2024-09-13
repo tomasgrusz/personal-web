@@ -18,7 +18,7 @@ const Moon = () => {
     <div className={`${styles.moon} ${styles[moonType]}`}>
       {moonType !== 'normalMoon' && 
         <p className={styles.specialMoonText}>
-          It's{' '}
+          It&apos;s{' '}
           {moonType === 'pumpkinMoon' && 'Halloween! 🎃'}
           {moonType === 'bloodMoon' && 'Friday the 13th! 🩸'}
           {moonType === 'frostMoon' && 'Christmas time! ❄️'}
