@@ -44,7 +44,7 @@ const useComet = (containerRef: RefObject<HTMLDivElement>) => {
 
         // Initialize comet's starting point
         cometElement.style.left = `${initialX}px`;
-        cometElement.style.top = `-10px`;
+        cometElement.style.top = `-50px`;
 
         // Render comet inside container
         containerElement.appendChild(cometElement);
