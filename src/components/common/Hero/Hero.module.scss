@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   gap: 2rem;
-  padding: 0 2rem;
+  padding: 0;
 
   @include medium {
     padding: 0;

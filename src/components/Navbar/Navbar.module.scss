@@ -4,11 +4,11 @@
 .Navbar {
   $padding: $nav-padding;
   position: fixed;
-  width: calc(100vw - ($padding * 2));
+  width: calc(100vw - ($padding * 2 + 6px));
   z-index: 10;
   display: flex;
   justify-content: space-between;
-  padding: $padding;
+  padding: $padding calc($padding + 6px) $padding $padding;
   align-items: center;
   backdrop-filter: blur(4px);
 
@@ -44,6 +44,10 @@
       svg {
         font-size: $icon-size-button;
       }
+    }
+
+    .mainLink {
+      margin: 0;
     }
   }
 

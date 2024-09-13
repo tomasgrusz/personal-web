@@ -2,4 +2,4 @@ https://grusz.dev
 https://grusz.dev/#home
 https://grusz.dev/#about
 https://grusz.dev/#portfolio
-https://grusz.dev/#contact
+https://grusz.dev/#tech

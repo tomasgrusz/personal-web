@@ -5,7 +5,7 @@ import ProjectCardList from '@components/ProjectCard/ProjectCardList';
 
 const PortfolioSection = () => {
   return (
-    <section className={styles.PortfolioSection} id="portfolio">
+    <section className={`${styles.PortfolioSection} no-padding`} id="portfolio">
       <Cave />
       <ProjectCardList data={projects} />
       <Cave flip />

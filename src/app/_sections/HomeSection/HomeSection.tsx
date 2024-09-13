@@ -8,7 +8,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HomeSection = () => {
   return (
-    <section className={styles.HomeSection} id="home">
+    <section className={`${styles.HomeSection} no-padding`} id="home">
       <Background />
       <ScrollReveal vertical={false}>
         <h1 className={styles.heading}>
@@ -35,6 +35,7 @@ const HomeSection = () => {
           style={{ display: 'inline-block', whiteSpace: 'pre-line' }}
           repeat={0}
           className={styles.greeting}
+          defaultValue={"I'm Tomáš Grusz. Let's explore the web dev universe!"}
         />
       </ScrollReveal>
     </section>

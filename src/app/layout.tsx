@@ -2,9 +2,9 @@ import './global.scss';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tomas Grusz - Frontend Web Developer',
+  title: 'Tomas Grusz | Frontend Web Developer | Custom Web Apps',
   description:
-    "I'm a Frontend Web Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
+    "Prague-based Frontend Developer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.",
   applicationName: 'tomasgrusz',
   authors: [{ name: 'Tomas Grusz' }],
   keywords: 'website development, web dev, frontend developer',
@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://grusz.dev',
-    title: 'Tomas Grusz - Frontend Web Developer',
+    title: 'Tomas Grusz | Frontend Web Developer | Custom Web Apps',
     description:
-      "I'm a Frontend Web Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
+      "Prague-based Frontend Developer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.",
     siteName: 'Tomas Grusz',
     images: [
       {
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     creator: '@gruszdev',
     images: '/banner.png',
-    title: 'Tomas Grusz - Frontend Web Developer',
+    title: 'Tomas Grusz | Frontend Web Developer | Custom Web Apps',
     description:
-      "I'm a Frontend Web Developer currently based in Prague, Czech Republic. With enthusiasm for design, I specialize in creating custom websites and interactive web applications.",
+      "Prague-based Frontend Developer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.",
   },
   other: {
     'msapplication-TileColor': '#603cba',
@@ -52,12 +52,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@context": "https://schema.org/",
               "@type": "WebSite",
               "name": "Tomáš Grusz",
-              "alternateName": ["Tomas Grusz", "Grusz"],
+              "alternateName": [
+                "Tomas Grusz",
+                "Grusz,
+                Tom Grusz"
+              ],
               "url": "https://grusz.dev",
+              "description": "Prague-based Frontend Developer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.",
+              "image": "https://grusz.dev/favicon.ico",
               "potentialAction": {
                 "@type": "SearchAction",
                 "target": "{search_term_string}",
                 "query-input": "required name=search_term_string"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "itemReviewed": {
+                  "@type": "LocalBusiness",
+                  "name": "Tomáš Grusz Development",
+                  "address": "tomas@grusz.dev",
+                  "image": "https://grusz.dev/icon-521.png",
+                  "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "ratingCount": "4"
+                  }
+                },
+                "ratingValue": "5",
+                "ratingCount": "4"
               }
             }`,
           }}
@@ -77,14 +99,34 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "https://github.com/tomasgrusz",
                 "https://grusz.dev"
               ],
-              "jobTitle": "Associate Software Engineer - Frontend",
+              "jobTitle": "Frontend Web Developer",
+              "email": "tomas@grusz.dev",
+              "alternateName": "Tomas Grusz",
+              "gender": "Male",
+              "additionalName": "Tom",
+              "alumniOf": "University of Birmingham",
               "worksFor": {
                 "@type": "Organization",
-                "name": "Make"
+                "name": "Make",
+                "url": "https://make.com"
               }
             }`,
           }}
         ></script>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+            __html: `{
+            "@context": "https://schema.org/",
+            "@type": "LocalBusiness",
+            "name": "Tomáš Grusz Development",
+            "address": "tomas@grusz.dev",
+            "image": "https://grusz.dev/icon-521.png",
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5",
+              "ratingCount": "4"
+            }
+          }`
+        }}></script>
       </head>
       <body>{children}</body>
     </html>

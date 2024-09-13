@@ -1,11 +1,12 @@
 import styles from './Navbar.module.scss';
 
 import { BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
-import { BiHomeAlt2, BiCarousel } from 'react-icons/bi';
-import { MdAlternateEmail } from 'react-icons/md';
+import { BiHomeAlt2, BiCarousel, BiCodeBlock, BiEnvelope } from 'react-icons/bi';
 
 import Link from 'next/link';
 import Image from 'next/image';
+import mailLink from '@/utils/mailLink';
+import Button from '../common/Button';
 
 const Navbar = () => {
   return (
@@ -20,16 +21,17 @@ const Navbar = () => {
         </Link>
         <Link href="#about" className={styles.link}>
           <BsPerson />
-          About Me
+          About
         </Link>
         <Link href="#portfolio" className={styles.link}>
           <BiCarousel />
           Portfolio
         </Link>
-        <Link href="#contact" className={styles.link}>
-          <MdAlternateEmail />
-          Contact Me
+        <Link href="#tech" className={styles.link}>
+          <BiCodeBlock />
+          Technology
         </Link>
+        <Button icon={<BiEnvelope />} text={"Contact Me"} link={mailLink} className={styles.mainLink} />
       </div>
       <div className={styles.links}>
         <Link
