@@ -67,6 +67,7 @@ const HeroSection3 = () => {
         alt="Web Developer"
         width={500}
         height={252}
+        style={{ width: '100%', height: 'auto', maxWidth: '500px' }}
         className={styles.image}
       />
     </section>

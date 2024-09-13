@@ -36,6 +36,12 @@
         border-radius: 0.5rem;
         box-shadow: inset 0px 0px 32px 8px rgba(0, 0, 0, 0.2), inset 0px 0px 16px 2px rgba(0, 0, 0, 0.4), inset 0px 0px 0px 0px;
 
+        @include small {
+            padding: 1rem;
+            box-shadow: none;
+            background-color: rgba(0,0,0,0.2);
+        }
+
         .stat {
             p {
                 font-weight: 500;

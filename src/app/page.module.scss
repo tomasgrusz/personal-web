@@ -21,6 +21,10 @@
       padding: 2rem;
     }
 
+    @include small {
+      padding: 1rem;
+    }
+
     &[class*="no-padding"] {
       padding: 0;
     }
