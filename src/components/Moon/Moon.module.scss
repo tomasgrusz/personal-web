@@ -9,10 +9,46 @@ $moon-size: 200px;
   background-position-y: bottom;
   width: $moon-size;
   height: $moon-size * 0.975;
-  // filter: opacity(0.5) drop-shadow(0 0 0 rgb(113, 98, 231));
+
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 
   @include medium {
     width: $moon-size * 0.75;
     height: $moon-size * 0.975 * 0.75;
   }
+}
+
+.specialMoonText {
+  
+  margin-bottom: -2rem;
+}
+
+$moon-shadow: radial-gradient(rgba(200,200,200, 0.35) 0%, rgba(200,200,200, 0.55) 70%, rgba(200,200,200, 0.85) 100%);
+
+$moon-image: url("/images/moon.webp");
+
+.normalMoon {
+  background-image: radial-gradient(rgba(114, 57, 171, 0.5) 0%, rgba(114, 57, 171, 0.5) 100%), $moon-shadow, $moon-image;
+  box-shadow: 0 2px 80px 12px rgb(163, 122, 195), inset 16px -8px 16px 10px rgba(70, 40, 70);
+}
+
+.pumpkinMoon {
+  background-image: radial-gradient(rgba(185, 67, 44, 0.5) 0%, rgba(188, 66, 41, 0.5) 100%), $moon-shadow, $moon-image;
+  box-shadow: 0 2px 80px 12px rgb(195, 134, 122), inset 16px -8px 16px 10px rgb(70, 45, 40);
+  color: rgb(220, 144, 108);
+}
+
+.bloodMoon {
+  background-image: radial-gradient(rgba(184, 34, 34, 0.5) 0%, rgba(207, 35, 35, 0.5) 100%), $moon-shadow, $moon-image;
+  box-shadow: 0 2px 80px 12px rgb(195, 122, 122), inset 16px -8px 16px 10px rgb(69, 29, 29);
+  color: rgb(220, 108, 108);
+}
+
+.frostMoon {
+  background-image: radial-gradient(rgba(57, 171, 171, 0.5) 0%, rgba(57, 171, 156, 0.5) 100%), $moon-shadow, $moon-image;
+  box-shadow: 0 2px 80px 12px rgb(122, 195, 189), inset 16px -8px 16px 10px rgb(40, 69, 70);
+  color: rgb(108, 220, 207);
 }
