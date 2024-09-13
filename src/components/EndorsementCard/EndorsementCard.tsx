@@ -17,8 +17,38 @@ type Props = {
 const EndorsementCard: React.FC<Props> = ({
     name, title, subtitle, company, companyIcon, quotes, image, link
 }) => {
+    const reviewSchema = <script type="application/ld+json" dangerouslySetInnerHTML={{
+        __html: `{
+            "@context": "https://schema.org/",
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            },
+            "itemReviewed": {
+                "@type": "LocalBusiness",
+                "name": "Tomáš Grusz Development",
+                "address": "tomas@grusz.dev",
+                "image": "https://grusz.dev/icon-521.png"
+            },
+            "reviewBody": "${quotes.join(" ")}",
+            "author": {
+                "@type": "Person",
+                "name": "${name}",
+                "jobTitle": "${title}",
+                "worksFor": {
+                    "@type": "Organization",
+                    "name": "${company}"
+                }
+            }
+        }`
+    }}>
+    </script>
+
     return (
         <div className={styles.EndorsementCard}>
+            {reviewSchema}
             {quotes.map((quote, index) => {
                 return (
                     <blockquote key={index} className={styles.quote}>

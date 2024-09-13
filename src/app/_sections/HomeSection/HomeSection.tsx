@@ -35,6 +35,7 @@ const HomeSection = () => {
           style={{ display: 'inline-block', whiteSpace: 'pre-line' }}
           repeat={0}
           className={styles.greeting}
+          defaultValue={"I'm Tomáš Grusz. Let's explore the web dev universe!"}
         />
       </ScrollReveal>
     </section>

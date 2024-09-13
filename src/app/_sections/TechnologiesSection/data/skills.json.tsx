@@ -160,7 +160,7 @@ const skills = [
   },
   {
     icon: <GoTools size={128} />,
-    label: 'Miscellaneous',
+    label: 'Tools',
     pills: [
       {
         text: 'Git',
