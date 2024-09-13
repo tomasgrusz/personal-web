@@ -111,12 +111,14 @@ const useComet = (containerRef: RefObject<HTMLDivElement>) => {
 
       // Function to create a new comet every 2.5 to 7.5 seconds
       const loopComet = () => {
-        // Randomize comet's initial position
-        const initialX = Math.floor(Math.random() * (containerElement.offsetWidth - 20)); // Adjust the comet's width
-        // Randomize comet's target position
-        const targetX = Math.floor(Math.random() * (containerElement.offsetWidth - 20)); // Adjust the comet's width
-        // Initialize comet creation
-        createComet(initialX, targetX - DEFAULT_TAIL);
+        if (document.visibilityState === 'visible') {
+          // Randomize comet's initial position
+          const initialX = Math.floor(Math.random() * (containerElement.offsetWidth - 20)); // Adjust the comet's width
+          // Randomize comet's target position
+          const targetX = Math.floor(Math.random() * (containerElement.offsetWidth - 20)); // Adjust the comet's width
+          // Initialize comet creation
+          createComet(initialX, targetX - DEFAULT_TAIL);
+        }
         // wait for a random time before creating the next comet
         setTimeout(loopComet, 2500 + Math.random() * 5000);
       }
