@@ -1,5 +1,7 @@
 "use server";
 
+import 'server-only';
+
 import axios from "axios";
 
 const topLanguagesQuery = `query userInfo() {
