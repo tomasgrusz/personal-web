@@ -57,7 +57,7 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 
 #### How Do I Submit a Good Bug Report?
 
-> You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead sensitive bugs must be sent by email to grusztomas0@gmail.com.
+> You must never report security related issues, vulnerabilities or bugs including sensitive information to the issue tracker, or elsewhere in public. Instead sensitive bugs must be sent by email to contact@grusz.dev.
 
 <!-- You may add a PGP key to allow the messages to be sent encrypted as well. -->
 
@@ -83,15 +83,3 @@ Enhancement suggestions are tracked as [GitHub issues](https://github.com/tomasg
 - Describe the current behavior and explain which behavior you expected to see instead and why. At this point you can also tell which alternatives do not work for you.
 - You may want to include screenshots and animated GIFs which help you demonstrate the steps or point out the part which the suggestion is related to.
 - Explain why this enhancement would be useful. You may also want to point out the other projects that solved it better and which could serve as inspiration.
-
-## Styleguides
-
-### Component Template
-
-<!-- TODO -->
-
-### Commit Messages
-
-<!-- TODO -->
-
-Prettier has been integrated i
