@@ -17,7 +17,8 @@
     "react-dom": "^18",
     "react-icons": "^4.11.0",
     "react-type-animation": "^3.1.0",
-    "sass": "^1.68.0"
+    "sass": "^1.68.0",
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -39,6 +39,19 @@
         "link": "https://www.linkedin.com/in/alexanderyushin/"
     },
     {
+        "name": "James Skinner",
+        "title": "Tech Lead",
+        "subtitle": "",
+        "company": "Make",
+        "quotes": [
+            "...his level of initiative and ability to own and take a task to completion was far beyond what I would normally expect from someone so fresh...",
+            "...brought a <b>strong positive energy to the team</b>, collaborated well with colleagues...",
+            "...constantly <b>pushing for higher code standards</b> and fresh ideas..."
+        ],
+        "image": "/images/endorsements/james-skinner.jpeg",
+        "link": "https://www.linkedin.com/in/james-skinner-42460596/"
+    },
+    {
         "name": "Jorge Collinet",
         "title": "Machine Learning Engineer",
         "subtitle": "",

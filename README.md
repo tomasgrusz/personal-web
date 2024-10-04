@@ -4,39 +4,44 @@ A personal [grusz.dev](https://grusz.dev) website & portfolio built with Next.js
 
 ## Feedback
 
-If you have any feedback, please reach out to me on [LinkedIn](https://www.linkedin.com/in/tomasgrusz/) or via form on the [website](https://grusz.dev).
+If you have any feedback, please reach out to me on [LinkedIn](https://www.linkedin.com/in/tomasgrusz/) or [email](mailto:contact@grusz.dev) me.
 
 ## Tech Stack
 
-Next 13, React, Three.js, SCSS, TypeScript
+- **Framework**: Next.js 13
+- **Library**: React
+- **Styling**: SCSS
+- **Language**: TypeScript
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
 ## Run Locally
 
-Clone the project
+To run this project locally, follow these steps:
 
-```bash
-  git clone https://github.com/tomasgrusz/personal-web.git
-```
+1. **Clone the project**
 
-Go to the project directory
+    ```bash
+    git clone https://github.com/tomasgrusz/personal-web.git
+    ```
 
-```bash
-  cd personal-web
-```
+2. **Go to the project directory**
 
-Install dependencies
+    ```bash
+    cd personal-web
+    ```
 
-```bash
-  npm install
-```
+3. **Install dependencies**
 
-Start the server
+    ```bash
+    npm install
+    ```
 
-```bash
-  npm start
-```
+4. **Start the server**
+
+    ```bash
+    npm start
+    ```
 
 ## Contributing
 
@@ -48,13 +53,15 @@ Please adhere to this project's license.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
-
-## Acknowledgements
-
--
+This project is licensed under the MIT License. See the [LICENSE](https://choosealicense.com/licenses/mit/) for details.
 
 ## Color Reference
 
 | Color | Hex |
 | ----- | --- |
+| Purple BG | <span style="color:#9448df">*#9448df*</span> |
+| Red BG | <span style="color:#540719">*#540719*</span> |
+| Text Color Light | <span style="color:#e5f7ff">*#e5f7ff*</span> |
+| Text Gradient 1 | <span style="color:#e963ff">*#e963ff*</span> |
+| Text Gradient 2 | <span style="color:#ffae74">*#ffae74*</span> |
+| Text Gradient 3 | <span style="color:#a764ff">*#a764ff*</span> |
