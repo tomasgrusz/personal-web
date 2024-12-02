@@ -40,8 +40,8 @@
     },
     {
         "name": "James Skinner",
-        "title": "Tech Lead",
-        "subtitle": "",
+        "title": "Staff Engineer",
+        "subtitle": "Managed directly",
         "company": "Make",
         "quotes": [
             "...his level of initiative and ability to own and take a task to completion was far beyond what I would normally expect from someone so fresh...",
@@ -53,7 +53,7 @@
     },
     {
         "name": "Jorge Collinet",
-        "title": "Machine Learning Engineer",
+        "title": "AI/ML Engineering Manager",
         "subtitle": "",
         "company": "Make",
         "quotes": [
