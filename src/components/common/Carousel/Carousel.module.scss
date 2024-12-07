@@ -1,0 +1,33 @@
+@import '@/styles/mixins.scss';
+
+.Carousel {
+    margin-bottom: 2rem;
+    [class*="slick-dots"] {
+        bottom: -50px;
+        *:before {
+            color: white !important;
+        }
+    }
+
+    @include small {
+        [class*='slick-prev'] {
+            left: 0px;
+        }
+        [class*='slick-next'] {
+            right: 0px;
+        }
+    }
+
+    @include minimal {
+        [class*='slick-prev'], [class*='slick-next'] {
+            display: none !important;
+        }
+    }
+
+    .item {
+        & > * {
+            margin: 0 auto;
+            cursor: grab;
+        }
+    }
+}
