@@ -1,5 +1,10 @@
 [
   {
+    "logo": "Mastercard",
+    "alt": "Mastercard Logo",
+    "link": "https://mastercard.com"
+  },
+  {
     "logo": "Make",
     "alt": "Make Logo",
     "link": "https://make.com"

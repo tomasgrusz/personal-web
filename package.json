@@ -16,14 +16,17 @@
     "react-countup": "^6.5.3",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
+    "react-slick": "^0.30.2",
     "react-type-animation": "^3.1.0",
     "sass": "^1.68.0",
-    "server-only": "^0.0.1"
+    "server-only": "^0.0.1",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
     "eslint": "^8",
     "eslint-config-next": "13.5.4",
     "typescript": "^5"

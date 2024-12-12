@@ -94,7 +94,7 @@
   {
     "title": "Studdy",
     "shortDesc": "Web app for flashcards with gamification.",
-    "desc": "A full-stack web application with an aim to help students with study material memorisation via flashcards and other mnemonic and gamification techniques. Spend intelligems to customize your 3D studio room dynamically.",
+    "desc": "A full-stack web application with an aim to help students with study material memorisation via flashcards and other mnemonic and gamification techniques. Spend intelligems to customize your 3D studio room dynamically. (Backend has been deprecated)",
     "dateStarted": "Oct 2022",
     "dateEnded": "May 2023",
     "image": "images/projects/studdy.png",
@@ -152,7 +152,7 @@
   {
     "title": "Fresher Friend",
     "shortDesc": "Social web for freshers at UoB.",
-    "desc": "An interactive web application developed using a PERN stack that helps freshers (and students in general) studying at the University of Birmingham find their future flatmates and course mates, engage in fun activities, chat, and socialise. By creating an account, users are automatically allocated into groups based on their profile and interests.",
+    "desc": "An interactive web application developed using a PERN stack that helps freshers (and students in general) studying at the University of Birmingham find their future flatmates and course mates, engage in fun activities, chat, and socialise. By creating an account, users are automatically allocated into groups based on their profile and interests. (Project deprecated)",
     "dateStarted": "Feb 2022",
     "dateEnded": "Jun 2022",
     "image": "images/projects/fresher-friend.jpeg",

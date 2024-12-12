@@ -6,6 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 const PartnerImages: PartnerImage[] = [
+  { url: '/images/partners/mastercard-icon.png', width: 102, height: 79 },
   { url: '/images/partners/Make-Logo-RGB-White.svg', width: 160, height: 32 },
   { url: '/images/partners/UoB-white-line.png', width: 384, height: 97 },
 ];
@@ -13,6 +14,7 @@ const PartnerImages: PartnerImage[] = [
 const Partners: FC<PartnersProps> = ({ partners }) => {
   return (
     <section className={styles.Partners}>
+      <h2 className={styles.title}>*Organizations I worked/studied at.</h2>
       <ScrollRevealList className={styles.List} childrenClassName={styles.Partner}>
         {partners.map((partner: PartnerProps, i: number) => (
           <Link

@@ -10,18 +10,6 @@
 
     .description {
         line-height: 1.25rem;
-    }
-  
-    .endorsements {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 4rem;
-        flex-wrap: wrap;
-        margin-top: 2rem;
-        justify-items: center;
-
-        @include xlarge {
-            grid-template-columns: 1fr;
-        }
+        margin-bottom: 2rem;
     }
 }

@@ -1,5 +1,12 @@
 @import './variables';
 
+// Less than min devices
+@mixin minimal {
+  @media (max-width: #{$screen-min}) {
+    @content;
+  }
+}
+
 // Small devices
 @mixin small {
   @media (max-width: #{$screen-small}) {
