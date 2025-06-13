@@ -2,12 +2,12 @@ import './global.scss';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tomas Grusz | Frontend Web Developer | Custom Web Apps',
+  title: 'Tom Grusz | Frontend Architect & Software Engineer | Custom Web Apps',
   description:
-    "Prague-based Frontend Developer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.",
-  applicationName: 'tomasgrusz',
-  authors: [{ name: 'Tomas Grusz' }],
-  keywords: 'website development, web dev, frontend developer',
+    'Prague-based Frontend Architect & Software Engineer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.',
+  applicationName: 'grusz.dev',
+  authors: [{ name: 'Tom Grusz' }],
+  keywords: 'website development, web dev, frontend developer, design',
   themeColor: '#252233',
   viewport: { width: 'device-width', initialScale: 1 },
   robots: { index: true, follow: true },
@@ -15,10 +15,10 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     url: 'https://grusz.dev',
-    title: 'Tomas Grusz | Frontend Web Developer | Custom Web Apps',
+    title: 'Tom Grusz | Frontend Architect & Software Engineer | Custom Web Apps',
     description:
-      "Prague-based Frontend Developer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.",
-    siteName: 'Tomas Grusz',
+      'Prague-based Frontend Architect & Software Engineer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.',
+    siteName: 'Tom Grusz | Frontend Architect & Software Engineer',
     images: [
       {
         url: '/banner.png',
@@ -32,9 +32,9 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     creator: '@gruszdev',
     images: '/banner.png',
-    title: 'Tomas Grusz | Frontend Web Developer | Custom Web Apps',
+    title: 'Tom Grusz | Frontend Architect & Software Engineer | Custom Web Apps',
     description:
-      "Prague-based Frontend Developer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.",
+      'Prague-based Frontend Architect & Software Engineer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.',
   },
   other: {
     'msapplication-TileColor': '#603cba',
@@ -51,14 +51,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: `{
               "@context": "https://schema.org/",
               "@type": "WebSite",
-              "name": "Tomáš Grusz",
+              "name": "Tom Grusz",
               "alternateName": [
-                "Tomas Grusz",
+                "Tom Grusz",
                 "Grusz,
-                Tom Grusz"
+                "Tomáš Grusz"
               ],
               "url": "https://grusz.dev",
-              "description": "Prague-based Frontend Developer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.",
+              "description": "Prague-based Frontend Architect & Software Engineer specializing in custom websites development and interactive web apps, combining a passion for design with expert coding skills.",
               "image": "https://grusz.dev/favicon.ico",
               "potentialAction": {
                 "@type": "SearchAction",
@@ -69,7 +69,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 "@type": "AggregateRating",
                 "itemReviewed": {
                   "@type": "LocalBusiness",
-                  "name": "Tomáš Grusz Development",
+                  "name": "grusz.dev",
                   "address": "tomas@grusz.dev",
                   "image": "https://grusz.dev/icon-521.png",
                   "aggregateRating": {
@@ -90,43 +90,47 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             __html: `{
               "@context": "https://schema.org/",
               "@type": "Person",
-              "name": "Tomáš Grusz",
+              "name": "Tom Grusz",
               "url": "https://grusz.dev",
               "image": "https://pbs.twimg.com/profile_images/1710629613129359361/-0KpGWTv_400x400.jpg",
               "sameAs": [
                 "https://twitter.com/gruszdev",
                 "https://www.linkedin.com/in/tomasgrusz/",
                 "https://github.com/tomasgrusz",
-                "https://grusz.dev"
+                "https://grusz.dev",
+                "https://dev.to/gruszdev"
               ],
-              "jobTitle": "Frontend Web Developer",
-              "email": "tomas@grusz.dev",
+              "jobTitle": "Frontend Architect & Software Engineer",
+              "email": "contact@grusz.dev",
               "alternateName": "Tomas Grusz",
               "gender": "Male",
-              "additionalName": "Tom",
+              "additionalName": "Tomáš",
               "alumniOf": "University of Birmingham",
               "worksFor": {
                 "@type": "Organization",
-                "name": "Make",
-                "url": "https://make.com"
+                "name": "Mastercard",
+                "url": "https://mastercard.com"
               }
             }`,
           }}
         ></script>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
             __html: `{
             "@context": "https://schema.org/",
             "@type": "LocalBusiness",
-            "name": "Tomáš Grusz Development",
-            "address": "tomas@grusz.dev",
+            "name": "grusz.dev",
+            "address": "contact@grusz.dev",
             "image": "https://grusz.dev/icon-521.png",
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "5",
               "ratingCount": "4"
             }
-          }`
-        }}></script>
+          }`,
+          }}
+        ></script>
       </head>
       <body>{children}</body>
     </html>

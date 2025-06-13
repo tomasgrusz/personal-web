@@ -38,8 +38,8 @@ const EndorsementCard: React.FC<Props> = ({
             },
             "itemReviewed": {
                 "@type": "LocalBusiness",
-                "name": "Tomáš Grusz Development",
-                "address": "tomas@grusz.dev",
+                "name": "Tom Grusz Development",
+                "address": "contact@grusz.dev",
                 "image": "https://grusz.dev/icon-521.png"
             },
             "reviewBody": "${quotes.join(' ')}",
