@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import mailLink from '@/utils/mailLink';
 import Button from '../common/Button';
-import { FaDev, FaX, FaXTwitter } from 'react-icons/fa6';
+import { FaHashnode, FaXTwitter } from 'react-icons/fa6';
 
 const Navbar = () => {
   return (
@@ -59,13 +59,13 @@ const Navbar = () => {
           <BsGithub />
         </Link>
         <Link
-          href="https://dev.to/gruszdev"
-          aria-label="Visit @gruszdev blog on dev.to"
+          href="https://blog.grusz.dev/"
+          aria-label="Visit my blog"
           target="_blank"
           className={styles.link}
-          title="Dev.to"
+          title="Blog"
         >
-          <FaDev />
+          <FaHashnode />
         </Link>
         <Link
           href="https://x.com/gruszdev"
