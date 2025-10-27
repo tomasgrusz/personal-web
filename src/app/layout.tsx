@@ -92,7 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               "@type": "Person",
               "name": "Tom Grusz",
               "url": "https://grusz.dev",
-              "image": "https://pbs.twimg.com/profile_images/1710629613129359361/-0KpGWTv_400x400.jpg",
+              "image": "https://grusz.dev/images/icon.png",
               "sameAs": [
                 "https://twitter.com/gruszdev",
                 "https://www.linkedin.com/in/tomasgrusz/",
