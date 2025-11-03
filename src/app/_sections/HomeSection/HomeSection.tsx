@@ -12,7 +12,7 @@ const HomeSection = () => {
       <Background />
       <ScrollReveal vertical={false}>
         <h1 className={styles.heading}>
-          Frontend Developer & <span className={styles.gradient}>Design Enthusiast</span>
+          <span className={styles.gradient}>Frontend Architect</span> & Software Engineer
         </h1>
       </ScrollReveal>
       <Moon />
@@ -23,11 +23,11 @@ const HomeSection = () => {
             2000,
             'Hi!',
             1000,
-            "I'm Tomáš Grusz.",
+            "I'm Tom Grusz.",
             1000,
-            "I'm Tomáš Grusz.\nNice to meet you!",
+            "I'm Tom Grusz.\nNice to meet you!",
             1000,
-            "I'm Tomáš Grusz.\nLet's explore the web dev universe!",
+            "I'm Tom Grusz.\nLet's explore the web dev universe!",
           ]}
           wrapper="h2"
           speed={25}
@@ -35,7 +35,7 @@ const HomeSection = () => {
           style={{ display: 'inline-block', whiteSpace: 'pre-line' }}
           repeat={0}
           className={styles.greeting}
-          defaultValue={"I'm Tomáš Grusz. Let's explore the web dev universe!"}
+          defaultValue={"I'm Tom Grusz. Let's explore the web dev universe!"}
         />
       </ScrollReveal>
     </section>

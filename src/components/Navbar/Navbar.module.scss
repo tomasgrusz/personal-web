@@ -16,6 +16,10 @@
     backdrop-filter: none;
   }
 
+  .logo img {
+    border-radius: 100%;
+  }
+
   .routes {
     display: flex;
     flex: 1;
