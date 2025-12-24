@@ -1,4 +1,5 @@
 https://grusz.dev
+https://blog.grusz.dev
 https://grusz.dev/#home
 https://grusz.dev/#about
 https://grusz.dev/#portfolio
