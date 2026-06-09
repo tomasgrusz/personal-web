@@ -73,7 +73,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   "@type": "LocalBusiness",
                   "name": "grusz.dev",
                   "address": "tomas@grusz.dev",
-                  "image": "https://grusz.dev/icon-521.png",
+                  "image": "https://grusz.dev/icon-512.png",
                   "aggregateRating": {
                     "@type": "AggregateRating",
                     "ratingValue": "5",
@@ -124,7 +124,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             "@type": "LocalBusiness",
             "name": "grusz.dev",
             "address": "contact@grusz.dev",
-            "image": "https://grusz.dev/icon-521.png",
+            "image": "https://grusz.dev/icon-512.png",
             "aggregateRating": {
               "@type": "AggregateRating",
               "ratingValue": "5",

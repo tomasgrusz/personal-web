@@ -1,5 +1,6 @@
+'use client';
 import styles from './Navbar.module.scss';
-
+import { motion } from 'framer-motion';
 import { BsGithub, BsLinkedin, BsPerson } from 'react-icons/bs';
 import { BiHomeAlt2, BiCarousel, BiCodeBlock, BiEnvelope } from 'react-icons/bi';
 
@@ -13,7 +14,19 @@ const Navbar = () => {
   return (
     <nav className={styles.Navbar}>
       <div className={styles.logo}>
-        <Image src={'/images/icon.png'} width={48} height={48} alt="Tomas Grusz profile picture" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="48" height="48">
+          <motion.path
+            style={{ strokeWidth: 25, strokeOpacity: 1 }}
+            fill="none"
+            stroke="white"
+            stroke-width="25"
+            stroke-opacity="1"
+            d="M 150 150 L 100 100 L 400 100 L 250 100 L 150 300 L 250 400 L 350 200 L 100 200"
+            initial={{ pathLength: 0 }}
+            animate={{ pathLength: 1 }}
+            transition={{ duration: 2, ease: 'easeOut' }}
+          ></motion.path>
+        </svg>
       </div>
       <div className={styles.routes}>
         <Link href="#home" className={styles.link}>
