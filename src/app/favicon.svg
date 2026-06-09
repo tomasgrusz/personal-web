@@ -1,3 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500"><metadata><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:dc="http://purl.org/dc/elements/1.1/"><rdf:Description><dc:creator>RealFaviconGenerator</dc:creator><dc:source>https://realfavicongenerator.net</dc:source></rdf:Description></rdf:RDF></metadata><path style="fill: none; stroke: black; stroke-width: 25px;" d="M 150 150 L 100 100 L 400 100 L 250 100 L 150 300 L 250 400 L 350 200 L 100 200"></path><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
-@media (prefers-color-scheme: dark) { :root { filter: invert(100%); } }
-</style></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" xmlns:bx="https://boxy-svg.com">
+    <ellipse
+        style="stroke-width: 0px; paint-order: fill; stroke: white; fill: black;"
+        cx="250" cy="250" rx="250" ry="250"></ellipse>
+    <defs>
+        <bx:grid x="0" y="0" width="50" height="50"></bx:grid>
+        <bx:export>
+            <bx:file format="png"></bx:file>
+        </bx:export>
+    </defs>
+    <path
+        d="M 163.734 178.818 L 113.734 128.818 L 413.734 128.818 L 263.734 128.818 L 163.734 328.818 L 263.734 428.818 L 363.734 228.818 L 113.734 228.818"
+        style="fill: none; stroke: white; stroke-width: 25;"></path>
+</svg>
