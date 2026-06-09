@@ -2,8 +2,6 @@
 
 import 'server-only';
 
-import axios from "axios";
-
 const contributionQuery = `query() { 
   user(login: "tomasgrusz"){
     contributionsCollection {
@@ -24,23 +22,26 @@ const contributionQuery = `query() {
   }
 }`;
 
-const request = (query: string) => {
-  return axios({
-    url: "https://api.github.com/graphql",
-    method: "post",
+const request = async (query: string) => {
+  const response = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
     headers: {
-        Authorization: `token ${process.env.GITHUB_PAT}`,
+      Authorization: `Bearer ${process.env.GITHUB_PAT}`,
+      'Content-Type': 'application/json',
     },
-    data: {
-        query: query,
-    }
+    body: JSON.stringify({ query }),
   });
+
+  if (!response.ok) {
+    throw new Error(`GitHub GraphQL request failed with status ${response.status}`);
+  }
+
+  return response.json();
 };
 
 const fetchContributions = async () => {
   console.log('Fetching contributions');
-  const contributions = await request(contributionQuery);
-  return contributions.data;
+  return request(contributionQuery);
 };
 
 export default fetchContributions;

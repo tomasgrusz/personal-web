@@ -2,8 +2,6 @@
 
 import 'server-only';
 
-import axios from "axios";
-
 const topLanguagesQuery = `query userInfo() {
   user(login: "tomasgrusz") {
     # fetch only owner repos & not forks
@@ -24,17 +22,21 @@ const topLanguagesQuery = `query userInfo() {
   }
 }`;
 
-const request = (query: string) => {
-  return axios({
-    url: "https://api.github.com/graphql",
-    method: "post",
+const request = async (query: string) => {
+  const response = await fetch('https://api.github.com/graphql', {
+    method: 'POST',
     headers: {
-        Authorization: `token ${process.env.GITHUB_PAT}`,
+      Authorization: `Bearer ${process.env.GITHUB_PAT}`,
+      'Content-Type': 'application/json',
     },
-    data: {
-        query: query,
-    }
+    body: JSON.stringify({ query }),
   });
+
+  if (!response.ok) {
+    throw new Error(`GitHub GraphQL request failed with status ${response.status}`);
+  }
+
+  return response.json();
 };
 
 export type Language = {
@@ -50,11 +52,11 @@ const fetchLanguages = async () => {
   console.log('Fetching languages');
   const res = await request(topLanguagesQuery);
 
-  if (res.data.errors) {
-    return res.data.errors;
+  if (res.errors) {
+    return res.errors;
   }
 
-  let repoNodes = res.data.data.user.repositories.nodes;
+  let repoNodes = res.data.user.repositories.nodes;
   let repoCount = 0;
 
   repoNodes = repoNodes
